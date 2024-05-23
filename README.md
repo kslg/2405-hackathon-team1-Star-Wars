@@ -14,6 +14,8 @@ Screenshot
 ## Design 
 ### Wireframes
 ### Colour scheme
+We decided on a colour scheme using Darth Vader colours. 
+
 ### Font
 ### User experience
 
