@@ -5,6 +5,7 @@ Screenshot
 ## Introduction
 
 ## Criteria
+
 - **Project is Star Wars themed**
 - **Well-executed project with effective planning using GitHub Projects and a basic README.md** 
 - **The project uses Star Wars sound effects**
@@ -12,9 +13,13 @@ Screenshot
 - **Fun and entertaining presentation**
 
 ## Design 
+
 ### Wireframes
+
 ### Colour scheme
+
 ### Font
+
 ### User experience
 
 ## Accessibility
@@ -26,6 +31,7 @@ Screenshot
 ## Credits
 
 ## Team
+
 - Alex Crabbe [GitHub](https://github.com/alexrobincrabbe) [LinkedIn]()
 - Kera Cudmore [GitHub](https://github.com/kera-cudmore) [LinkedIn](https://www.linkedin.com/in/keracudmore/)
 - Micah Francis [GitHub](https://github.com/2ndborn?tab=repositories) [LinkedIn](www.linkedin.com/in/micah-francis-87bb0832)
