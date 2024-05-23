@@ -30,6 +30,8 @@ Screenshot
 
 ## Credits
 
+* [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
+
 ## Team
 
 - Alex Crabbe [GitHub](https://github.com/alexrobincrabbe) [LinkedIn]()
