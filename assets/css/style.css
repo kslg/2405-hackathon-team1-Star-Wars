@@ -1,0 +1,12 @@
+/*--------------------------Color styles*/
+body {
+    background-color: #101010;
+}
+
+.bg-color-background {
+    background: #2B3637;
+}
+
+.container-fluid {
+    color: #F1F1F1;
+}
