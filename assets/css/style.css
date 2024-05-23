@@ -34,3 +34,7 @@ body {
 .navbar-nav .nav-item .nav-link {
     color: var(--white);
 }
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid var(--red);
+}
