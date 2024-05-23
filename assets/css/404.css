@@ -1,11 +1,10 @@
 body {
-    background: #101010;
     perspective: 400px;
 }
 
-div {
+.text-crawl {
     text-align: center;
-    color: #8b0000;
+    color: var(--red);
     font-weight: bold;
     width: 600px;
     margin: 0 auto;
