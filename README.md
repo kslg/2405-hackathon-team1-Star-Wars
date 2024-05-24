@@ -3,7 +3,6 @@
 Screenshot
 
 ## Introduction
-Test
 
 ## Criteria
 
@@ -29,7 +28,11 @@ We decided on a colour scheme using Darth Vader colours.
 
 ## Responsiveness
 
+Bootstrap has been utilised through the site which provides great responsiveness on a range of devices. We have also used custom media queries where required (for example on the 404 page).
+
 ## Tech used
+
+This project was created with HTML, CSS and JavaScript and the [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework.
 
 ## Credits
 
