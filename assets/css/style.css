@@ -38,3 +38,35 @@ body {
 .navbar-nav .nav-item .nav-link:hover {
     border-bottom: 2px solid var(--red);
 }
+
+/*----- FOOTER -----*/
+footer {
+    color: var(white);
+    background-color: var(--grey);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer a {
+    color: var(--white);
+    font-size: 25px;
+}
+
+footer a:hover {
+    color: var(--red);
+}
+/*----- MAIN -----*/
+.homepage-card{
+    height: 300px;
+    font-family: "Star Wars", "Rubik", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+.homepage-card a{
+    color: var(--red);
+    text-decoration-line: none;
+}
