@@ -1,0 +1,40 @@
+/*----- ROOT VARIABLES -----*/
+:root {
+    /* Typography Variables */
+    
+
+    /* Colour Variables */
+    --white: #F1F1F1;
+    --grey: #2B3637;
+    --black: #101010;
+    --red: #FF0011;
+}
+
+body {
+    background: var(--black);
+}
+
+.bg-color-background {
+    background: var(--grey);
+}
+
+.container-fluid {
+    color: var(--white);
+}
+
+/*----- NAVBAR -----*/
+.navbar-dark {
+    background-color: var(--black) !important;
+}
+
+.navbar .navbar-brand {
+    color: var(--red);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--white);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid var(--red);
+}
