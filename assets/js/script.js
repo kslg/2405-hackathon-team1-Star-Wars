@@ -1,29 +1,89 @@
 //Question bank
 var questionBank = [
     {
-        question : 'Where does Peter Parker live?',
-        option : ['L.A', 'Chicago', 'Punjab', 'New York'],
-        answer : 'New York'
+        question : 'What colour is Darth Vader&#39;s light saber?',
+        option : ['Red', 'Blue', 'Green', 'Yellow'],
+        answer : 'Red'
     },
     {
-        question : 'Who made the suit Peter wore for most of the movie?',
-        option : ['Bruce Banner', 'Aunt May', 'Tony Stark', 'I did!'],
-        answer : 'Tony Stark'
+        question : 'Who is the voice of Darth Vader in the original trilogy?',
+        option : ['David Prowse', 'James Earl Jones', 'Mark Hamill', 'Harrison Ford'],
+        answer : 'James Earl Jones'
     },
     {
-        question : 'Name the high-tech glasses in &#39;Far From Home&#39;',
-        option : ['J.U.L.Y.', 'E.D.I.T.H.', 'S.H.I.E.L.D.', 'B.O.B'],
-        answer : 'E.D.I.T.H.'
+        question : 'What was Darth Vader&#39;s name as a child?',
+        option : ['Darth Vader', 'Han Solo', 'Anakin Skywalker', 'Boba Fett'],
+        answer : 'Anakin Skywalker'
     },
     {
-        question : 'Finish the quote: "With great power comes great..."',
-        option : ['Responsibility', 'Catastrophe', 'Sensibility', 'Accountability'],
-        answer : 'Responsibility'
+        question : 'What is the famous line said by Darth Vader?',
+        option : ['"Luke, I am your father"', '"No, I am your father"', '"Who is your father?"', '"I am your mother"'],
+        answer : 'No, I am your father'
     },
     {
-        question : 'In Tobey Maguire&#39;s Spider-Man, how does he shoot webs?',
-        option : ['Using Web Shooters', 'From his wrists', 'From his finger nails', 'They magically appear'],
-        answer : 'From his wrists'
+        question : 'Who are Darth Vader&#39;s children?',
+        option : ['Han and Leia', 'Luke and Leia', 'Luke and Han', 'He had no children'],
+        answer : 'Luke and Leia'
+    },
+    {
+        question : 'What planet did Darth Vader grow up on?',
+        option : ['Hoth', 'Naboo', 'Tattooine', 'Tusken'],
+        answer : 'Tattooine'
+    },
+    {
+        question : 'What does Darth Vader mean?',
+        option : ['The Night Lord', 'The Evil Lord', 'The Black Lord', 'The Dark Lord'],
+        answer : 'The Dark Lord'
+    },
+    {
+        question : 'Who was Darth Vader&#39;s grandchild?',
+        option : ['Han Solo', 'Leia Organa', 'Luke Skywalker', 'Kylo Ren'],
+        answer : 'No, I am your father'
+    },
+    {
+        question : 'In what movie did Darth Vader tell Luke that he was his father?',
+        option : ['A New Hope', 'The Empire Strikes Back', 'Return of the Jedi', 'The Last Jedi'],
+        answer : 'The Empire Strikes Back'
+    },
+    {
+        question : 'What is Darth Vader&#39;s theme song called?',
+        option : ['March of the Resistance', 'Cantina Band', 'The Imperial March', 'Imperial Attack'],
+        answer : 'The Imperial March'
+    },
+    {
+        question : 'How many minutes of screen time did Darth Vader have in A New Hope?',
+        option : ['12', '24', '36', '48'],
+        answer : '12'
+    },
+    {
+        question : 'Who convinced Darth Vader to turn to the dark side?',
+        option : ['Darth Tyranus', 'Exar Kun', 'Palpatine', 'Darth Palgueis'],
+        answer : 'Palpatine'
+    },
+    {
+        question : 'What is Darth Vader&#39;s mother&#39;s name?',
+        option : ['Tsumi', 'Rumi', 'Ahmi', 'Shmi'],
+        answer : 'Shmi'
+    },
+    {
+        question : 'What body part did Darth Vader cut off of Luke Skywalker?',
+        option : ['Left hand', 'Right hand', 'Left leg', 'Right leg'],
+        answer : 'Right hand'
+    },
+    {
+        question : 'What Force power did Darth Vader use against his own officers?',
+        option : ['Force choke', 'Force Grip', 'Mind Trick', 'Force Lightning'],
+        answer : 'Force choke'
+    },
+    {
+        question : 'Who was Darth Vader&#39;s wife?',
+        option : ['Leia', 'Padme', 'Rey', 'Ahsoka'],
+        answer : 'Padme'
+    },
+    {
+        question : 'What age was Darth Vader when he turned to the dark side?',
+        option : ['23', '24', '25', '26'],
+        answer : '23'
     }
 ];
 
@@ -64,21 +124,35 @@ function calcScore(e){
     setTimeout(nextQuestion,300);
 }
 
-//Function to display next question
+//NEW Function to display next question
 function nextQuestion(){
-    if(i<questionBank.length-1)
+    i<questionBank.length-1
     {
         i=i+1;
         displayQuestion();
-    } else {
-        points.innerHTML= score+ '/'+ questionBank.length;
-        quizContainer.style.display= 'none';
-        scoreboard.style.display= 'block'
-        delete window.alert
+        questionBank.splice(i, 1);
+        console.log(questionBank[(Math.floor(Math.random() * questionBank.length))]);
     }
 }
-//Click events to next button
+
+//NEW Click events to next button
 next.addEventListener('click',nextQuestion);
+
+//OLD Function to display next question
+// function nextQuestion(){
+//     if(i<questionBank.length-1)
+//     {
+//         i=i+1;
+//         displayQuestion();
+//     } else {
+//         points.innerHTML= score+ '/'+ questionBank.length;
+//         quizContainer.style.display= 'none';
+//         scoreboard.style.display= 'block'
+//         delete window.alert
+//     }
+// }
+//OLD Click events to next button
+// next.addEventListener('click',nextQuestion);
 
 //Back to Quiz button event
 function backToQuiz(){
@@ -115,10 +189,8 @@ displayQuestion();
     timeleft -= 1;
     document.getElementById("countdown").innerHTML = timeleft + 
     " " + "seconds remaining";
-    if(timeleft <= -1){
-        console.log(i)
-        alert("Oh no! Times up. Don't worry, you can try again.");
-        document.getElementById("countdown").innerHTML = "Time is up!"
+    if(timeleft <= -0){
+        $("#myModal").modal();
         clearInterval(downloadTimer);
     }
     }, 1000);

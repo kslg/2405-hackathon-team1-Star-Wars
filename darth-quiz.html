@@ -87,7 +87,7 @@
             <a class="nav-link" href="/darth-quiz.html">Quiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Wiki</a>
+            <a class="nav-link" href="/wiki.html">Wiki</a>
           </li>
           <li class="nav-item">
             <a class="nav-link">About Us</a>
@@ -100,8 +100,8 @@
   <!-- Placeholder for the heading -->
   <main>
     <section class="container-fluid">
-      <div class="row justify-content-center mt-4">
-        <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
+        <div class="row justify-content-center mt-4">
+            <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
                 <div class="gameArea" role="none" aria-hidden="true">
                     <!-- quiz and scoreboard container -->    
                     <div class="container">
@@ -112,7 +112,7 @@
                                 <!-- Countdown timer -->
                                 <div id="countdown" role="presentation" aria-label="This is the countdown timer">
                                 </div>
-                                <h2 id="welcome-text" role="presentation" aria-labelledby="welcome-text">Welcome to the Spider-Quiz!</h2>
+                                <h2 id="welcome-text" role="presentation" aria-labelledby="welcome-text">Join me and play the quiz!</h2>
                                 <div id="question-buttons">
                                     <!-- Quiz questions -->
                                     <div id="question">
@@ -165,6 +165,7 @@
                     </div>
                         <!-- scoreboard section -->
                         <div id="scoreboard">
+                            <h2 role="presentation">The force is strong with this one!</h2>
                             <h2 id="score-title">Your Score</h2>
                             <div id="score" role="presentation" aria-label="Your final score for the quiz"></div>
                             <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
@@ -179,7 +180,24 @@
                         </div>
                 </div>
         </div>
-      </div>
+        <!-- Times Up Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Times Up Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Time is up!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Oh no! Times up. Don't worry, you can try again.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
   </main>
   <!-- Placeholder for the footer -->
