@@ -38,3 +38,8 @@ body {
 .navbar-nav .nav-item .nav-link:hover {
     border-bottom: 2px solid var(--red);
 }
+/*----- MAIN -----*/
+.homepage-card{
+    height: 300px;
+    
+}
