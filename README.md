@@ -3,6 +3,7 @@
 Screenshot
 
 ## Introduction
+
 ## User Stories
 ### Navigation
 * I want to gain access to the gain access to the Home, About Us, Quiz and Wiki page via the nav bar so that I can understand what areas of the site to visit.
@@ -28,6 +29,7 @@ Screenshot
 ### General
 * I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars verse.
 
+
 ## Criteria
 
 - **Project is Star Wars themed**
@@ -42,6 +44,8 @@ Screenshot
 
 ### Colour scheme
 
+We decided on a colour scheme using Darth Vader colours. 
+
 ### Font
 
 ### User experience
@@ -50,7 +54,11 @@ Screenshot
 
 ## Responsiveness
 
+Bootstrap has been utilised through the site which provides great responsiveness on a range of devices. We have also used custom media queries where required (for example on the 404 page).
+
 ## Tech used
+
+This project was created with HTML, CSS and JavaScript and the [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework.
 
 ## Credits
 
