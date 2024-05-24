@@ -61,7 +61,7 @@ We decided on a colour scheme based on an image of Darth Vader, using [Coolers](
 
 ### Font
 
-We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=What%20colour%20is%20Darth%20Vader%27s%20light%20saber%3F&query=news) for the main text and
+We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=What%20colour%20is%20Darth%20Vader%27s%20light%20saber%3F&query=news) for the main text and [star wars]() font for headings.
 
 ### User experience
 
@@ -84,6 +84,10 @@ This project was created with HTML, CSS and JavaScript and the [Bootstrap (Versi
 ## Credits
 
 - [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
+
+Images:
+
+[Anakin](https://www.starwars.com/databank/anakin-skywalker?image_id=5390fdbc0a172d315d0003a7)
 
 ## Team
 
