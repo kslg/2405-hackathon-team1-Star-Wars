@@ -68,13 +68,13 @@ Screenshot
 
 
 ## Accessibility
-
+- The colour scheme was run through a [Web Accessibility Colour Contrast Checker](https://accessibleweb.com/color-contrast-checker/) to ensure good contrast for colours. 
+- Aria labels were added so that users with screen readers can access the site more easily. 
 
 ## Responsiveness
 - Bootstrap has been utilised through the site which provides great responsiveness on a range of devices. We have also used custom media queries where required (for example on the 404 page).
 
 ## Features
-
 ### Quiz
 
 ### Wiki Page
