@@ -27,13 +27,8 @@ var questionBank = [
     },
     {
         question : 'What planet did Darth Vader grow up on?',
-        option : ['Hoth', 'Naboo', 'Tattooine', 'Tusken'],
-        answer : 'Tattooine'
-    },
-    {
-        question : 'What does Darth Vader mean?',
-        option : ['The Night Lord', 'The Evil Lord', 'The Black Lord', 'The Dark Lord'],
-        answer : 'The Dark Lord'
+        option : ['Hoth', 'Naboo', 'Tatooine', 'Tusken'],
+        answer : 'Tatooine'
     },
     {
         question : 'Who was Darth Vader&#39;s grandchild?',

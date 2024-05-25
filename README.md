@@ -73,6 +73,7 @@ This project was created with HTML, CSS and JavaScript and the [Bootstrap (Versi
 ## Credits
 
 * [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
+* [Darth Vader information](https://en.wikipedia.org/wiki/Darth_Vader)
 
 ## Team
 
