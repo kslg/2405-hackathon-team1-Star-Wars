@@ -79,8 +79,25 @@ footer a:hover {
 
 .title-card h5 {
   font-family: "starwars", "Rubik", sans-serif;
-
   font-size: 60px;
+  color: var(--red);
+  text-decoration-line: none;
+}
+
+.avatar-card {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.avatar-card:focus,
+.avatar-card:hover {
+  border: 1px solid var(--red);
+  box-shadow: 0 0 50px var(--red);
+}
+
+.avatar-card h5 {
+  font-family: "starwars", "Rubik", sans-serif;
+  font-size: 30px;
   color: var(--red);
   text-decoration-line: none;
 }
