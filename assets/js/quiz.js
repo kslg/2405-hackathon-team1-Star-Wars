@@ -190,6 +190,8 @@ displayQuestion();
 document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("question-buttons").style.display = "block"
     document.getElementById("welcome-text").style.display = "none"
+    document.getElementById("gameStart").style.display = "none"
+    document.getElementById("next").style.display = "none"
     var timeleft = 60;
     var currentQuestion = 0;
     var a = 0; a < (questionBank.length - 6);
