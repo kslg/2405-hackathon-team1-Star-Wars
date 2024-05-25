@@ -119,3 +119,7 @@ span {
 #welcome-text {
   display: block;
 }
+
+.quiz-box-shadow {
+  box-shadow: 0 0 10px 5px #ff1b30;
+}

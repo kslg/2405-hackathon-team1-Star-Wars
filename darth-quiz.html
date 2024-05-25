@@ -103,7 +103,7 @@
     <section class="container-fluid">
         <div class="row justify-content-center mt-4">
             <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
-                <div class="gameArea" role="none" aria-hidden="true">
+                <div class="gameArea bg-dark quiz-box-shadow" role="none" aria-hidden="true">
                     <!-- quiz and scoreboard container -->    
                     <div class="container">
                         <!-- quiz container -->
@@ -111,12 +111,12 @@
                             <!-- question container -->
                             <div class="questions" role="presentation" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
                                 <!-- Countdown timer -->
-                                <div id="countdown" role="presentation" aria-label="This is the countdown timer">
+                                <div class='text-center' id="countdown" role="presentation" aria-label="This is the countdown timer">
                                 </div>
-                                <h2 id="welcome-text" role="presentation" aria-labelledby="welcome-text">Join me and play the quiz!</h2>
+                                <h2 class='text-center' id="welcome-text" role="presentation" aria-labelledby="welcome-text">Join me and play the quiz!</h2>
                                 <div id="question-buttons">
                                     <!-- Quiz questions -->
-                                    <div id="question">
+                                    <div class='text-center' id="question">
                                     </div>
                                         <ol type="A">
                                             <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
@@ -125,17 +125,17 @@
                                             <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
                                         </ol>
                                         <!-- Question count -->
-                                        <div id="questionCount" role="presentation" aria-label="This is the question counter, counting up to five">
+                                        <div class='text-center' id="questionCount" role="presentation" aria-label="This is the question counter, counting up to five">
                                         </div>     
                                     </div>                     
                             </div>
                             <!-- Quiz Control Buttons -->
-                            <div class="buttons">
-                                <button type="button" id="gameStart" class="gameStart" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
-                                <button type="button" id="next" class="next" aria-labelledby="next" aria-label="Next question">Next</button>
-                                <button type="button" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Reset</button>
+                            <div class="buttons text-center">
+                                <button type="button" id="gameStart" class="gameStart btn btn-danger" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
+                                <button type="button" id="next" class="next btn btn-danger" aria-labelledby="next" aria-label="Next question">Next</button>
+                                <button type="button" class="btn btn-danger" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Reset</button>
                                 <!-- Trigger the modal with a button -->
-                                <button type="button" id="show-modal-btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
+                                <button type="button" id="show-modal-btn" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
                                 <!-- <button type="button" id="show-modal-btn" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button> -->
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
