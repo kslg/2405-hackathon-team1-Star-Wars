@@ -66,6 +66,10 @@ Bootstrap has been utilised through the site which provides great responsiveness
 
 This project was created with HTML, CSS and JavaScript and the [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework.
 
+## Media
+
+* [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
+
 ## Credits
 
 * [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
