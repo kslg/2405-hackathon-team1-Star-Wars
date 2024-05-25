@@ -64,12 +64,6 @@ footer a:hover {
   color: var(--red);
 }
 /*----- MAIN -----*/
-
-.landing-image {
-    background-image: url('../images/darth_saber.jpeg');
-    background-size: cover;
-}
-
 .homepage-card{
     height: 300px;
     font-family: "Star Wars", "Rubik", sans-serif;
@@ -77,19 +71,27 @@ footer a:hover {
     font-weight: 500;
 }
 
-/* .homepage-card:hover {
-    border: 3px solid var(--red);
-} */
-
 .homepage-card:focus, .homepage-card:hover {
     border: 1px solid var(--red);
     box-shadow: 0 0 50px var(--red);
-  }
+}
 
 .homepage-card a{
     color: var(--red);
     text-decoration-line: none;
+}
 
+.logo-card {
+  background: url('../images/darth_saber.jpeg') no-repeat;
+  background-size: cover;
+}
+.quiz-card {
+  background: url('../images/darth-vader-stormtrooper.jpg') no-repeat center center;
+  background-size: cover;
+}
+.wiki-card {
+  background: url('../images/darth_helmet.jpg') no-repeat center center;
+  background-size: cover;
 }
 /*----- QUIZ -----*/
 .hide {
