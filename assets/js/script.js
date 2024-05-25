@@ -9,7 +9,7 @@ function StopSound(soundobj) {
     thissound.currentTime = 0;
 }
 
-
+//
 function PlaySound(soundobj) {
     var lightSaberEffect = document.getElementById('light-saber');
     lightSaberEffect.play();
