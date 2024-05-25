@@ -3,6 +3,7 @@
 Screenshot
 
 ## Introduction
+### Problem Statement
 
 
 ## User Stories
@@ -54,6 +55,7 @@ Screenshot
 - We focused our design around the character of Darth Vader. He wears a dark hooded cloak and carries a red lightsaber. The Star Wars universe also uses a distinctive font which we utilised on our site. Hover effects were used to create a light blurred effect around the edges of buttons on the site - to emulate a lightsaber. 
 
 ### Wireframes
+- ![The Darth Side site planning wireframe](assets/images/wireframe-chewhakkas.png)
 
 ### Colour scheme
 - ![Colour palette - black, red, gunmetal]
@@ -84,11 +86,18 @@ Screenshot
 - [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework
 
 ## Media
-* [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
+- [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
 
 ## Credits
-* [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
-* [Darth Vader information](https://en.wikipedia.org/wiki/Darth_Vader)
+- [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
+- [Darth Vader information](https://en.wikipedia.org/wiki/Darth_Vader)
+### Quiz resources
+- https://stackoverflow.com/questions/59210276/javascript-array-get-first-10-items
+- https://stackoverflow.com/questions/62475521/splicing-first-object-returns-typeerror-cannot-read-property-of-undefined
+- https://stackoverflow.com/questions/2860243/whats-wrong-with-this-javascript-array-not-defined
+- https://stackoverflow.com/questions/37373387/display-array-item-onceon-click
+- https://stackoverflow.com/questions/70776559/how-can-i-get-objects-in-my-array-to-only-show-up-once-javascript
+- https://stackoverflow.com/questions/27091427/using-an-array-element-only-once
 
 ## Team
 - Alex Crabbe [GitHub](https://github.com/alexrobincrabbe) [LinkedIn]()
