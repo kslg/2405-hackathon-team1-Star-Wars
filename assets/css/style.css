@@ -123,3 +123,21 @@ span {
 .quiz-box-shadow {
   box-shadow: 0 0 10px 5px #ff1b30;
 }
+
+.quiz-text-title {
+  font-family: "starwars", "Rubik", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.quiz-text-caption {
+  font-family: "starwars", "Rubik", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.quiz-text {
+  font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
