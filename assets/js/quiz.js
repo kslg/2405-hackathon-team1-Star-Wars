@@ -28,7 +28,7 @@ var questionBank = [
     {
         question : 'What planet did Darth Vader grow up on?',
         option : ['Hoth', 'Naboo', 'Tatooine', 'Tusken'],
-        answer : 'Tattooine'
+        answer : 'Tatooine'
     },
     {
         question : 'Who was Darth Vader&#39;s grandchild?',
