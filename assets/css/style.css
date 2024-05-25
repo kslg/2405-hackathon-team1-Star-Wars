@@ -18,6 +18,10 @@ body {
   background: var(--black);
 }
 
+main {
+  padding-bottom: 100px;
+}
+
 .bg-color-background {
   background: var(--grey);
 }
@@ -90,15 +94,18 @@ footer a:hover {
 .homepage-card a {
   color: var(--red);
   text-decoration-line: none;
+}
 
 .logo-card {
   background: url('../images/darth_saber.jpeg') no-repeat;
   background-size: cover;
 }
+
 .quiz-card {
   background: url('../images/darth-vader-stormtrooper.jpg') no-repeat center center;
   background-size: cover;
 }
+
 .wiki-card {
   background: url('../images/darth_helmet.jpg') no-repeat center center;
   background-size: cover;
