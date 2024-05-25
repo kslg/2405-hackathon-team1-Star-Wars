@@ -64,16 +64,32 @@ footer a:hover {
   color: var(--red);
 }
 /*----- MAIN -----*/
-.homepage-card {
-  height: 300px;
-  font-family: "starwars", "Rubik", sans-serif;
-  font-size: 3.75rem;
-  font-weight: 500;
-  box-shadow: -5px 0px 10px rgb(255, 147, 147), 5px 0px 10px rgb(255, 147, 147);
+
+.landing-image {
+    background-image: url('../images/darth_saber.jpeg');
+    background-size: cover;
 }
-.homepage-card a {
-  color: var(--red);
-  text-decoration-line: none;
+
+.homepage-card{
+    height: 300px;
+    font-family: "Star Wars", "Rubik", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* .homepage-card:hover {
+    border: 3px solid var(--red);
+} */
+
+.homepage-card:focus, .homepage-card:hover {
+    border: 1px solid var(--red);
+    box-shadow: 0 0 50px var(--red);
+  }
+
+.homepage-card a{
+    color: var(--red);
+    text-decoration-line: none;
+
 }
 /*----- QUIZ -----*/
 .hide {

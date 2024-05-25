@@ -81,13 +81,18 @@ Bootstrap has been utilised through the site which provides great responsiveness
 
 This project was created with HTML, CSS and JavaScript and the [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework.
 
-## Credits
+## Media
 
-- [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
+* [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
+
+## Credits
 
 Images:
 
 [Anakin](https://www.starwars.com/databank/anakin-skywalker?image_id=5390fdbc0a172d315d0003a7)
+
+* [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
+* [Darth Vader information](https://en.wikipedia.org/wiki/Darth_Vader)
 
 ## Team
 
