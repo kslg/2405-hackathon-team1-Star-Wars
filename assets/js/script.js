@@ -115,7 +115,7 @@ function displayQuestion() {
     option1.innerHTML= questionBank[currentQuestion].option[1];
     option2.innerHTML= questionBank[currentQuestion].option[2];
     option3.innerHTML= questionBank[currentQuestion].option[3];
-    questionCount.innerHTML= "Question"+' '+(currentQuestion+1)+' '+'of'+' '+questionBank.length;
+    questionCount.innerHTML= "Question" + ' ' + (currentQuestion+1) + ' ' + 'of' + ' ' + (questionBank.length-7);
 }
 
 //Function to calculate scores
@@ -131,7 +131,7 @@ function calcScore(e){
 
 //NEW Function to display next question
 function nextQuestion(){
-    if(currentQuestion<questionBank.length-1){
+    if(currentQuestion<questionBank.length-8){
         currentQuestion=currentQuestion+1;
         displayQuestion();
     }
