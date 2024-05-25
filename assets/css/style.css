@@ -1,65 +1,70 @@
 /*----- ROOT VARIABLES -----*/
 :root {
-    /* Typography Variables */
-    
+  /* Typography Variables */
 
-    /* Colour Variables */
-    --white: #F1F1F1;
-    --grey: #2B3637;
-    --black: #101010;
-    --red: #FF0011;
+  /* Colour Variables */
+  --white: #f1f1f1;
+  --grey: #2b3637;
+  --black: #101010;
+  --red: #ff0011;
+}
+
+@font-face {
+  font-family: "starwars";
+  src: url(/assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
 }
 
 body {
-    background: var(--black);
+  background: var(--black);
 }
 
 .bg-color-background {
-    background: var(--grey);
+  background: var(--grey);
 }
 
 .container-fluid {
-    color: var(--white);
+  color: var(--white);
 }
 
 /*----- NAVBAR -----*/
 .navbar-dark {
-    background-color: var(--black) !important;
+  background-color: var(--black) !important;
 }
 
 .navbar .navbar-brand {
-    color: var(--red);
+  color: var(--red);
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: var(--white);
+  color: var(--white);
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
 }
 
 /*----- FOOTER -----*/
 footer {
-    color: var(white);
-    background-color: var(--grey);
-    text-align: center;
-    padding: 0.75rem;
+  color: var(white);
+  background-color: var(--grey);
+  text-align: center;
+  padding: 0.75rem;
 }
 
 footer p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 footer a {
-    color: var(--white);
-    font-size: 25px;
+  color: var(--white);
+  font-size: 25px;
 }
 
 footer a:hover {
-    color: var(--red);
+  color: var(--red);
 }
 /*----- MAIN -----*/
+
 .landing-image {
     background-image: url('../images/darth_saber.jpeg');
     background-size: cover;
@@ -84,20 +89,22 @@ footer a:hover {
 .homepage-card a{
     color: var(--red);
     text-decoration-line: none;
+
 }
 /*----- QUIZ -----*/
 .hide {
-    display: none;
+  display: none;
 }
-span{
-    display: block;
+span {
+  display: block;
 }
-#scoreboard,#answerBank{
-    display: none;
+#scoreboard,
+#answerBank {
+  display: none;
 }
 #question-buttons {
-    display: none;
+  display: none;
 }
 #welcome-text {
-    display: block;
+  display: block;
 }
