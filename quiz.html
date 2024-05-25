@@ -114,10 +114,10 @@
                                 <div class='text-center quiz-text' id="countdown" role="presentation" aria-label="This is the countdown timer">
                                 </div>
                                 <h1 class='text-center quiz-text-title' id="welcome-text" role="presentation" aria-labelledby="title-text">DARTH QUIZ</h1>
-                                <h2 class='text-center quiz-text-caption' id="welcome-text" role="presentation" aria-labelledby="welcome-text">Give yourself to the Dark Side!</h2>
+                                <h2 class='text-center quiz-text-caption' id="welcome-text" role="presentation" aria-labelledby="welcome-text">Give yourself to the Dark Side</h2>
                                 <div id="question-buttons">
                                     <!-- Quiz questions -->
-                                    <div class='text-center' id="question">
+                                    <div class='text-center quiz-text' id="question">
                                     </div>
                                         <ol type="A">
                                             <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
@@ -126,14 +126,13 @@
                                             <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
                                         </ol>
                                         <!-- Question count -->
-                                        <div class='text-center' id="questionCount" role="presentation" aria-label="This is the question counter, counting up to five">
+                                        <div class='text-center quiz-text' id="questionCount" role="presentation" aria-label="This is the question counter, counting up to five">
                                         </div>     
                                     </div>                     
                             </div>
                             <!-- Quiz Control Buttons -->
                             <div class="buttons text-center">
                                 <button type="button" id="gameStart" class="gameStart btn btn-danger" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
-                                <button type="button" id="next" class="next btn btn-danger" aria-labelledby="next" aria-label="Next question">Next</button>
                                 <button type="button" class="btn btn-danger icon" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Reset</button>
                                 <!-- Trigger the modal with a button -->
                                 <button type="button" id="show-modal-btn" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
