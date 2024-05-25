@@ -210,18 +210,6 @@ function refresh(){
     window.location.reload("Refresh")
   }
 
-// Dark Mode function
-let themeToggler = document.getElementById('theme-toggler');
-
-themeToggler.onclick = () => {
-  themeToggler.classList.toggle('fa-sun');
-
-  if (themeToggler.classList.contains('fa-sun')) {
-    document.body.classList.add('active');
-  } else {
-    document.body.classList.remove('active');
-  }
-};
 // Modal function
 const overlay = document.querySelector("#overlay");
   document.querySelector("#show-modal-btn").
