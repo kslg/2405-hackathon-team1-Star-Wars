@@ -7,30 +7,41 @@ Screenshot
 
 
 ## User Stories
+
 ### Navigation
-* I want to gain access to the gain access to the Home, About Us, Quiz and Wiki page via the nav bar so that I can understand what areas of the site to visit.
-* I want to able to visually identify what page I am on using the nav bar so that I can know what page I am on.
+
+- I want to gain access to the gain access to the Home, About Us, Quiz and Wiki page via the nav bar so that I can understand what areas of the site to visit.
+- I want to able to visually identify what page I am on using the nav bar so that I can know what page I am on.
+
 ### Home Page
-* I want to be able to view a home page with an image of Darth Vader so that I can understand the theme of the website.
-* I want to have clear options on what areas of the site I should visit so that I understand where the main features of the site are.
+
+- I want to be able to view a home page with an image of Darth Vader so that I can understand the theme of the website.
+- I want to have clear options on what areas of the site I should visit so that I understand where the main features of the site are.
+
 ### About Us
-* I want to view a list of collaborators and their roles so that I can understand who was involved in building site.
-* I want to view short summary of why the site was created so that I can gain and insite into the websites origin.
+
+- I want to view a list of collaborators and their roles so that I can understand who was involved in building the site.
+- I want to view short summary of why the site was created so that I can gain an insight into the websites origin.
+
 ### Quiz Page
+
 * I want to be able to participate in a quiz about Darth Vader so that I can test my knowledge about this character.
 * I want to have multiple choice options so that I have I higher chance of selecting the correct answer.
 * I want to receive a performance based nofication upon completion so that I can see how well I know Darth Vader.
 * I want to be able to refer to the instructions without having to restart the game so that I can have a quick reminder if I forget and continue to play.
 * I want to have a Start, Reset and Next question button so I have some control over the flow of the game.
 * I want to have time limited questions so that the game doesn't take all day.
-### Wiki Page
-* I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way.
-* I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me.
-* I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period.
-* I want to be able to interact with each images on the timeline so that I can see the image in more detail.
-### General
-* I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars verse.
 
+### Wiki Page
+
+- I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way.
+- I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me.
+- I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period.
+- I want to be able to interact with each images on the timeline so that I can see the image in more detail.
+
+### General
+
+- I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars verse.
 
 ## Criteria
 - **Project is Star Wars themed**
@@ -51,6 +62,7 @@ Screenshot
 - The presentation was presented as a 'recruitment to the Empire' presentation in order to add entertainment value.
 
 ## Design
+
 - ![Hero image of Darth Vader](assets/images/darth_saber.jpeg)
 - We focused our design around the character of Darth Vader. He wears a dark hooded cloak and carries a red lightsaber. The Star Wars universe also uses a distinctive font which we utilised on our site. Hover effects were used to create a light blurred effect around the edges of buttons on the site - to emulate a lightsaber. 
 
@@ -58,11 +70,13 @@ Screenshot
 - ![The Darth Side site planning wireframe](assets/images/wireframe-chewhakkas.png)
 
 ### Colour scheme
+
 - ![Colour palette - black, red, gunmetal]
 - The colour scheme was chosen to match the costume of Darth Vader but also to provide enough contrast for accessibility reasons.
 
 ### Font
 
+We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=What%20colour%20is%20Darth%20Vader%27s%20light%20saber%3F&query=news) for the main text and [star wars]() font for headings.
 
 ### User experience
 
@@ -89,8 +103,10 @@ Screenshot
 - [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
 
 ## Credits
+
 - [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
 - [Darth Vader information](https://en.wikipedia.org/wiki/Darth_Vader)
+
 ### Quiz resources
 - https://stackoverflow.com/questions/59210276/javascript-array-get-first-10-items
 - https://stackoverflow.com/questions/62475521/splicing-first-object-returns-typeerror-cannot-read-property-of-undefined
@@ -98,6 +114,10 @@ Screenshot
 - https://stackoverflow.com/questions/37373387/display-array-item-onceon-click
 - https://stackoverflow.com/questions/70776559/how-can-i-get-objects-in-my-array-to-only-show-up-once-javascript
 - https://stackoverflow.com/questions/27091427/using-an-array-element-only-once
+
+Images:
+
+[Anakin](https://www.starwars.com/databank/anakin-skywalker?image_id=5390fdbc0a172d315d0003a7)
 
 ## Team
 - Alex Crabbe [GitHub](https://github.com/alexrobincrabbe) [LinkedIn]()
