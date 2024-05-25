@@ -4,6 +4,7 @@ Screenshot
 
 ## Introduction
 
+
 ## User Stories
 ### Navigation
 * I want to gain access to the gain access to the Home, About Us, Quiz and Wiki page via the nav bar so that I can understand what areas of the site to visit.
@@ -20,7 +21,7 @@ Screenshot
 * I want to receive a performance based nofication upon completion so that I can see how well I know Darth Vader.
 * I want to be able to refer to the instructions without having to restart the game so that I can have a quick reminder if I forget and continue to play.
 * I want to have a Start, Reset and Next question button so I have some control over the flow of the game.
-* I want to have time limited questions so that I the game doesn't take all day.
+* I want to have time limited questions so that the game doesn't take all day.
 ### Wiki Page
 * I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way.
 * I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me.
@@ -31,30 +32,44 @@ Screenshot
 
 
 ## Criteria
-
 - **Project is Star Wars themed**
-- **Well-executed project with effective planning using GitHub Projects and a basic README.md** 
-- **The project uses Star Wars sound effects**
-- **Project demonstrates responsiveness, accessibility, and thorough testing**
-- **Fun and entertaining presentation**
+- The website is centred around the antagonist of the original Star Wars trilogy: Darth Vader. 
 
-## Design 
+- **Well-executed project with effective planning using GitHub Projects and a basic README.md** 
+- Agile methodology was used by appointing a Scrum Master (Micah) and utilising a Kanban board on GitHub in order to prioritise and organise tasks. 
+
+- **The project uses Star Wars sound effects**
+- Sound effects are employed throughout the site when buttons are pressed.
+
+- **Project demonstrates responsiveness, accessibility, and thorough testing**
+- Project was designed with a mobile first approach. BootStrap was utilised to ensure responsiveness across all screen sizes. 
+- The site was continually manually tested by members throughout development.
+
+- **Fun and entertaining presentation**
+- A video presentation was created using OBS. 
+- The presentation was presented as a 'recruitment to the Empire' presentation in order to add entertainment value.
+
+## Design
+- ![Hero image of Darth Vader](assets/images/darth_saber.jpeg)
+- We focused our design around the character of Darth Vader. He wears a dark hooded cloak and carries a red lightsaber. The Star Wars universe also uses a distinctive font which we utilised on our site. Hover effects were used to create a light blurred effect around the edges of buttons on the site - to emulate a lightsaber. 
 
 ### Wireframes
 
 ### Colour scheme
-
-We decided on a colour scheme using Darth Vader colours. 
+- ![Colour palette - black, red, gunmetal]
+- The colour scheme was chosen to match the costume of Darth Vader but also to provide enough contrast for accessibility reasons.
 
 ### Font
 
+
 ### User experience
+
 
 ## Accessibility
 
-## Responsiveness
 
-Bootstrap has been utilised through the site which provides great responsiveness on a range of devices. We have also used custom media queries where required (for example on the 404 page).
+## Responsiveness
+- Bootstrap has been utilised through the site which provides great responsiveness on a range of devices. We have also used custom media queries where required (for example on the 404 page).
 
 ## Features
 
@@ -63,20 +78,19 @@ Bootstrap has been utilised through the site which provides great responsiveness
 ### Wiki Page
 
 ## Tech used
-
-This project was created with HTML, CSS and JavaScript and the [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework.
+- HTML
+- CSS 
+- JavaScript 
+- [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework
 
 ## Media
-
 * [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
 
 ## Credits
-
 * [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
 * [Darth Vader information](https://en.wikipedia.org/wiki/Darth_Vader)
 
 ## Team
-
 - Alex Crabbe [GitHub](https://github.com/alexrobincrabbe) [LinkedIn]()
 - Kera Cudmore [GitHub](https://github.com/kera-cudmore) [LinkedIn](https://www.linkedin.com/in/keracudmore/)
 - Micah Francis [GitHub](https://github.com/2ndborn?tab=repositories) [LinkedIn](www.linkedin.com/in/micah-francis-87bb0832)
