@@ -218,6 +218,7 @@ const overlay = document.querySelector("#overlay");
       overlay.style.display = "none";
   })
   const modalOverlay = document.getElementById("overlay")
+
   modalOverlay.classList.add('hide')
 
 
