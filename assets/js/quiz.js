@@ -1,0 +1,231 @@
+//Question bank
+var questionBank = [
+    {
+        question : 'What colour is Darth Vader&#39;s light saber?',
+        option : ['Red', 'Blue', 'Green', 'Yellow'],
+        answer : 'Red'
+    },
+    {
+        question : 'Who is the voice of Darth Vader in the original trilogy?',
+        option : ['David Prowse', 'James Earl Jones', 'Mark Hamill', 'Harrison Ford'],
+        answer : 'James Earl Jones'
+    },
+    {
+        question : 'What was Darth Vader&#39;s name as a child?',
+        option : ['Darth Vader', 'Han Solo', 'Anakin Skywalker', 'Boba Fett'],
+        answer : 'Anakin Skywalker'
+    },
+    {
+        question : 'What is the famous line said by Darth Vader?',
+        option : ['"Luke, I am your father"', '"No, I am your father"', '"Who is your father?"', '"I am your mother"'],
+        answer : 'No, I am your father'
+    },
+    {
+        question : 'Who are Darth Vader&#39;s children?',
+        option : ['Han and Leia', 'Luke and Leia', 'Luke and Han', 'He had no children'],
+        answer : 'Luke and Leia'
+    },
+    {
+        question : 'What planet did Darth Vader grow up on?',
+        option : ['Hoth', 'Naboo', 'Tattooine', 'Tusken'],
+        answer : 'Tattooine'
+    },
+    {
+        question : 'What does Darth Vader mean?',
+        option : ['The Night Lord', 'The Evil Lord', 'The Black Lord', 'The Dark Lord'],
+        answer : 'The Dark Lord'
+    },
+    {
+        question : 'Who was Darth Vader&#39;s grandchild?',
+        option : ['Han Solo', 'Leia Organa', 'Luke Skywalker', 'Kylo Ren'],
+        answer : 'No, I am your father'
+    },
+    {
+        question : 'In what movie did Darth Vader tell Luke that he was his father?',
+        option : ['A New Hope', 'The Empire Strikes Back', 'Return of the Jedi', 'The Last Jedi'],
+        answer : 'The Empire Strikes Back'
+    },
+    {
+        question : 'What is Darth Vader&#39;s theme song called?',
+        option : ['March of the Resistance', 'Cantina Band', 'The Imperial March', 'Imperial Attack'],
+        answer : 'The Imperial March'
+    },
+    {
+        question : 'How many minutes of screen time did Darth Vader have in A New Hope?',
+        option : ['12', '24', '36', '48'],
+        answer : '12'
+    },
+    {
+        question : 'Who convinced Darth Vader to turn to the dark side?',
+        option : ['Darth Tyranus', 'Exar Kun', 'Palpatine', 'Darth Palgueis'],
+        answer : 'Palpatine'
+    },
+    {
+        question : 'What is Darth Vader&#39;s mother&#39;s name?',
+        option : ['Tsumi', 'Rumi', 'Ahmi', 'Shmi'],
+        answer : 'Shmi'
+    },
+    {
+        question : 'What body part did Darth Vader cut off of Luke Skywalker?',
+        option : ['Left hand', 'Right hand', 'Left leg', 'Right leg'],
+        answer : 'Right hand'
+    },
+    {
+        question : 'What Force power did Darth Vader use against his own officers?',
+        option : ['Force choke', 'Force Grip', 'Mind Trick', 'Force Lightning'],
+        answer : 'Force choke'
+    },
+    {
+        question : 'Who was Darth Vader&#39;s wife?',
+        option : ['Leia', 'Padme', 'Rey', 'Ahsoka'],
+        answer : 'Padme'
+    },
+    {
+        question : 'What age was Darth Vader when he turned to the dark side?',
+        option : ['23', '24', '25', '26'],
+        answer : '23'
+    }
+];
+
+var question = document.getElementById('question');
+var quizContainer = document.getElementById('quiz-container');
+var scorecard = document.getElementById('scorecard');
+var option0 = document.getElementById('option0');
+var option1 = document.getElementById('option1');
+var option2 = document.getElementById('option2');
+var option3 = document.getElementById('option3');
+var next = document.querySelector('.next');
+var points = document.getElementById('score');
+var span = document.querySelectorAll('span');
+var i = 0;
+var score = 0;
+
+//Function to display questions
+function displayQuestion() {
+    for (var a=0;a<span.length;a++){
+        span[a].style.background='none';
+    }
+    question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
+    option0.innerHTML= questionBank[i].option[0];
+    option1.innerHTML= questionBank[i].option[1];
+    option2.innerHTML= questionBank[i].option[2];
+    option3.innerHTML= questionBank[i].option[3];
+    questionCount.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
+}
+
+//Function to calculate scores
+function calcScore(e){
+    if(e.innerHTML===questionBank[i].answer && score<questionBank.length){
+        score= score+1;
+        document.getElementById(e.id).style.background= 'limegreen';
+    } else {
+        document.getElementById(e.id).style.background= 'tomato';
+    }
+    setTimeout(nextQuestion,300);
+}
+
+//NEW Function to display next question
+function nextQuestion(){
+    i<questionBank.length-1
+    {
+        i=i+1;
+        displayQuestion();
+        questionBank.splice(i, 1);
+        console.log(questionBank[(Math.floor(Math.random() * questionBank.length))]);
+    }
+}
+
+//NEW Click events to next button
+next.addEventListener('click',nextQuestion);
+
+//OLD Function to display next question
+// function nextQuestion(){
+//     if(i<questionBank.length-1)
+//     {
+//         i=i+1;
+//         displayQuestion();
+//     } else {
+//         points.innerHTML= score+ '/'+ questionBank.length;
+//         quizContainer.style.display= 'none';
+//         scoreboard.style.display= 'block'
+//         delete window.alert
+//     }
+// }
+//OLD Click events to next button
+// next.addEventListener('click',nextQuestion);
+
+//Back to Quiz button event
+function backToQuiz(){
+    location.reload();
+}
+
+//Function to check Answers
+function checkAnswer(){
+    var answerBank= document.getElementById('answerBank');
+    
+    var answers= document.getElementById('answers');
+    answerBank.style.display= 'block';
+    scoreboard.style.display= 'none';
+    
+    for(var a=0;a<questionBank.length;a++) {
+        var list= document.createElement('li');
+        list.innerHTML= questionBank[a].answer;
+        answers.appendChild(list);
+    }
+}
+displayQuestion();
+
+/** 
+ * Countdown timer which shows a window alert 
+ * if the player does not complete the quiz before the countdown ends
+ * if the player does complete the quiz before the countdown ends, then the window alert does not show
+ */ 
+ document.getElementById("gameStart").addEventListener("click", function(){
+    document.getElementById("question-buttons").style.display = "block"
+    document.getElementById("welcome-text").style.display = "none"
+    var timeleft = 60;
+
+    var downloadTimer = setInterval(function function1(){
+    timeleft -= 1;
+    document.getElementById("countdown").innerHTML = timeleft + 
+    " " + "seconds remaining";
+    if(timeleft <= -0){
+        $("#myModal").modal();
+        clearInterval(downloadTimer);
+    }
+    }, 1000);
+});
+
+/** 
+ * Connected to the Reset button and 
+ * reloads the page so the player 
+ * can retsart the quiz and the timer.
+ */ 
+function refresh(){
+    window.location.reload("Refresh")
+  }
+
+// Dark Mode function
+let themeToggler = document.getElementById('theme-toggler');
+
+themeToggler.onclick = () => {
+  themeToggler.classList.toggle('fa-sun');
+
+  if (themeToggler.classList.contains('fa-sun')) {
+    document.body.classList.add('active');
+  } else {
+    document.body.classList.remove('active');
+  }
+};
+// Modal function
+const overlay = document.querySelector("#overlay");
+  document.querySelector("#show-modal-btn").
+  addEventListener("click", () => {
+      overlay.style.display = "block";
+  })
+  document.querySelector("#close-modal-btn").
+  addEventListener("click", () => {
+      overlay.style.display = "none";
+  })
+  const modalOverlay = document.getElementById("overlay")
+  modalOverlay.classList.add('hide')

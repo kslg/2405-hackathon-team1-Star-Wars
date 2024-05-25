@@ -70,3 +70,19 @@ footer a:hover {
     color: var(--red);
     text-decoration-line: none;
 }
+/*----- QUIZ -----*/
+.hide {
+    display: none;
+}
+span{
+    display: block;
+}
+#scoreboard,#answerBank{
+    display: none;
+}
+#question-buttons {
+    display: none;
+}
+#welcome-text {
+    display: block;
+}
