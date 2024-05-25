@@ -27,13 +27,8 @@ var questionBank = [
     },
     {
         question : 'What planet did Darth Vader grow up on?',
-        option : ['Hoth', 'Naboo', 'Tattooine', 'Tusken'],
-        answer : 'Tattooine'
-    },
-    {
-        question : 'What does Darth Vader mean?',
-        option : ['The Night Lord', 'The Evil Lord', 'The Black Lord', 'The Dark Lord'],
-        answer : 'The Dark Lord'
+        option : ['Hoth', 'Naboo', 'Tatooine', 'Tusken'],
+        answer : 'Tatooine'
     },
     {
         question : 'Who was Darth Vader&#39;s grandchild?',
@@ -87,8 +82,15 @@ var questionBank = [
     }
 ];
 
+/*shuffle the question bank when the document loads */
+
+shuffle(questionBank);
+console.log(questionBank);
+
 var question = document.getElementById('question');
-var quizContainer = document.getElementById('quiz-container');
+var quizContainer = document.getElementById('quiz-container'); 
+// var timeupmodal = document.getElementById('timeupmodal'); 
+// var myModal = document.getElementById('myModal'); 
 var scorecard = document.getElementById('scorecard');
 var option0 = document.getElementById('option0');
 var option1 = document.getElementById('option1');
@@ -97,7 +99,7 @@ var option3 = document.getElementById('option3');
 var next = document.querySelector('.next');
 var points = document.getElementById('score');
 var span = document.querySelectorAll('span');
-var i = 0;
+var currentQuestion = 0;
 var score = 0;
 
 //Function to display questions
@@ -105,17 +107,20 @@ function displayQuestion() {
     for (var a=0;a<span.length;a++){
         span[a].style.background='none';
     }
-    question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
-    option0.innerHTML= questionBank[i].option[0];
-    option1.innerHTML= questionBank[i].option[1];
-    option2.innerHTML= questionBank[i].option[2];
-    option3.innerHTML= questionBank[i].option[3];
-    questionCount.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
+    question.innerHTML= 'Q.'+(currentQuestion+1)+' '+questionBank[currentQuestion].question;
+    option0.innerHTML= questionBank[currentQuestion].option[0];
+    option1.innerHTML= questionBank[currentQuestion].option[1];
+    option2.innerHTML= questionBank[currentQuestion].option[2];
+    option3.innerHTML= questionBank[currentQuestion].option[3];
+    questionCount.innerHTML= "Question" + ' ' + (currentQuestion+1) + ' ' + 'of' + ' ' + (questionBank.length-6);
+    // if(i<questionBank.length-6){
+    //     scoreboard.style.display= 'block'
+    // }
 }
 
 //Function to calculate scores
 function calcScore(e){
-    if(e.innerHTML===questionBank[i].answer && score<questionBank.length){
+    if(e.innerHTML===questionBank[currentQuestion].answer && score<questionBank.length){
         score= score+1;
         document.getElementById(e.id).style.background= 'limegreen';
     } else {
@@ -126,12 +131,14 @@ function calcScore(e){
 
 //NEW Function to display next question
 function nextQuestion(){
-    i<questionBank.length-1
-    {
-        i=i+1;
+    var timeleft = 60;
+    if(currentQuestion<questionBank.length-7){
+        currentQuestion=currentQuestion+1;
         displayQuestion();
-        questionBank.splice(i, 1);
-        console.log(questionBank[(Math.floor(Math.random() * questionBank.length))]);
+    } else {
+        scoreboard.style.display= 'block'
+        points.innerHTML= score+ '/'+ questionBank.length;
+        quizContainer.style.display= 'none';
     }
 }
 
@@ -167,7 +174,7 @@ function checkAnswer(){
     answerBank.style.display= 'block';
     scoreboard.style.display= 'none';
     
-    for(var a=0;a<questionBank.length;a++) {
+    for(var a=0;a<(questionBank.length-6);a++) {
         var list= document.createElement('li');
         list.innerHTML= questionBank[a].answer;
         answers.appendChild(list);
@@ -184,16 +191,23 @@ displayQuestion();
     document.getElementById("question-buttons").style.display = "block"
     document.getElementById("welcome-text").style.display = "none"
     var timeleft = 60;
+    var currentQuestion = 0;
+    var a=0;a<(questionBank.length-6);
 
     var downloadTimer = setInterval(function function1(){
     timeleft -= 1;
     document.getElementById("countdown").innerHTML = timeleft + 
     " " + "seconds remaining";
-    if(timeleft <= -0){
-        $("#myModal").modal();
-        clearInterval(downloadTimer);
-    }
-    }, 1000);
+        if(timeleft <= -0){
+            $("#myModal").modal();
+            clearInterval(downloadTimer);
+        } else if (timeleft >= 0, currentQuestion>questionBank.length-7){
+            $("#myModal").modal('hide');
+            clearInterval(downloadTimer);
+            quizContainer.style.display= 'none';
+            scoreboard.style.display= 'block';
+        }
+        }, 100);
 });
 
 /** 
@@ -205,18 +219,6 @@ function refresh(){
     window.location.reload("Refresh")
   }
 
-// Dark Mode function
-let themeToggler = document.getElementById('theme-toggler');
-
-themeToggler.onclick = () => {
-  themeToggler.classList.toggle('fa-sun');
-
-  if (themeToggler.classList.contains('fa-sun')) {
-    document.body.classList.add('active');
-  } else {
-    document.body.classList.remove('active');
-  }
-};
 // Modal function
 const overlay = document.querySelector("#overlay");
   document.querySelector("#show-modal-btn").
@@ -228,4 +230,22 @@ const overlay = document.querySelector("#overlay");
       overlay.style.display = "none";
   })
   const modalOverlay = document.getElementById("overlay")
+
   modalOverlay.classList.add('hide')
+
+
+  function shuffle(array) {
+    let currentIndex = array.length;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      let randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  }
