@@ -142,15 +142,6 @@ function nextQuestion() {
     }
 }
 
-//NEW Click events to next button
-// next.addEventListener('click', nextQuestion);
-// window.onload = function(){document.getElementById("next").style.visibility = "hidden"; };
-
-//Back to Quiz button event
-function backToQuiz() {
-    location.reload();
-}
-
 //Function to check Answers
 function checkAnswer() {
     var answerBank = document.getElementById('answerBank');
@@ -217,7 +208,6 @@ document.querySelector("#close-modal-btn").
 const modalOverlay = document.getElementById("overlay")
 
 modalOverlay.classList.add('hide')
-
 
 function shuffle(array) {
     let currentIndex = array.length;

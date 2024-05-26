@@ -157,6 +157,10 @@ ol{
   background-color: #ff0011;
 }
 
+.modal {
+  top: 10rem
+}
+
 .modal-content {
   color: #fff;
   background-color: #2b3637;
