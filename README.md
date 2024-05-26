@@ -3,8 +3,7 @@
 Screenshot
 
 ## Introduction
-### Problem Statement
-
+The Darth Side is a website designed to provide fans with the opportunity to learn about and test their knowledge on the iconic Darth Vader from the legendary Star Wars franchise.
 
 ## User Stories
 
@@ -29,7 +28,7 @@ Screenshot
 * I want to have multiple choice options so that I have I higher chance of selecting the correct answer.
 * I want to receive a performance based nofication upon completion so that I can see how well I know Darth Vader.
 * I want to be able to refer to the instructions without having to restart the game so that I can have a quick reminder if I forget and continue to play.
-* I want to have a Start, Reset and Next question button so I have some control over the flow of the game.
+* I want to have Start and Restart buttons so I have some control over the flow of the game. 
 * I want to have time limited questions so that the game doesn't take all day.
 
 ### Wiki Page

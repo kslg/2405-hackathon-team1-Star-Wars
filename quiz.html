@@ -51,7 +51,6 @@
   <meta name="msapplication-square310x310logo" content="assets/favicon/icons8-darth-vader-310.png">
   
   <!-- Fonts -->
-  <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -72,7 +71,7 @@
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand d-none d-lg-block" href="index.html">The Darth Side</a>
+      <a class="navbar-brand d-none d-lg-block" href="index.html" aria-label="click to go to home-page">The Darth Side</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,17 +80,17 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" aria-label="click to go to home-page">Home</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="quiz.html" aria-label="click to go to quiz page">Quiz <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="quiz.html">Quiz <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="wiki.html" aria-label="click to go wiki page">Wiki</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="wiki.html">Wiki</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="about.html">About</a>
+            <a class="nav-link"  href="about.html" aria-label="click to go to about us page">About</a>
           </li>
         </ul>
       </div>
@@ -134,8 +133,10 @@
                             </div>
                             <!-- Quiz Control Buttons -->
                             <div class="buttons text-center">
+
                                 <button type="button" id="gameStart" class="gameStart btn btn-danger quiz-text game-buttons" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
                                 <button type="button" class="btn btn-danger quiz-text game-buttons" id="Refresh" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Restart</button>
+
                                 <!-- Trigger the modal with a button -->
                                 <button type="button" id="show-modal-btn" class="btn btn-danger quiz-text game-buttons" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
                                 <!-- Modal -->
@@ -165,12 +166,15 @@
                     <!-- </div> -->
                         <!-- scoreboard section -->
                         <div id="scoreboard">
-                          <h2 class="quiz-text-caption text-center" role="presentation">You did well my young apprentice</h2>
+
+                          <h2 class="quiz-text-caption text-center" role="presentation" id="score-message">You did well my young apprentice</h2>
                           <div class="score-points">
                             <h2 class="quiz-text text-center" id="score-title">Your Score</h2>
                             <!-- Score Points Placeholder  -->
                             <div class="quiz-text text-center" id="score" role="presentation" aria-label="Your final score for the quiz"></div>
                           </div>
+
+                  
                           <div class="buttons text-center">
                             <button class="quiz-text btn btn-danger" type="button" id="score-btn-one" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Restart</button>
                             <button class="quiz-text btn btn-danger game-buttons" type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
@@ -212,13 +216,13 @@
   <footer class="container-fluid footer-container fixed-bottom">
     <div class="row">
       <div class="col">
-        <a href="https://github.com/DesislavaNaydenova/2405-hackathon-team1-StarWars" target="_blank" rel="noopener">
+        <a href="https://github.com/DesislavaNaydenova/2405-hackathon-team1-StarWars" target="_blank" rel="noopener" aria-label="click to open GitHub repository on a new tab">
           <i class="fa-brands fa-github"><span class="sr-only">View our project on GitHub</span></i>
         </a>
       </div>
       <div class="col">
-        <a href="#">
-          <i class="fa-solid fa-people-group"><span class="sr-only">Meet the Team</span></i>
+        <a href="about.html">
+          <i class="fa-solid fa-people-group"><span class="sr-only" aria-label="click to go to about us page">Meet the Team</span></i>
         </a>
       </div>
       <div class="col">

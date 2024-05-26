@@ -1,7 +1,6 @@
 
 
 main {
-  background-color: black;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -10,6 +9,14 @@ main {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img{
+  width:100%;
+  padding-top:10px;
+}
+.wiki-timeline {
+  padding-bottom: 200px;
 }
 
 #timeline-heading {
@@ -109,6 +116,7 @@ main {
 
 @media screen and (min-width:500px) {
   .history-content p {
-    width: 60vw;
+    width:auto;
+    max-width: 60vw;
   }
 }
