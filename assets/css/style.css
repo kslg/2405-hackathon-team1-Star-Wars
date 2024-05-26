@@ -198,6 +198,10 @@ ol{
   width: 90%;
 }
 
+.game-buttons {
+  box-shadow: 0 0 10px 2px #f1f1f1;
+}
+
 .question {
   height: 3rem;
   margin-top: 2rem;

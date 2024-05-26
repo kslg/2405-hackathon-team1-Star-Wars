@@ -134,17 +134,17 @@
                             </div>
                             <!-- Quiz Control Buttons -->
                             <div class="buttons text-center">
-                                <button type="button" id="gameStart" class="gameStart btn btn-danger quiz-text" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
-                                <button type="button" class="btn btn-danger quiz-text" id="Refresh" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Restart</button>
+                                <button type="button" id="gameStart" class="gameStart btn btn-danger quiz-text game-buttons" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
+                                <button type="button" class="btn btn-danger quiz-text game-buttons" id="Refresh" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Restart</button>
                                 <!-- Trigger the modal with a button -->
-                                <button type="button" id="show-modal-btn" class="btn btn-danger quiz-text" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
+                                <button type="button" id="show-modal-btn" class="btn btn-danger quiz-text game-buttons" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
                                 <!-- Modal -->
                                 <div class="modal fade" id="htpModal" tabindex="-1" aria-labelledby="htpModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                       <div class="modal-content">
                                         <div class="modal-header">
                                           <h2 class="modal-title" id="htpModalLabel">Join me and play</h2>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <button class="game-buttons" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                           </button>
                                         </div>
@@ -155,7 +155,7 @@
                                                 <p>'RESTART' to reset the quiz.</p>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-danger quiz-text" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-danger quiz-text game-buttons" data-dismiss="modal">Close</button>
                                         </div>
                                       </div>
                                     </div>
@@ -173,7 +173,7 @@
                           </div>
                           <div class="buttons text-center">
                             <button class="quiz-text btn btn-danger" type="button" id="score-btn-one" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Restart</button>
-                            <button class="quiz-text btn btn-danger" type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
+                            <button class="quiz-text btn btn-danger game-buttons" type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
                           </div>
                         </div>  
                         <!-- Answers section -->
@@ -182,7 +182,7 @@
                           <ol class="text-left" type="1" id="answers">
                           </ol>
                           <div class="buttons text-center">
-                            <button class="btn btn-danger quiz-text" type="button" id="score-btn-two" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Return to Quiz</button>
+                            <button class="btn btn-danger quiz-text game-buttons" type="button" id="score-btn-two" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Return to Quiz</button>
                           </div>
                         </div>
                 </div>
