@@ -104,25 +104,25 @@ footer a:hover {
 
 #logo-text {
   font-family: "rubik", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--red);
-  text-shadow: 0 0 10px var(--black);
+  text-shadow: 2px 2px var(--black);
   visibility: hidden;
 }
 
 #quiz-text {
   font-family: "rubik", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--red);
-  text-shadow: 0 20px 100px var(--white);
+  text-shadow: 2px 2px var(--black);
   visibility: hidden;
 }
 
 #wiki-text {
   font-family: "rubik", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--red);
-  text-shadow: 0 0 100px var(--white);
+  text-shadow: 3px 3px var(--black);
   visibility: hidden;
 }
   
