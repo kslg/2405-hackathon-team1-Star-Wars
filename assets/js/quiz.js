@@ -137,7 +137,7 @@ function nextQuestion() {
     } else {
         clearInterval(downloadTimer);
         scoreboard.style.display = 'block'
-        points.innerHTML = score + '/' + questionBank.length;
+        points.innerHTML = score + '/' + (questionBank.length - 6);
         quizContainer.style.display = 'none';
     }
 }
