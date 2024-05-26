@@ -81,10 +81,10 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html" aria-label="click to go to home-page">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="quiz.html" aria-label="click to go to quiz page">Quiz <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -133,7 +133,7 @@
                             <!-- Quiz Control Buttons -->
                             <div class="buttons text-center">
                                 <button type="button" id="gameStart" class="gameStart btn btn-danger quiz-text" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
-                                <button type="button" class="btn btn-danger quiz-text" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Restart</button>
+                                <button type="button" id="gameRestart" class="btn btn-danger quiz-text" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Restart</button>
                                 <!-- Trigger the modal with a button -->
                                 <button type="button" id="show-modal-btn" class="btn btn-danger quiz-text" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
                                 <!-- Modal -->
@@ -163,7 +163,7 @@
                     </div>
                         <!-- scoreboard section -->
                         <div id="scoreboard">
-                          <h2 class="quiz-text-caption text-center" role="presentation">The force is strong with this one!</h2>
+                          <h2 class="quiz-text-caption text-center" role="presentation" id="score-message">The force is strong with this one!</h2>
                           <h2 class="quiz-text text-center" id="score-title">Your Score</h2>
                           <!-- Score Points Placeholder  -->
                           <div class="quiz-text text-center" id="score" role="presentation" aria-label="Your final score for the quiz"></div>
@@ -213,7 +213,7 @@
         </a>
       </div>
       <div class="col">
-        <a href="#">
+        <a href="about.html">
           <i class="fa-solid fa-people-group"><span class="sr-only" aria-label="click to go to about us page">Meet the Team</span></i>
         </a>
       </div>

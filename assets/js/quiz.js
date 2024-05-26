@@ -82,6 +82,14 @@ var questionBank = [
     }
 ];
 
+/* sounds */
+const sound1=document.createElement('audio');
+sound1.setAttribute('src', 'assets/audio/Voicy_Darth_Vader_Noooo.mp3');
+const sound2=document.createElement('audio');
+sound2.setAttribute('src', 'assets/audio/Voicy_Dont_fail_me_again.mp3');
+const sound3=document.createElement('audio');
+sound3.setAttribute('src', 'assets/audio/Voicy_Darth_Vader_Force_strong.mp3');
+
 /*shuffle the question bank when the document loads */
 
 shuffle(questionBank);
@@ -101,7 +109,7 @@ var span = document.querySelectorAll('span');
 var currentQuestion = 0;
 var score = 0;
 var downloadTimer;
-
+var scoreMessage=document.getElementById('score-message');
 //Function to display questions
 function displayQuestion() {
     for (var a = 0; a < span.length; a++) {
@@ -136,6 +144,20 @@ function nextQuestion() {
         displayQuestion();
     } else {
         clearInterval(downloadTimer);
+        switch(true){
+            case(score<5):
+                scoreMessage.innerText="placholder1";
+                sound1.play();
+                break;
+            case(score<8):
+                scoreMessage.innerText="placeholder2";
+                sound2.play();
+                break;
+            case(score>=8):
+                scoreMessage.innerText="placeholder3";
+                sound3.play();
+                break;
+        }
         scoreboard.style.display = 'block'
         points.innerHTML = score + '/' + (questionBank.length - 6);
         quizContainer.style.display = 'none';
@@ -166,8 +188,9 @@ displayQuestion();
 document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("question-buttons").style.display = "block";
     document.getElementById("welcome-text").style.display = "none";
-    document.getElementById("welcome-text-2").style.display = "none";gi
+    document.getElementById("welcome-text-2").style.display = "none";
     document.getElementById("gameStart").style.display = "none";
+    document.getElementById("gameRestart").style.display ="inline-block";
     var timeleft = 60;
     var currentQuestion = 0;
     var a = 0; a < (questionBank.length - 6);
