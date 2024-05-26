@@ -43,6 +43,10 @@ main {
   color: var(--white);
 }
 
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: var(--red);
+}
+
 .navbar-nav .nav-item .nav-link:hover {
   border-bottom: 2px solid var(--red);
 }
