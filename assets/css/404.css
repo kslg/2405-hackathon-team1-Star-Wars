@@ -10,15 +10,11 @@ main {
   font-weight: bold;
   width: 50%;
   margin: 0 auto;
-  transform: rotateX(50deg);
+  transform: rotateX(40deg);
   animation: animateCrawl 20s ease-in;
 }
 
 h1 {
-  font-size: 30px;
-}
-
-h2 {
   font-size: 30px;
 }
 
