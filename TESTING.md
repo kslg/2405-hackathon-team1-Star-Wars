@@ -72,10 +72,10 @@ We used Lighthouse within the Chrome Developer Tools to test the performance, ac
 
 `Navigation`
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| I want to gain access to the gain access to the Home, About Us, Quiz and Wiki page via the nav bar so that I can understand what areas of the site to visit. | A Navbar with links to all pages of the site is utilised. |
-| I want to able to visually identify what page I am on using the nav bar so that I can know what page I am on. | |
+| Goals | How are they achieved? | Evidence |
+| :--- | :--- | :--- |
+| I want to gain access to the gain access to the Home, About Us, Quiz and Wiki page via the nav bar so that I can understand what areas of the site to visit. | A Navbar with links to all pages of the site is utilised. | ![Navbar](docs/testing/navbar.png) |
+| I want to able to visually identify what page I am on using the nav bar so that I can know what page I am on. | The current page is highlighted red in the navbar | ![Navbar](docs/testing/navbar.png) |
 
 `Home Page`
 
@@ -116,7 +116,7 @@ We used Lighthouse within the Chrome Developer Tools to test the performance, ac
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars verse. | Sound effects have been added to the cards on the home page that will play when they are moused over.|
+| I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars universe. | Sound effects have been added to the cards on the home page that will play when they are moused over.|
 
 - - -
 
@@ -142,13 +142,28 @@ Additional testing was taken by friends and family on a variety of devices and s
 | --- | --- | --- | --- | --- |
 | `Navbar` |
 | --- | --- | --- | --- | --- |
+| Site Name | When clicked, user will be taken to the home page | Clicked site name | Taken to home page | ✅ |
+| Home Nav Item | When clicked, user will be taken to the home page | Clicked home nav item | Taken to the home page | ✅ |
+| Quiz Nav Item | When clicked, user will be taken to the home page | Clicked quick nav item | Taken to the quiz page | ✅ |
+| Wiki Nav Item | When clicked, user will be taken to the wiki page | Clicked wiki nav item | Taken to the wiki page | ✅ |
+| About Nav Item | When clicked, user will be taken to the about page | Clicked about nav item | Taken to the about page | ✅ |
+| Active on page | It is clear which page you are currently on, as the nav item will be red to hightlight the active page | Visit pages to see if they update to display as red in navbar | The current page is displayed as red in the navbar | ✅ |
+| Hover effect on nav items | When user hovers over a nav item in the navbar, a red bar will be displayed underneath | Hovered over nav items in the navbar | When hovered over, the nav item displays a red bar underneath | ✅ |
 | `Footer` |
 | --- | --- | --- | --- | --- |
+| GitHub icon | When clicked, user will be taken to the GitHub repo for this project in a new tab. | Clicked icon | Taken to the project GitHub page in a new tab | ✅ |
+| Team icon | When clicked, user will be taken to the about page. | Clicked icon | Taken to about page | ✅ |
+| Icon Hover | When user hovers over the icon, the icon changes color to red to indicate the user is hovered over the icon | Hover over icons | Icons change to red | ✅ |
 | `Home Page` |
 | --- | --- | --- | --- | --- |
+| Quiz Card | When clicked, user is taken to the quiz page | Clicked quiz card | Taken to the quiz page | ✅ |
+| Wiki Card | When clicked, user is taken to the wiki page | Clicked wiki card | Taken to the quiz page | ✅ |
+| Sound Effect | When card on home page is moused over, a sound effect will play | Mouseover card | Sound effect plays | ✅ |
 | `Quiz Page` |
 | --- | --- | --- | --- | --- |
 | `Wiki Page` |
 | --- | --- | --- | --- | --- |
 | `About Page` |
 | --- | --- | --- | --- | --- |
+| Team Member Linkedin Links| When clicked, user is taken to that members Linkedin Page in a new tab ||||
+|Team Member GitHub Links | When clicked, user is taken to that members GitHub Profile Page in a new tab ||||
