@@ -120,7 +120,7 @@ footer a:hover {
   font-family: "rubik", sans-serif;
   font-size: 25px;
   color: var(--red);
-  text-shadow: 2px 2px var(--black);
+  text-shadow: 2px 2px 4px var(--black);
   visibility: hidden;
 }
 
@@ -128,7 +128,7 @@ footer a:hover {
   font-family: "rubik", sans-serif;
   font-size: 25px;
   color: var(--red);
-  text-shadow: 2px 2px var(--black);
+  text-shadow: 2px 2px 4px var(--black);
   visibility: hidden;
 }
 
@@ -136,7 +136,7 @@ footer a:hover {
   font-family: "rubik", sans-serif;
   font-size: 25px;
   color: var(--red);
-  text-shadow: 3px 3px var(--black);
+  text-shadow: 2px 2px 4px var(--black);
   visibility: hidden;
 }
 
