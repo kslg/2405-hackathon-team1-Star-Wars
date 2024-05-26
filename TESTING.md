@@ -39,6 +39,11 @@ We have gone through each page using google chrome developer tools & Firefox ins
 * [About]()
 * [404]()
 
+* [style.css]()
+* [about.css]()
+* [wiki.css]()
+* [404.css](docs/testing/validation/404-css-validation.png) - ✅
+
 - - -
 
 ### JavaScript Validator
@@ -79,44 +84,44 @@ We used Lighthouse within the Chrome Developer Tools to test the performance, ac
 
 `Home Page`
 
-|  Goals | How are they achieved? |
-| :--- | :--- |
-| I want to be able to view a home page with an image of Darth Vader so that I can understand the theme of the website. | The home page has a banner with an image of Darth Vader. |
-| I want to have clear options on what areas of the site I should visit so that I understand where the main features of the site are. | A navbar is available on each page |
+|  Goals | How are they achieved? | Evidence |
+| :--- | :--- | :--- |
+| I want to be able to view a home page with an image of Darth Vader so that I can understand the theme of the website. | The home page has a banner with an image of Darth Vader. | |
+| I want to have clear options on what areas of the site I should visit so that I understand where the main features of the site are. | A navbar is available on each page, along with cards on the main page | |
 
 `About Us`
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar |
-| I want to view short summary of why the site was created so that I can gain an insight into the websites origin. | |
+| Goals | How are they achieved? | Evidence |
+| :--- | :--- | :--- |
+| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar | |
+| I want to view short summary of why the site was created so that I can gain an insight into the websites origin. | | |
 
 
 `Quiz Page`
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| I want to be able to participate in a quiz about Darth Vader so that I can test my knowledge about this character. ||
-| I want to have multiple choice options so that I have I higher chance of selecting the correct answer. ||
-| I want to receive a performance based nofication upon completion so that I can see how well I know Darth Vader. ||
-| I want to be able to refer to the instructions without having to restart the game so that I can have a quick reminder if I forget and continue to play. ||
-| I want to have a Start, Reset and Next question button so I have some control over the flow of the game. ||
-| I want to have time limited questions so that the game doesn't take all day. ||
+| Goals | How are they achieved? | Evidence |
+| :--- | :--- | :--- |
+| I want to be able to participate in a quiz about Darth Vader so that I can test my knowledge about this character. |||
+| I want to have multiple choice options so that I have I higher chance of selecting the correct answer. | Each quesion provides 4 possible answers for the user to select from ||
+| I want to receive a performance based nofication upon completion so that I can see how well I know Darth Vader. | At the end of the quiz, users are shown their score ||
+| I want to be able to refer to the instructions without having to restart the game so that I can have a quick reminder if I forget and continue to play. | The quiz page has a how to play button that displays at the beginning of the quiz before you start and also whilst playing. Clicking this will open a modal that displays how to play instructions. ||
+| I want to have Start and Restart buttons so I have some control over the flow of the game. | A Start button allows the user to choose when to start the quiz, and a restart button is provided during the quiz to allow the user to restart at any time ||
+| I want to have time limited questions so that the game doesn't take all day. |||
 
 `Wiki Page`
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way. ||
-| I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me. ||
-| I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period. ||
-| I want to be able to interact with each images on the timeline so that I can see the image in more detail. ||
+| Goals | How are they achieved? | Evidence |
+| :--- | :--- | :--- |
+| I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way. |||
+| I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me. |||
+| I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period. |||
+| I want to be able to interact with each images on the timeline so that I can see the image in more detail. |||
 
 `General`
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars universe. | Sound effects have been added to the cards on the home page that will play when they are moused over.|
+| Goals | How are they achieved? | Evidence |
+| :--- | :--- | :--- |
+| I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars universe. | Sound effects have been added to the cards on the home page that will play when they are moused over.| |
 
 - - -
 
