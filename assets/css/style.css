@@ -51,6 +51,10 @@ main {
   border-bottom: 2px solid var(--red);
 }
 
+.navbar-toggler-icon {
+  box-shadow: 0 0 50px var(--red);
+}
+
 /*----- FOOTER -----*/
 footer {
   color: var(--white);
