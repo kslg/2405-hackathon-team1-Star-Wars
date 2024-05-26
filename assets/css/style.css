@@ -93,20 +93,21 @@ footer a:hover {
 }
 
 .logo-card {
-  background: url('../images/darth_saber.jpeg') no-repeat;
+  background: url("../images/darth_saber.jpeg") no-repeat;
   background-size: cover;
 }
 
 .quiz-card {
-  background: url('../images/darth-vader-stormtrooper.jpg') no-repeat center center;
+  background: url("../images/darth-vader-stormtrooper.jpg") no-repeat center
+    center;
   background-size: cover;
 }
 
 .wiki-card {
-  background: url('../images/darth_helmet.jpg') no-repeat center center;
+  background: url("../images/darth_helmet.jpg") no-repeat center center;
   background-size: cover;
 }
-  
+
 /*----- QUIZ -----*/
 .hide {
   display: none;
@@ -114,6 +115,20 @@ footer a:hover {
 
 span {
   display: block;
+}
+
+.option{
+  width:fit-content;
+}
+
+/*highlight answer on mouse hover*/
+.option:hover{
+  box-shadow: 0px 0px 5px 5px #ff0011;
+  cursor: pointer;
+}
+
+.option:hover .option:marker{
+  box-shadow: 0px 0px 5px 5px #ff0011;
 }
 
 #scoreboard,
@@ -135,23 +150,23 @@ span {
 
 .quiz-text-title {
   font-family: "starwars", "Rubik", sans-serif;
-    font-size: 60px;
-    font-weight: 500;
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .quiz-text-caption {
   font-family: "starwars", "Rubik", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .quiz-text {
   font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-ol{
+ol {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -167,7 +182,7 @@ ol{
 }
 
 .modal {
-  top: 10rem
+  top: 10rem;
 }
 
 .modal-content {
@@ -187,7 +202,7 @@ ol{
 }
 
 .hero-image {
-  background: url('../images/darth-quiz-hero.png') no-repeat;
+  background: url("../images/darth-quiz-hero.png") no-repeat;
   background-size: cover;
 }
 
