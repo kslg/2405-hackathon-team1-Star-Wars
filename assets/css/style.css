@@ -90,11 +90,12 @@ footer a:hover {
 .homepage-card a {
   color: var(--red);
   text-decoration-line: none;
+  text-shadow:1px 1px 3px var(--grey);
 }
 .homepage-card a>p {
   font-size: 25px;
   font-weight: 500;
-  text-shadow:1px 1px 3px #f1f1f1;
+  text-shadow:1px 1px 3px var(--grey);
 
 }
 .logo-card {
@@ -223,5 +224,9 @@ ol {
   .homepage-card a>p {
     font-size: 3vw;
     font-weight: 500;
-    text-shadow: 1px 1px 3px #f1f1f1;
-}
+    text-shadow: 1px 1px 3px var(--grey);
+}}
+@media (max-width: 375px) {
+  .homepage-card a {
+    font-size: 35px;
+}}
