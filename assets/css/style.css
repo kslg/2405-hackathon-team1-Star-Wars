@@ -176,7 +176,7 @@ span {
   display: block;
 }
 
-#gameRestart{
+#Refresh{
   display:none;
 }
 
@@ -295,7 +295,7 @@ li.option:hover {
   }
 }
 /* End of Responsive breakpoints */
-}
+
 
 @media (max-width: 768px) {
   .homepage-card a>p {
