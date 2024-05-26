@@ -11,8 +11,9 @@
 
 @font-face {
   font-family: "starwars";
-  src: url(assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
+  src: url(/assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
 }
+
 
 body {
   background: var(--black);
@@ -93,7 +94,7 @@ footer a:hover {
   text-shadow:2px 2px 4px var(--grey);
 }
 .homepage-card a>p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   text-shadow:2px 2px 4px var(--grey);
 
@@ -223,7 +224,7 @@ ol {
 
 @media (max-width: 768px) {
   .homepage-card a>p {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 500;
 }
 }
@@ -231,8 +232,9 @@ ol {
   .logo-card {
     height: 120px;
   }
-
   .homepage-card a {
-    font
+    font-size: 28px;
   }
+  .homepage-card a>p {
+    font-size: 3.2vw;
 }
