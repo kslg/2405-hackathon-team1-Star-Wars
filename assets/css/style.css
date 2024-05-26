@@ -110,6 +110,20 @@ footer a:hover {
 span {
   display: block;
 }
+
+.option{
+  width:fit-content;
+}
+/*highlight answer on mouse hover*/
+.option:hover{
+  box-shadow: 0px 0px 5px 5px #ff0011;
+  cursor: pointer;
+}
+
+.option:hover .option:marker{
+  box-shadow: 0px 0px 5px 5px #ff0011;
+}
+
 #scoreboard,
 #answerBank {
   display: none;
