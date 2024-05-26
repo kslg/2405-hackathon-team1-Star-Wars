@@ -14,7 +14,6 @@
   src: url('SfDistantGalaxyAltoutline-e2Bp.ttf');
 }
 
-
 body {
   background: var(--black);
 }
@@ -44,7 +43,7 @@ main {
   color: var(--white);
 }
 
-.navbar-dark .navbar-nav .active>.nav-link {
+.navbar-dark .navbar-nav .active > .nav-link {
   color: var(--red);
 }
 
@@ -91,14 +90,15 @@ footer a:hover {
 .homepage-card a {
   color: var(--red);
   text-decoration-line: none;
-  text-shadow:2px 2px 4px var(--grey);
+  text-shadow: 2px 2px 4px var(--grey);
 }
-.homepage-card a>p {
+
+.homepage-card a > p {
   font-size: 20px;
   font-weight: 500;
-  text-shadow:2px 2px 4px var(--grey);
+  text-shadow: 2px 2px 4px var(--grey);
 
-}
+
 .logo-card {
   background: url("../images/darth_saber.jpeg") no-repeat;
   background-size: cover;
@@ -149,17 +149,17 @@ span {
   display: block;
 }
 
-.option{
-  width:fit-content;
+.option {
+  width: fit-content;
 }
 
 /*highlight answer on mouse hover*/
-.option:hover{
+.option:hover {
   box-shadow: 0px 0px 5px 5px #ff0011;
   cursor: pointer;
 }
 
-.option:hover .option:marker{
+.option:hover .option:marker {
   box-shadow: 0px 0px 5px 5px #ff0011;
 }
 
@@ -176,8 +176,8 @@ span {
   display: block;
 }
 
-#Refresh{
-  display:none;
+#Refresh {
+  display: none;
 }
 
 .quiz-box-shadow {
@@ -192,7 +192,7 @@ span {
 
 .quiz-text-caption {
   font-family: "starwars", "Rubik", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
 }
 
@@ -242,20 +242,22 @@ ol {
 }
 
 .hero-image {
-  background: url("../images/darth-quiz-hero.png") no-repeat;
+  background: url("../images/darth-quiz-hero.png") no-repeat center center;
   background-size: cover;
 }
 
-#scoreboard, .inner-gameArea, #answerBank {
+#scoreboard,
+.inner-gameArea,
+#answerBank {
   height: 32rem;
 
-  background: url('../images/darth-quiz-hero.png') no-repeat;
+  background: url("../images/darth-quiz-hero.png") no-repeat;
   background-size: cover;
 }
 
 .buttons {
   position: absolute;
-  bottom:   20px;
+  bottom: 20px;
   width: 90%;
 }
 
@@ -278,14 +280,18 @@ li.option:hover {
 }
 
 /* Responsive breakpoints */
-@media screen and (min-width:576px) {
-  .hero-image, #scoreboard, #answerBank {
+@media screen and (min-width: 576px) {
+  .hero-image,
+  #scoreboard,
+  #answerBank {
     background-position-x: 50%;
     color: white;
     overflow: hidden;
-    background: #C04848;  /* fallback for old browsers */
-    background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)), url('../images/darth-quiz-hero.png'); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #c04848; /* fallback for old browsers */
+    background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)),
+      url("../images/darth-quiz-hero.png"); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)),
+      url("../images/darth-quiz-hero.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   .modal {
     top: 6rem;
@@ -299,7 +305,7 @@ li.option:hover {
 @media (max-width: 769px) {
   #logo-text,
   #wiki-text,
-  #quiz-text{
+  #quiz-text {
     font-size: 2vw;
     font-weight: 500;
   }
@@ -314,8 +320,7 @@ li.option:hover {
     font-size: 28px;
   }
 
-  .homepage-card a>p {
+  .homepage-card a > p {
     font-size: 3.2vw;
   }
 }
-
