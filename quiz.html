@@ -105,9 +105,9 @@
             <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
                 <div class="gameArea bg-dark quiz-box-shadow" role="none" aria-hidden="true">
                     <!-- quiz and scoreboard container -->    
-                    <div class="container">
+                    <div class="container" id="quiz-container">
                         <!-- quiz container -->
-                        <div id="quiz-container">
+                        <div id="quiz-container" class="hero-image container-fluid">
                             <!-- question container -->
                             <div class="questions" role="presentation" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
                                 <!-- Countdown timer -->
@@ -135,27 +135,25 @@
                                 <button type="button" id="gameStart" class="gameStart btn btn-danger" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
                                 <button type="button" class="btn btn-danger icon" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Reset</button>
                                 <!-- Trigger the modal with a button -->
-                                <button type="button" id="show-modal-btn" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
+                                <button type="button" id="show-modal-btn" class="btn btn-danger" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="htpModal" tabindex="-1" aria-labelledby="htpModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h2 class="modal-title" id="exampleModalLabel">How to play</h2>
+                                          <h2 class="modal-title" id="htpModalLabel">Join me and play</h2>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                           </button>
                                         </div>
-                                        <div class="modal-body">
-                                                <p>The aim of the game is to answer all five questions before the timer runs out. You have 60 seconds, good luck!</p>
+                                        <div class="modal-body quiz-text">
+                                                <p>How well do you know the Dark Loard?<br> Test your knowledge and get ten questions correct before the timer runs out.<br> You have 60 seconds. It is your destiny!</p>
                                             <h3>Controls:</h3>
-                                                <p>'START' to start the countdown timer.</p>
-                                                <p>'NEXT' to move to the next question.</p>
+                                                <p>'START' to start the quiz.</p>
                                                 <p>'RESTART' to reset the quiz.</p>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                         </div>
                                       </div>
                                     </div>
