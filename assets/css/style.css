@@ -101,6 +101,7 @@ footer a:hover {
 .logo-card {
   background: url("../images/darth_saber.jpeg") no-repeat;
   background-size: cover;
+  height: 160px;
 }
 
 .quiz-card {
@@ -224,8 +225,14 @@ ol {
   .homepage-card a>p {
     font-size: 3vw;
     font-weight: 500;
-}}
-@media (max-width: 375px) {
+}
+}
+@media (max-width: 426px) {
+  .logo-card {
+    height: 120px;
+  }
+
   .homepage-card a {
-    font-size: 35px;
-}}
+    font
+  }
+}
