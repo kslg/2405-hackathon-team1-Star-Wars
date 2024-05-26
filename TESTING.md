@@ -71,18 +71,27 @@ We have gone through each page using google chrome developer tools & Firefox ins
 | I want to have clear options on what areas of the site I should visit so that I understand where the main features of the site are. | A navbar is available on each page, along with cards on the main page | ![Image of homepage](docs/testing/user-story-home-1.png) |
 | I want to be able to view a home page with an image of Darth Vader so that I can understand the theme of the website. | The home page has a banner with an image of Darth Vader. | ![Image of homepage](docs/testing/user-story-home-1.png) |
 | I want to have clear options on what areas of the site I should visit so that I understand where the main features of the site are. | A navbar is available on each page, along with cards on the main page | ![Image of homepage](docs/testing/user-story-home-1.png) |
+| I want to be able to view a home page with an image of Darth Vader so that I can understand the theme of the website. | The home page has a banner with an image of Darth Vader. | ![Image of homepage](docs/testing/user-story-home-1.png) |
+| I want to have clear options on what areas of the site I should visit so that I understand where the main features of the site are. | A navbar is available on each page, along with cards on the main page | ![Image of homepage](docs/testing/user-story-home-1.png) |
 
 `About Us`
 
 | Goals | How are they achieved? | Evidence |
 | :--- | :--- | :--- |
-| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar and links to their Linkedin and GitHub profiles | | |
+| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar and links to their Linkedin and GitHub profiles | |
+| I want to view short summary of why the site was created so that I can gain an insight into the websites origin. | | |
 
 
 `Quiz Page`
 
 | Goals | How are they achieved? | Evidence |
 | :--- | :--- | :--- |
+| I want to be able to participate in a quiz about Darth Vader so that I can test my knowledge about this character. | A quiz is provided on the site with questions to test users knowledge of Darth Vader | ![Quiz Page](docs/testing/user-story-quiz-1.png) |
+| I want to have multiple choice options so that I have I higher chance of selecting the correct answer. | Each quesion provides 4 possible answers for the user to select from | ![Quiz Multiple Choice](docs/testing/user-story-quiz-2.png) |
+| I want to receive a performance based nofication upon completion so that I can see how well I know Darth Vader. | At the end of the quiz, users are shown their score | ![Quiz results page](docs/testing/user-story-quiz-3.png) |
+| I want to be able to refer to the instructions without having to restart the game so that I can have a quick reminder if I forget and continue to play. | The quiz page has a how to play button that displays at the beginning of the quiz before you start and also whilst playing. Clicking this will open a modal that displays how to play instructions. | ![How to Play instructions](docs/testing/user-story-quiz-4.png) |
+| I want to have Start and Restart buttons so I have some control over the flow of the game. | A Start button allows the user to choose when to start the quiz, and a restart button is provided during the quiz to allow the user to restart at any time | ![Restart Button on Quiz](docs/testing/user-story-quiz-5.png) |
+| I want to have time limited questions so that the game doesn't take all day. | The quiz utilises a timer| ![Quiz Timer](docs/testing/user-story-quiz-6.png) |
 | I want to be able to participate in a quiz about Darth Vader so that I can test my knowledge about this character. | A quiz is provided on the site with questions to test users knowledge of Darth Vader | ![Quiz Page](docs/testing/user-story-quiz-1.png) |
 | I want to have multiple choice options so that I have I higher chance of selecting the correct answer. | Each quesion provides 4 possible answers for the user to select from | ![Quiz Multiple Choice](docs/testing/user-story-quiz-2.png) |
 | I want to receive a performance based nofication upon completion so that I can see how well I know Darth Vader. | At the end of the quiz, users are shown their score | ![Quiz results page](docs/testing/user-story-quiz-3.png) |
