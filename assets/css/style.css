@@ -91,7 +91,12 @@ footer a:hover {
   color: var(--red);
   text-decoration-line: none;
 }
+.homepage-card a>p {
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow:1px 1px 3px #f1f1f1;
 
+}
 .logo-card {
   background: url("../images/darth_saber.jpeg") no-repeat;
   background-size: cover;
@@ -212,4 +217,11 @@ ol {
 
 .inner-gameArea {
   height: 32rem;
+}
+
+@media (max-width: 768px) {
+  .homepage-card a>p {
+    font-size: 3vw;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px #f1f1f1;
 }
