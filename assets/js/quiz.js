@@ -146,14 +146,16 @@ function nextQuestion() {
         clearInterval(downloadTimer);
         switch(true){
             case(score<5):
-                scoreMessage.innerText="placholder2";
+                scoreMessage.innerText="placholder1";
                 sound1.play();
                 break;
             case(score<8):
-                scoreMessage.innerText="placeholder3";
+                scoreMessage.innerText="placeholder2";
+                sound2.play();
                 break;
             case(score>=8):
-                scoreMessage.innerText="placeholder4";
+                scoreMessage.innerText="placeholder3";
+                sound3.play();
                 break;
         }
         scoreboard.style.display = 'block'
