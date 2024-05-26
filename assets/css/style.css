@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "starwars";
-  src: url(/assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
+  src: url(assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
 }
 
 body {
@@ -53,7 +53,7 @@ main {
 
 /*----- FOOTER -----*/
 footer {
-  color: var(white);
+  color: var(--white);
   background-color: var(--grey);
   text-align: center;
   padding: 0.75rem;
@@ -71,6 +71,7 @@ footer a {
 footer a:hover {
   color: var(--red);
 }
+
 /*----- MAIN -----*/
 
 .homepage-card {
@@ -110,16 +111,20 @@ footer a:hover {
 .hide {
   display: none;
 }
+
 span {
   display: block;
 }
+
 #scoreboard,
 #answerBank {
   display: none;
 }
+
 #question-buttons {
   display: none;
 }
+
 #welcome-text {
   display: block;
 }
