@@ -137,33 +137,9 @@ function nextQuestion() {
     } else {
         clearInterval(downloadTimer);
         scoreboard.style.display = 'block'
-        points.innerHTML = score + '/' + questionBank.length;
+        points.innerHTML = score + '/' + (questionBank.length - 6);
         quizContainer.style.display = 'none';
     }
-}
-
-//NEW Click events to next button
-next.addEventListener('click', nextQuestion);
-
-//OLD Function to display next question
-// function nextQuestion(){
-//     if(i<questionBank.length-1)
-//     {
-//         i=i+1;
-//         displayQuestion();
-//     } else {
-//         points.innerHTML= score+ '/'+ questionBank.length;
-//         quizContainer.style.display= 'none';
-//         scoreboard.style.display= 'block'
-//         delete window.alert
-//     }
-// }
-//OLD Click events to next button
-// next.addEventListener('click',nextQuestion);
-
-//Back to Quiz button event
-function backToQuiz() {
-    location.reload();
 }
 
 //Function to check Answers
@@ -191,7 +167,6 @@ document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("question-buttons").style.display = "block"
     document.getElementById("welcome-text").style.display = "none"
     document.getElementById("gameStart").style.display = "none"
-    document.getElementById("next").style.display = "none"
     var timeleft = 60;
     var currentQuestion = 0;
     var a = 0; a < (questionBank.length - 6);
@@ -233,7 +208,6 @@ document.querySelector("#close-modal-btn").
 const modalOverlay = document.getElementById("overlay")
 
 modalOverlay.classList.add('hide')
-
 
 function shuffle(array) {
     let currentIndex = array.length;
