@@ -200,6 +200,7 @@ ol{
 
 .game-buttons {
   box-shadow: 0 0 10px 2px #f1f1f1;
+  font-weight: 700;
 }
 
 .question {
