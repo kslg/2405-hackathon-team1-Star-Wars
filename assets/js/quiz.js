@@ -145,19 +145,16 @@ function nextQuestion() {
         displayQuestion();
     } else {
         clearInterval(downloadTimer);
-        switch(true){
-            case(score<5):
-                scoreMessage.innerText="placholder1";
-                sound1.play();
-                break;
-            case(score<8):
-                scoreMessage.innerText="placeholder2";
-                sound2.play();
-                break;
-            case(score>=8):
-                scoreMessage.innerText="placeholder3";
-                sound3.play();
-                break;
+        // Determine the message based on the score
+        if (score < 5) {
+            scoreMessage.innerText = "YES, YOUR THOUGHTS BETRAY YOU.";
+            sound1.play();
+        } else if (score < 8) {
+            scoreMessage.innerText = "YOU DON’T KNOW THE POWER OF THE DARK SIDE.";
+            sound2.play();
+        } else {
+            scoreMessage.innerText = "WE WOULD BE HONORED, IF YOU WOULD JOIN US.";
+            sound3.play();
         }
         scoreboard.style.display = 'block'
         points.innerHTML = score + '/' + (questionBank.length - 6);
