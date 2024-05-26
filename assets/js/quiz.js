@@ -18,7 +18,7 @@ var questionBank = [
     {
         question: 'What is the famous line said by Darth Vader?',
         option: ['"Luke, I am your father"', '"No, I am your father"', '"Who is your father?"', '"I am your mother"'],
-        answer: 'No, I am your father'
+        answer: '"No, I am your father"'
     },
     {
         question: 'Who are Darth Vader&#39;s children?',
@@ -33,7 +33,7 @@ var questionBank = [
     {
         question: 'Who was Darth Vader&#39;s grandchild?',
         option: ['Han Solo', 'Leia Organa', 'Luke Skywalker', 'Kylo Ren'],
-        answer: 'No, I am your father'
+        answer: 'Kylo Ren'
     },
     {
         question: 'In what movie did Darth Vader tell Luke that he was his father?',
@@ -67,8 +67,8 @@ var questionBank = [
     },
     {
         question: 'What Force power did Darth Vader use against his own officers?',
-        option: ['Force choke', 'Force Grip', 'Mind Trick', 'Force Lightning'],
-        answer: 'Force choke'
+        option: ['Force Choke', 'Force Grip', 'Mind Trick', 'Force Lightning'],
+        answer: 'Force Choke'
     },
     {
         question: 'Who was Darth Vader&#39;s wife?',
@@ -190,7 +190,10 @@ document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("welcome-text").style.display = "none";
     document.getElementById("welcome-text-2").style.display = "none";
     document.getElementById("gameStart").style.display = "none";
-    document.getElementById("gameRestart").style.display ="inline-block";
+
+    var timeleft = 6000;
+
+    document.getElementById("Refresh").style.display ="inline-block";
     var timeleft = 60;
     var currentQuestion = 0;
     var a = 0; a < (questionBank.length - 6);
