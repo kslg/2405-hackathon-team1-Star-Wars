@@ -93,16 +93,16 @@ We have gone through each page using google chrome developer tools & Firefox ins
 
 | Goals | How are they achieved? | Evidence |
 | :--- | :--- | :--- |
-| I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way. |||
-| I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me. |||
-| I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period. |||
+| I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way. | Timeline of Darth Vaders Life for users to explore | ![Timeline](docs/testing/user-story-wiki-1.png) |
+| I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me. | Users can select a period of the timeline and click to reveal more information | ![More info on Wiki](docs/testing/user-story-wiki-2.png) |
+| I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period. | Images are shown as part of the detailed information | ![More info on Wiki](docs/testing/user-story-wiki-2.png) | 
 | I want to be able to interact with each images on the timeline so that I can see the image in more detail. |||
 
 `General`
 
-| Goals | How are they achieved? | Evidence |
-| :--- | :--- | :--- |
-| I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars universe. | Sound effects have been added to the cards on the home page that will play when they are moused over.| |
+| Goals | How are they achieved? |
+| :--- | :--- |
+| I want to be able to hear the lightsaber sound when I hover over key areas of the site so that I can feel like I am part of the Star Wars universe. | Sound effects have been added to the cards on the home page that will play when they are moused over.| Sound effects have been added in several places on the website, for example the home page cards. |
 
 - - -
 
