@@ -101,6 +101,30 @@ footer a:hover {
   background: url('../images/darth_helmet.jpg') no-repeat center center;
   background-size: cover;
 }
+
+#logo-text {
+  font-family: "rubik", sans-serif;
+  font-size: 20px;
+  color: var(--red);
+  text-shadow: 0 0 10px var(--black);
+  visibility: hidden;
+}
+
+#quiz-text {
+  font-family: "rubik", sans-serif;
+  font-size: 20px;
+  color: var(--red);
+  text-shadow: 0 20px 100px var(--white);
+  visibility: hidden;
+}
+
+#wiki-text {
+  font-family: "rubik", sans-serif;
+  font-size: 20px;
+  color: var(--red);
+  text-shadow: 0 0 100px var(--white);
+  visibility: hidden;
+}
   
 /*----- QUIZ -----*/
 .hide {
@@ -126,20 +150,20 @@ span {
 
 .quiz-text-title {
   font-family: "starwars", "Rubik", sans-serif;
-    font-size: 60px;
-    font-weight: 500;
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .quiz-text-caption {
   font-family: "starwars", "Rubik", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .quiz-text {
   font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 ol{
