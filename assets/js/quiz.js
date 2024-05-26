@@ -106,13 +106,14 @@ var option3 = document.getElementById('option3');
 var next = document.querySelector('.next');
 var points = document.getElementById('score');
 var span = document.querySelectorAll('span');
+var toggler1=document.getElementById('toggler1')
 var currentQuestion = 0;
 var score = 0;
 var downloadTimer;
 var scoreMessage=document.getElementById('score-message');
 //Function to display questions
 function displayQuestion() {
-    for (var a = 0; a < span.length; a++) {
+    for (var a = 1; a < span.length; a++) {
         span[a].style.background = 'none';
     }
     question.innerHTML = 'Q.' + (currentQuestion + 1) + ' ' + questionBank[currentQuestion].question;
