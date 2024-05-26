@@ -136,6 +136,10 @@ span {
     font-weight: 700;
 }
 
+.main-caption {
+  margin-top: 7rem;
+}
+
 .quiz-text {
   font-family: "Rubik", sans-serif;
     font-size: 20px;
@@ -215,19 +219,4 @@ ol{
     margin-top: 3rem;
   }
 }
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:922px) {
-
-}
-
-@media screen and (min-width:1200px) {
-
-}
-
-@media screen and (min-width:1400px) {
-
-}
+/* End of Responsive breakpoints */
