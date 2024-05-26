@@ -41,7 +41,7 @@ We have gone through each page using google chrome developer tools & Firefox ins
 
 * [style.css]()
 * [about.css]()
-* [wiki.css]()
+* [wiki.css](docs/testing/validation/wiki-css-validation.png) - ✅
 * [404.css](docs/testing/validation/404-css-validation.png) - ✅
 
 - - -
