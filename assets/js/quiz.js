@@ -203,8 +203,9 @@ document.getElementById("gameStart").addEventListener("click", function () {
         document.getElementById("countdown").innerHTML = timeleft +
             " " + "seconds remaining";
         if (timeleft <= -0) {
-            $("#myModal").modal();
             clearInterval(downloadTimer);
+            $("#myModal").modal();
+            
         } else if (timeleft >= 0, currentQuestion > questionBank.length - 7) {
             $("#myModal").modal('hide');
             quizContainer.style.display = 'none';
