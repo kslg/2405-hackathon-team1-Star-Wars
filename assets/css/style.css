@@ -301,15 +301,20 @@ li.option:hover {
   .homepage-card a>p {
     font-size: 2vw;
     font-weight: 500;
+  }
 }
-}
+
 @media (max-width: 426px) {
   .logo-card {
     height: 120px;
   }
+
   .homepage-card a {
     font-size: 28px;
   }
+
   .homepage-card a>p {
     font-size: 3.2vw;
+  }
 }
+
