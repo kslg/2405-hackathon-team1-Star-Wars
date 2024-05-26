@@ -41,6 +41,11 @@ for (let i = 0; i < histories.length; i++) {
 
 function expandDetails(index) {
     if (details[index].style.display == "none") {
+        /* hide and other details that are displayed */
+        for (detail of details){
+            detail.style.display= "none";
+        }
+        /* show this one */
         details[index].style.display = "block";
     } else {
         details[index].style.display = "none";
@@ -55,17 +60,14 @@ function updateStlyes() {
         if (i % 2 == 0) {
             if (window.innerWidth < 500) {
                 details[i].style.right = "45vw";
-                details[i].style.color="red";
             } else {
                 details[i].style.right = "30vw";
             }
         } else {
             if (window.innerWidth < 500) {
                 details[i].style.left = "-5vw"
-                details[i].style.color="red";
             } else {
                 details[i].style.left = "10vw"
-                details[i].style.color="white";
             }
         }
     }

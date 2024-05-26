@@ -11,6 +11,10 @@ main {
   padding: 0;
 }
 
+img{
+  width:100%;
+  padding-top:10px;
+}
 .wiki-timeline {
   padding-bottom: 200px;
 }
@@ -112,6 +116,7 @@ main {
 
 @media screen and (min-width:500px) {
   .history-content p {
-    width: 60vw;
+    width:auto;
+    max-width: 60vw;
   }
 }
