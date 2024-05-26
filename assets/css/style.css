@@ -116,6 +116,30 @@ footer a:hover {
   background-size: cover;
 }
 
+#logo-text {
+  font-family: "rubik", sans-serif;
+  font-size: 25px;
+  color: var(--red);
+  text-shadow: 2px 2px var(--black);
+  visibility: hidden;
+}
+
+#quiz-text {
+  font-family: "rubik", sans-serif;
+  font-size: 25px;
+  color: var(--red);
+  text-shadow: 2px 2px var(--black);
+  visibility: hidden;
+}
+
+#wiki-text {
+  font-family: "rubik", sans-serif;
+  font-size: 25px;
+  color: var(--red);
+  text-shadow: 3px 3px var(--black);
+  visibility: hidden;
+}
+
 /*----- QUIZ -----*/
 .hide {
   display: none;

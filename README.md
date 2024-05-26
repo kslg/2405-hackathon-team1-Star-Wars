@@ -3,8 +3,7 @@
 Screenshot
 
 ## Introduction
-### Problem Statement
-
+The Darth Side is a website designed to provide fans with the opportunity to learn about and test their knowledge on the iconic Darth Vader from the legendary Star Wars franchise.
 
 ## User Stories
 
