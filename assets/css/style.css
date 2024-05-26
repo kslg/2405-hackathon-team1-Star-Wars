@@ -182,8 +182,10 @@ ol{
   background-size: cover;
 }
 
-.inner-gameArea {
+#scoreboard, .inner-gameArea, #answerBank {
   height: 32rem;
+  background: url('../images/darth-quiz-hero.png') no-repeat;
+  background-size: cover;
 }
 
 .buttons {
@@ -197,9 +199,13 @@ ol{
   margin-top: 2rem;
 }
 
+.score-points {
+  margin-top: 7rem;
+}
+
 /* Responsive breakpoints */
 @media screen and (min-width:576px) {
-  .hero-image {
+  .hero-image, #scoreboard, #answerBank {
     background-position-x: 50%;
   }
   .modal {
