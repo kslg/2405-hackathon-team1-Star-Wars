@@ -105,9 +105,9 @@
             <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
                 <div class="gameArea bg-dark quiz-box-shadow" role="none" aria-hidden="true">
                     <!-- quiz and scoreboard container -->    
-                    <div class="container" id="quiz-container">
+                    <div class="container-fluid" id="quiz-container">
                         <!-- quiz container -->
-                        <div id="quiz-container" class="hero-image container-fluid">
+                        <div id="quiz-container" class="hero-image container-fluid inner-gameArea">
                             <!-- question container -->
                             <div class="questions" role="presentation" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
                                 <!-- Countdown timer -->
@@ -132,10 +132,10 @@
                             </div>
                             <!-- Quiz Control Buttons -->
                             <div class="buttons text-center">
-                                <button type="button" id="gameStart" class="gameStart btn btn-danger" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
-                                <button type="button" class="btn btn-danger icon" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Reset</button>
+                                <button type="button" id="gameStart" class="gameStart btn btn-danger quiz-text" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
+                                <button type="button" class="btn btn-danger quiz-text" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Reset</button>
                                 <!-- Trigger the modal with a button -->
-                                <button type="button" id="show-modal-btn" class="btn btn-danger" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
+                                <button type="button" id="show-modal-btn" class="btn btn-danger quiz-text" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
                                 <!-- Modal -->
                                 <div class="modal fade" id="htpModal" tabindex="-1" aria-labelledby="htpModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -153,7 +153,7 @@
                                                 <p>'RESTART' to reset the quiz.</p>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-danger quiz-text" data-dismiss="modal">Close</button>
                                         </div>
                                       </div>
                                     </div>
@@ -163,18 +163,23 @@
                     </div>
                         <!-- scoreboard section -->
                         <div id="scoreboard">
-                            <h2 role="presentation">The force is strong with this one!</h2>
-                            <h2 id="score-title">Your Score</h2>
-                            <div id="score" role="presentation" aria-label="Your final score for the quiz"></div>
-                            <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
-                            <button type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
+                          <h2 class="quiz-text-caption text-center" role="presentation">The force is strong with this one!</h2>
+                          <h2 class="quiz-text text-center" id="score-title">Your Score</h2>
+                          <!-- Score Points Placeholder  -->
+                          <div class="quiz-text text-center" id="score" role="presentation" aria-label="Your final score for the quiz"></div>
+                          <div class="buttons text-center">
+                            <button class="quiz-text btn btn-danger" type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
+                            <button class="quiz-text btn btn-danger" type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
+                          </div>
                         </div>  
                         <!-- Answers section -->
                         <div id="answerBank" role="presentation" aria-label="Your answers">
-                            <h2>Answers :</h2>
-                            <ol type="1" id="answers">
-                            </ol>
-                            <button type="button" id="score-btn-two" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
+                          <h2 class="quiz-text-caption text-center">Your Answers</h2>
+                          <ol class="text-left" type="1" id="answers">
+                          </ol>
+                          <div class="buttons text-center">
+                            <button class="btn btn-danger quiz-text" type="button" id="score-btn-two" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
+                          </div>
                         </div>
                 </div>
         </div>

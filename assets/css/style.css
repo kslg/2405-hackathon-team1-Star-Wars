@@ -177,3 +177,7 @@ ol{
   background: url('../images/darth-quiz-hero.png') no-repeat;
   background-size: cover;
 }
+
+.inner-gameArea {
+  height: 32rem;
+}
