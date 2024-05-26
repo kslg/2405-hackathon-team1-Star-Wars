@@ -185,3 +185,43 @@ ol{
 .inner-gameArea {
   height: 32rem;
 }
+
+.buttons {
+  position: absolute;
+  bottom:   20px;
+  width: 90%;
+}
+
+.question {
+  height: 3rem;
+  margin-top: 2rem;
+}
+
+/* Responsive breakpoints */
+@media screen and (min-width:576px) {
+  .hero-image {
+    background-position-x: 50%;
+  }
+  .modal {
+    top: 6rem;
+  }
+  ol {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:922px) {
+
+}
+
+@media screen and (min-width:1200px) {
+
+}
+
+@media screen and (min-width:1400px) {
+
+}

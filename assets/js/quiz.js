@@ -168,7 +168,7 @@ document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("welcome-text").style.display = "none";
     document.getElementById("welcome-text-2").style.display = "none";
     document.getElementById("gameStart").style.display = "none";
-    var timeleft = 60;
+    var timeleft = 6000;
     var currentQuestion = 0;
     var a = 0; a < (questionBank.length - 6);
 

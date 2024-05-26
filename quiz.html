@@ -117,14 +117,16 @@
                                 <h2 class='text-center quiz-text-caption' id="welcome-text-2" role="presentation" aria-labelledby="welcome-text">Give yourself to the Dark Side</h2>
                                 <div id="question-buttons">
                                     <!-- Quiz questions -->
-                                    <div class='text-center quiz-text' id="question">
+                                    <div class="text-center quiz-text question">
+                                      <div id="question">
+                                      </div>
                                     </div>
-                                        <ol type="A">
-                                            <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
-                                            <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
-                                            <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
-                                            <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
-                                        </ol>
+                                    <ol class="options-container" type="A">
+                                        <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                                        <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                                        <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                                        <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+                                    </ol>
                                         <!-- Question count -->
                                         <div class='text-center quiz-text' id="questionCount" role="presentation" aria-label="This is the question counter, counting up to ten">
                                         </div>     
