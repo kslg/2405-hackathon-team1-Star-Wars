@@ -1,5 +1,9 @@
-
-
+main{
+  background:url('../images/darth_saber.jpeg') no-repeat center center/cover;
+}
+.logo-card{
+  background:none;
+}
 main {
   display: flex;
   flex-direction: column;
