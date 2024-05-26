@@ -198,12 +198,16 @@
     <title>The Darth Side</title>
   </head>
 
-
-<body>
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand d-none d-lg-block" href="index.html" aria-label="click to go to home page">The Darth Side</a>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a
+          class="navbar-brand d-none d-lg-block"
+          href="index.html"
+          aria-label="click to go to home page"
+          >The Darth Side</a
+        >
 
         <button
           class="navbar-toggler"
@@ -220,18 +224,36 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html" aria-label="click to go to home page"
+              <a
+                class="nav-link"
+                href="index.html"
+                aria-label="click to go to home page"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="quiz.html" aria-label="click to go to quiz page">Quiz</a>
+              <a
+                class="nav-link"
+                href="quiz.html"
+                aria-label="click to go to quiz page"
+                >Quiz</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="wiki.html" aria-label="click to go to wiki page">Wiki</a>
+              <a
+                class="nav-link"
+                href="wiki.html"
+                aria-label="click to go to wiki page"
+                >Wiki</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html" aria-label="click to go to about us page">About Us</a>
+              <a
+                class="nav-link"
+                href="about.html"
+                aria-label="click to go to about us page"
+                >About Us</a
+              >
             </li>
           </ul>
         </div>
@@ -242,55 +264,102 @@
     <main>
       <section class="container-fluid">
         <div class="row justify-content-center mt-4">
-          <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
-            <div class="bg-color-background section-column homepage-card logo-card p-3 text-center" onmouseover="PlaySound('light-saber')" onmouseout="StopSound('light-saber')">
-              <a href="index.html" onmouseover="reveal('logo-text')" onmouseout="hideText('logo-text')" aria-label="click to go to home page">The Darth Side</a>
-              <p id="logo-text">Welcome Future Apprentice...</p>
-              <audio id="light-saber" src="assets/sounds/Voicy_Lightsaber swing.mp3"></audio>
+
+          <div class="col-sm-12 col-md-12 col-lg-12 mt-4">
+            <div
+              class="bg-color-background section-column homepage-card logo-card p-3 text-center"
+              onmouseover="reveal('logo-text'); PlaySound('light-saber')"
+              onmouseout="hideText('logo-text'); StopSound('light-saber')"
+            >
+              <a href="index.html" aria-label="click to go to home page"
+                >The Darth Side</a
+              >
+              <p id="logo-text" class="mt-5">
+                Welcome to The Darth Side, the ultimate fan site dedicated to
+                Darth Vader!
+              </p>
+              <audio
+                id="light-saber"
+                src="assets/sounds/Voicy_Lightsaber swing.mp3"
+              ></audio>
+
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-10 col-md-6 col-lg-6 mb-4 mt-4">
-            <div class="bg-color-background section-column homepage-card quiz-card p-3 text-center" onmouseover="PlaySound('light-saber-quiz')" onmouseout="StopSound('light-saber-quiz')">
-              <a href="quiz.html" onmouseover="reveal('quiz-text')" onmouseout="hideText('quiz-text')" aria-label="click to go to quiz page">QUIZ</a>
-              <p id="quiz-text" class="mt-5">Pass the test, join the Sith...</p>
-              <audio id="light-saber-quiz" src="assets/sounds/Voicy_Lightsaber swing.mp3"></audio>
+            <div
+              class="bg-color-background section-column homepage-card quiz-card p-3 text-center"
+              onmouseover="reveal('logo-text'); PlaySound('light-saber')"
+              onmouseout="hideText('logo-text'); StopSound('light-saber')"
+            >
+              <a href="quiz.html" aria-label="click to go to quiz page">QUIZ</a>
+              <p id="quiz-text" class="mt-5">
+                Test your knowledge of the dark side with challenging trivia
+                that covers every aspect of Vader's journey.
+              </p>
+              <audio
+                id="light-saber-quiz"
+                src="assets/sounds/Voicy_Lightsaber swing.mp3"
+              ></audio>
             </div>
           </div>
           <div class="col-sm-10 col-md-6 col-lg-6 mb-4 mt-4">
-            <div class="bg-color-background section-column homepage-card wiki-card p-3 text-center" onmouseover="PlaySound('light-saber-wiki')" onmouseout="StopSound('light-saber-wiki')">
-              <a href="wiki.html" onmouseover="reveal('wiki-text')" onmouseout="hideText('wiki-text')" aria-label="click to go to wiki page">WIKI</a>
-              <p id="wiki-text" class="mt-5">Learn about Lord Vader...</p>
-              <audio id="light-saber-wiki" src="assets/sounds/Voicy_Lightsaber swing.mp3"></audio>
+            <div
+              class="bg-color-background section-column homepage-card wiki-card p-3 text-center"
+              onmouseover="reveal('logo-text'); PlaySound('light-saber')"
+              onmouseout="hideText('logo-text'); StopSound('light-saber')"
+            >
+              <a href="wiki.html" aria-label="click to go to wiki page">WIKI</a>
+              <p id="wiki-text" class="mt-5">
+                Access detailed entries on Vader's life, iconic battles, and key
+                figures in the Star Wars universe.
+              </p>
+              <audio
+                id="light-saber-wiki"
+                src="assets/sounds/Voicy_Lightsaber swing.mp3"
+              ></audio>
             </div>
           </div>
         </div>
       </section>
     </main>
-  
-  <!--  FOOTER -->
-  <footer class="container-fluid footer-container fixed-bottom">
-    <div class="row">
-      <div class="col">
-        <a href="https://github.com/DesislavaNaydenova/2405-hackathon-team1-StarWars" target="_blank" rel="noopener" aria-label="click to open GitHub repository in a new tab">
-          <i class="fa-brands fa-github"><span class="sr-only">View our project on GitHub</span></i>
-        </a>
-      </div>
-      <div class="col">
-        <a href="about.html" aria-label="click to go to the about us page">
 
-          <i class="fa-solid fa-people-group"><span class="sr-only">Meet the Team</span></i>
-        </a>
+    <!--  FOOTER -->
+    <footer class="container-fluid footer-container fixed-bottom">
+      <div class="row">
+        <div class="col">
+          <a
+            href="https://github.com/DesislavaNaydenova/2405-hackathon-team1-StarWars"
+            target="_blank"
+            rel="noopener"
+            aria-label="click to open GitHub repository in a new tab"
+          >
+            <i class="fa-brands fa-github"
+              ><span class="sr-only">View our project on GitHub</span></i
+            >
+          </a>
+        </div>
+        <div class="col">
+          <a href="about.html" aria-label="click to go to the about us page">
+            <i class="fa-solid fa-people-group"
+              ><span class="sr-only">Meet the Team</span></i
+            >
+          </a>
+        </div>
+        <div class="col">
+          <p
+            onmouseover="PlaySound('chewieSoundEffect')"
+            onmouseout="StopSound('chewieSoundEffect')"
+          >
+            &#169; Team ChewHakkas
+          </p>
+          <audio id="chewieSoundEffect">
+            <source src="assets/audio/chewbacca.mp3" />
+          </audio>
+        </div>
       </div>
-      <div class="col">
-        <p onmouseover="PlaySound('chewieSoundEffect')" onmouseout="StopSound('chewieSoundEffect')">&#169; Team ChewHakkas</p>
-        <audio id="chewieSoundEffect">
-          <source src="assets/audio/chewbacca.mp3">
-        </audio>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <!-- Scripts -->
     <script
