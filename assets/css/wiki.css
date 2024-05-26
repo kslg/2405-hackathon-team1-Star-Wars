@@ -11,6 +11,10 @@ main {
   padding: 0;
 }
 
+.wiki-timeline {
+  padding-bottom: 200px;
+}
+
 #timeline-heading {
   font-size: 200%;
   color: white;
