@@ -78,7 +78,8 @@ We have gone through each page using google chrome developer tools & Firefox ins
 
 | Goals | How are they achieved? | Evidence |
 | :--- | :--- | :--- |
-| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar and links to their Linkedin and GitHub profiles | | |
+| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar and links to their Linkedin and GitHub profiles | |
+| I want to view short summary of why the site was created so that I can gain an insight into the websites origin. | | |
 
 
 `Quiz Page`
