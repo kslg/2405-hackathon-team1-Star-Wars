@@ -11,8 +11,9 @@
 
 @font-face {
   font-family: "starwars";
-  src: url(assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
+  src: url(/assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
 }
+
 
 body {
   background: var(--black);
@@ -90,11 +91,18 @@ footer a:hover {
 .homepage-card a {
   color: var(--red);
   text-decoration-line: none;
+  text-shadow:2px 2px 4px var(--grey);
 }
+.homepage-card a>p {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow:2px 2px 4px var(--grey);
 
+}
 .logo-card {
   background: url("../images/darth_saber.jpeg") no-repeat;
   background-size: cover;
+  height: 160px;
 }
 
 .quiz-card {
@@ -236,4 +244,21 @@ ol {
 
 .inner-gameArea {
   height: 32rem;
+}
+
+@media (max-width: 768px) {
+  .homepage-card a>p {
+    font-size: 2vw;
+    font-weight: 500;
+}
+}
+@media (max-width: 426px) {
+  .logo-card {
+    height: 120px;
+  }
+  .homepage-card a {
+    font-size: 28px;
+  }
+  .homepage-card a>p {
+    font-size: 3.2vw;
 }
