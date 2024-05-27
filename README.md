@@ -142,6 +142,7 @@ Most of the images used are from [StarWars.com](https://www.starwars.com/).
 Other images:
 
 - [Darth helmet](https://www.pexels.com/photo/black-and-red-star-wars-helmet-4310574/) Photo by Lucas Ianiak from Pexels
+- [Kylo Ren](https://variety.com/wp-content/uploads/2023/12/Screen-Shot-2023-12-13-at-4.19.17-PM.png?w=1000&h=667&crop=1)
 
 We created our avatar images using [Doll Divine](https://www.dolldivine.com/star-wars-an-avatar-creator)
 
