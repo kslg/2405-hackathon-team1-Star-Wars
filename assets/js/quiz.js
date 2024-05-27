@@ -106,13 +106,14 @@ var option3 = document.getElementById('option3');
 var next = document.querySelector('.next');
 var points = document.getElementById('score');
 var span = document.querySelectorAll('span');
+var toggler1=document.getElementById('toggler1')
 var currentQuestion = 0;
 var score = 0;
 var downloadTimer;
 var scoreMessage=document.getElementById('score-message');
 //Function to display questions
 function displayQuestion() {
-    for (var a = 0; a < span.length; a++) {
+    for (var a = 1; a < span.length; a++) {
         span[a].style.background = 'none';
     }
     question.innerHTML = 'Q.' + (currentQuestion + 1) + ' ' + questionBank[currentQuestion].question;
@@ -144,19 +145,16 @@ function nextQuestion() {
         displayQuestion();
     } else {
         clearInterval(downloadTimer);
-        switch(true){
-            case(score<5):
-                scoreMessage.innerText="placholder1";
-                sound1.play();
-                break;
-            case(score<8):
-                scoreMessage.innerText="placeholder2";
-                sound2.play();
-                break;
-            case(score>=8):
-                scoreMessage.innerText="placeholder3";
-                sound3.play();
-                break;
+        // Determine the message based on the score
+        if (score < 5) {
+            scoreMessage.innerText = "YES, YOUR THOUGHTS BETRAY YOU.";
+            sound1.play();
+        } else if (score < 8) {
+            scoreMessage.innerText = "YOU DON’T KNOW THE POWER OF THE DARK SIDE.";
+            sound2.play();
+        } else {
+            scoreMessage.innerText = "WE WOULD BE HONORED, IF YOU WOULD JOIN US.";
+            sound3.play();
         }
         scoreboard.style.display = 'block'
         points.innerHTML = score + '/' + (questionBank.length - 6);
@@ -203,8 +201,9 @@ document.getElementById("gameStart").addEventListener("click", function () {
         document.getElementById("countdown").innerHTML = timeleft +
             " " + "seconds remaining";
         if (timeleft <= -0) {
-            $("#myModal").modal();
             clearInterval(downloadTimer);
+            $("#myModal").modal();
+            
         } else if (timeleft >= 0, currentQuestion > questionBank.length - 7) {
             $("#myModal").modal('hide');
             quizContainer.style.display = 'none';

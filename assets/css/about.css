@@ -45,7 +45,7 @@ body {
 
 /*----- FOOTER -----*/
 footer {
-  color: var(white);
+  color: var(--white);
   background-color: var(--grey);
   text-align: center;
   padding: 0.75rem;
@@ -72,10 +72,11 @@ footer a:hover {
 }
 
 .title-card {
-  /* height: 300px; */
+  font-family: "Rubik", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  background: url(../images/chewbacca.jpeg) no-repeat;
+  /* background: url(../images/chewbacca.jpeg) center no-repeat; */
+  /* height: 100%; */
 }
 
 .title-card:focus,
@@ -93,7 +94,8 @@ footer a:hover {
 }
 
 .avatar-card {
-  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -113,4 +115,19 @@ footer a:hover {
 
 .card-footer a:hover {
   color: var(--red);
+}
+
+@media (max-width: 426px) {
+  .homepage-card p {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .title-card h5 {
+    font-size: 28px;
+  }
+
+  .title-card a > p {
+    font-size: 3.2vw;
+  }
 }

@@ -1,53 +1,58 @@
 main {
-    perspective: 400px;
+  perspective: 400px;
+  background: url(../images/starfield.jpeg);
+  height: 100vh;
 }
 
 .text-crawl {
-    text-align: center;
-    color: var(--red);
-    font-weight: bold;
-    width: 200px;
-    margin: 0 auto;
-    transform: rotateX(30deg);
-    animation: animateCrawl 20s ease-in;
+  text-align: center;
+  color: #fff200;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  transform: rotateX(30deg);
+  animation: animateCrawl 20s ease-in;
 }
 
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 p {
-    font-size: 16px;
+  font-size: 20px;
 }
 
 @keyframes animateCrawl {
-    0% { transform: rotateX(30deg) translateY(400px); }
-    100% { transform: rotateX(30deg) translateY(-600px); }
+  0% {
+    transform: rotateX(30deg) translateY(400px);
+  }
+  100% {
+    transform: rotateX(30deg) translateY(-600px);
+  }
 }
 
+@media (426px <= width <= 768px) {
+  .text-crawl {
+    width: 300px;
+  }
+  h1 {
+    font-size: 60px;
+  }
 
-@media (426px <= width <= 768px )  {
-    .text-crawl {
-        width: 300px;
-    }
-    h1 {
-        font-size: 60px;
-    }
-    
-    p {
-        font-size: 25px;
-    }
+  p {
+    font-size: 25px;
+  }
 }
 
-@media ( width >= 769px )  {
-    .text-crawl {
-        width: 600px;
-    }
-    h1 {
-        font-size: 125px;
-    }
-    
-    p {
-        font-size: 30px;
-    }
+@media (width >= 769px) {
+  .text-crawl {
+    width: 600px;
+  }
+  h1 {
+    font-size: 125px;
+  }
+
+  p {
+    font-size: 30px;
+  }
 }
