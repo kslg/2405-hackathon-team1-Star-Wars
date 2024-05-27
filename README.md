@@ -138,6 +138,7 @@ Most of the images used are from [StarWars.com](https://www.starwars.com/).
 - [Shmi (Anakins mother)](https://www.starwars.com/databank/shmi-skywalker-lars)
 - [Anakin meal time](https://www.starwars.com/databank/shmi-skywalker-lars?image_id=55fb4f8ad66c4d274a02c118undefined)
 - [Star Wars movies](https://www.starwars.com/films) image a composite of images taken from StarWars.com
+- [Darth in front of Storm Troopers](https://www.hdwallpapers.in/darth_vader_stormtroopers-wallpapers.html) quiz image of the Darth Vader on the home page.
 
 Other images:
 
