@@ -35,14 +35,14 @@ main {
 
 .navbar .navbar-brand {
   color: var(--red);
-  font-size: 2rem;
   font-family: "starwars", "Rubik", sans-serif;
+  font-size: 2rem;
 }
 
 .navbar-nav .nav-item .nav-link {
   color: var(--white);
-  font-size: large;
   font-family: "Rubik", sans-serif;
+  font-size: large;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link {
