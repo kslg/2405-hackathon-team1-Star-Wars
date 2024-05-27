@@ -242,6 +242,9 @@ ol {
 .hero-image {
   background: url("../images/darth-quiz-hero.png") no-repeat center center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #scoreboard,
