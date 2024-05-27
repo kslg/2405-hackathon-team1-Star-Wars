@@ -117,6 +117,12 @@ footer a:hover {
   color: var(--red);
 }
 
+.fa-brands {
+  color:#f1f1f1f1;
+}
+.fa-brands:hover {
+  color: var(--red);
+
 @media (max-width: 426px) {
   .homepage-card p {
     display: inline-flex;
