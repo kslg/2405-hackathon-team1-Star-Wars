@@ -49,10 +49,11 @@
 }
 
 .fa-brands {
-  color:#f1f1f1f1;
+  color: #f1f1f1f1;
 }
 .fa-brands:hover {
   color: var(--red);
+}
 
 @media (max-width: 426px) {
   .homepage-card p {
