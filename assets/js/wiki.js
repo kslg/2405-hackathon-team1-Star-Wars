@@ -32,7 +32,7 @@ for (let i = 0; i < histories.length; i++) {
         if (window.innerWidth < 500) {
             details[i].style.left = "-5vw"
         } else {
-            details[i].style.left = "10vw"
+            details[i].style.left = "25vw"
         }
     }
     /* show the details when the header is clicked */
@@ -47,6 +47,9 @@ function expandDetails(index) {
         }
         /* show this one */
         details[index].style.display = "block";
+        if(index > 3){
+            details[index].scrollIntoView();
+        }
     } else {
         details[index].style.display = "none";
     }
