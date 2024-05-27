@@ -114,3 +114,9 @@ footer a:hover {
 .card-footer a:hover {
   color: var(--red);
 }
+.fa-brands {
+  color:#f1f1f1f1;
+}
+.fa-brands:hover {
+  color: var(--red);
+}
