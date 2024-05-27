@@ -93,8 +93,7 @@ We used Lighthouse within the Chrome Developer Tools to test the performance, ac
 
 | Goals | How are they achieved? | Evidence |
 | :--- | :--- | :--- |
-| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar | |
-| I want to view short summary of why the site was created so that I can gain an insight into the websites origin. | | |
+| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar | | |
 
 
 `Quiz Page`
@@ -115,7 +114,6 @@ We used Lighthouse within the Chrome Developer Tools to test the performance, ac
 | I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way. |||
 | I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me. |||
 | I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period. |||
-| I want to be able to interact with each images on the timeline so that I can see the image in more detail. |||
 
 `General`
 
@@ -131,9 +129,15 @@ Full testing was performed on the following devices:
 
 * Laptop:
   * Macbook Pro 2021 14 inch screen
+  * Pacard 13.5 inch screen
+  * acer Aspire 3 15 inch screen
+  * HP Pavilion 15 inch screen
 * Mobile Devices:
-  * iPhone 13 pro.
-  * 
+  * iPhone 13 pro
+  * Google Pixel 6
+  * Google Pixel 6 Pro
+  * Galaxy A71 
+  * Moto GP
 
 Each device tested the site using the following browsers:
 
