@@ -1,75 +1,4 @@
-/*----- ROOT VARIABLES -----*/
-:root {
-  /* Typography Variables */
-
-  /* Colour Variables */
-  --white: #f1f1f1;
-  --grey: #2b3637;
-  --black: #101010;
-  --red: #ff0011;
-}
-
-@font-face {
-  font-family: "starwars";
-  src: url(/assets/css/SfDistantGalaxyAltoutline-e2Bp.ttf);
-}
-
-body {
-  background: var(--black);
-}
-
-.bg-color-background {
-  background: var(--grey);
-}
-
-.container-fluid {
-  color: var(--white);
-}
-
-/*----- NAVBAR -----*/
-.navbar-dark {
-  background-color: var(--black) !important;
-}
-
-.navbar .navbar-brand {
-  color: var(--red);
-}
-
-.navbar-nav .nav-item .nav-link {
-  color: var(--white);
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 2px solid var(--red);
-}
-
-/*----- FOOTER -----*/
-footer {
-  color: var(--white);
-  background-color: var(--grey);
-  text-align: center;
-  padding: 0.75rem;
-}
-
-footer p {
-  font-size: 20px;
-}
-
-footer a {
-  color: var(--white);
-  font-size: 25px;
-}
-
-footer a:hover {
-  color: var(--red);
-}
 /*----- MAIN -----*/
-
-.logo-card {
-  background: url("../images/darth_saber.jpeg") no-repeat;
-  background-size: cover;
-  height: 160px;
-}
 
 .title-card {
   font-family: "Rubik", sans-serif;
@@ -118,11 +47,6 @@ footer a:hover {
 .card-footer a:hover {
   color: var(--red);
 }
-
-/* .scroll {
-  max-height: 200px;
-  overflow-y: auto;
-} */
 
 @media (max-width: 426px) {
   .homepage-card p {
