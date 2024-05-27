@@ -21,7 +21,6 @@ The Darth Side is a website designed to provide fans with the opportunity to lea
 ### About Us
 
 - I want to view a list of collaborators and their roles so that I can understand who was involved in building the site.
-- I want to view short summary of why the site was created so that I can gain an insight into the websites origin.
 
 ### Quiz Page
 
@@ -37,7 +36,6 @@ The Darth Side is a website designed to provide fans with the opportunity to lea
 - I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way.
 - I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me.
 - I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period.
-- I want to be able to interact with each images on the timeline so that I can see the image in more detail.
 
 ### General
 

@@ -75,8 +75,6 @@ We have gone through each page using google chrome developer tools & Firefox ins
 | Goals | How are they achieved? | Evidence |
 | :--- | :--- | :--- |
 | I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar and links to their Linkedin and GitHub profiles | |
-| I want to view short summary of why the site was created so that I can gain an insight into the websites origin. | | |
-
 
 `Quiz Page`
 
@@ -96,7 +94,6 @@ We have gone through each page using google chrome developer tools & Firefox ins
 | I want to be able to view a timeline of Darth Vaders life story so that I can learn about the character in a structured way. | Timeline of Darth Vaders Life for users to explore | ![Timeline](docs/testing/user-story-wiki-1.png) |
 | I want to be able to read text that is relevant to each part of the timeline so that I can learn about specific area that interest me. | Users can select a period of the timeline and click to reveal more information | ![More info on Wiki](docs/testing/user-story-wiki-2.png) |
 | I want to be able to view a relevant image on each part of the timeline so that I can gain a visual understanding of what happend during this period. | Images are shown as part of the detailed information | ![More info on Wiki](docs/testing/user-story-wiki-2.png) | 
-| I want to be able to interact with each images on the timeline so that I can see the image in more detail. |||
 
 `General`
 
@@ -112,15 +109,23 @@ Full testing was performed on the following devices:
 
 * Laptop:
   * Macbook Pro 2021 14 inch screen
+  * Pacard 13.5 inch screen
+  * acer Aspire 3 15 inch screen
+  * HP Pavilion 15 inch screen
+  * HP 255G8 Notebook
 * Mobile Devices:
-  * iPhone 13 pro.
-  * 
+  * iPhone 13 pro
+  * Google Pixel 6
+  * Google Pixel 6 Pro
+  * Galaxy A71 
+  * Moto GP
 
-Each device tested the site using the following browsers:
+Devices tested the site using the following browsers:
 
 * Google Chrome
 * Safari
 * Firefox
+* Opera 
 
 Additional testing was taken by friends and family on a variety of devices and screen sizes. 
 
