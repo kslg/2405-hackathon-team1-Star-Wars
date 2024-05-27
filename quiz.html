@@ -100,115 +100,110 @@
   <!-- Placeholder for the heading -->
   <main>
     <section class="container-fluid">
-        <div class="row justify-content-center mt-4">
-            <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
-                <div class="gameArea bg-dark quiz-box-shadow" role="none" aria-hidden="true">
-                    <!-- quiz and scoreboard container -->    
-                    <!-- <div class="container-fluid" id="quiz-container"> -->
-                        <!-- quiz container -->
-                        <div id="quiz-container" class="hero-image container-fluid inner-gameArea">
-                            <!-- question container -->
-                            <div class="questions" role="presentation" aria-label="This is the questions area for the quiz. There are ten multiple-choice questions">
-                                <!-- Countdown timer -->
-                                <div class='text-center quiz-text' id="countdown" role="presentation" aria-label="This is the countdown timer">
-                                </div>
-                                <h1 class='text-center quiz-text-title' id="welcome-text" aria-label="This is a h1">DARTH QUIZ</h1>
-                                <h2 class="text-center quiz-text-caption main-caption" id="welcome-text-2" role="presentation" aria-labelledby="welcome-text">Give yourself to the Dark Side</h2>
-                                <div id="question-buttons">
-                                    <!-- Quiz questions -->
-                                    <div class="text-center quiz-text question">
-                                      <div id="question">
-                                      </div>
-                                    </div>
-                                    <ol class="options-container" type="A">
-                                        <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
-                                        <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
-                                        <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
-                                        <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
-                                    </ol>
-                                        <!-- Question count -->
-                                        <div class='text-center quiz-text' id="questionCount" role="presentation" aria-label="This is the question counter, counting up to ten">
-                                        </div>     
-                                    </div>                     
-                            </div>
-                            <!-- Quiz Control Buttons -->
-                            <div class="buttons text-center">
-
-                                <button type="button" id="gameStart" class="gameStart btn btn-danger quiz-text game-buttons" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
-                                <button type="button" class="btn btn-danger quiz-text game-buttons" id="Refresh" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Restart</button>
-
-                                <!-- Trigger the modal with a button -->
-                                <button type="button" id="show-modal-btn" class="btn btn-danger quiz-text game-buttons" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="htpModal" tabindex="-1" aria-labelledby="htpModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h2 class="modal-title" id="htpModalLabel">Join me and play</h2>
-                                          <button class="game-buttons" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                          </button>
-                                        </div>
-                                        <div class="modal-body quiz-text">
-                                                <p>How well do you know the Dark Loard?<br> Test your knowledge and get ten questions correct before the timer runs out.<br> You have 60 seconds. It is your destiny!</p>
-                                            <h3>Controls:</h3>
-                                                <p>'START' to start the quiz.</p>
-                                                <p>'RESTART' to reset the quiz.</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-danger quiz-text game-buttons" data-dismiss="modal">Close</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- </div> -->
-                        <!-- scoreboard section -->
-                        <div id="scoreboard">
-
-                          <h2 class="quiz-text-caption text-center" role="presentation" id="score-message">You did well my young apprentice</h2>
-                          <div class="score-points">
-                            <h2 class="quiz-text text-center" id="score-title">Your Score</h2>
-                            <!-- Score Points Placeholder  -->
-                            <div class="quiz-text text-center" id="score" role="presentation" aria-label="Your final score for the quiz"></div>
-                          </div>
-
-                  
-                          <div class="buttons text-center">
-                            <button class="quiz-text btn btn-danger" type="button" id="score-btn-one" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Restart</button>
-                            <button class="quiz-text btn btn-danger game-buttons" type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
-                          </div>
-                        </div>  
-                        <!-- Answers section -->
-                        <div id="answerBank" role="presentation" aria-label="Your answers">
-                          <h2 class="quiz-text-caption text-center">Your Answers</h2>
-                          <ol class="text-left" type="1" id="answers">
-                          </ol>
-                          <div class="buttons text-center">
-                            <button class="btn btn-danger quiz-text game-buttons" type="button" id="score-btn-two" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Return to Quiz</button>
-                          </div>
-                        </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-sm-10 col-md-8 col-lg-8 mb-4 mt-4">
+          <div class="gameArea bg-dark quiz-box-shadow" role="none" aria-hidden="true">
+            <!-- quiz and scoreboard container -->    
+            <!-- quiz container -->
+            <div id="quiz-container" class="hero-image container-fluid inner-gameArea">
+              <!-- question container -->
+              <div class="questions" role="presentation" aria-label="This is the questions area for the quiz. There are ten multiple-choice questions">
+                <!-- Countdown timer -->
+                <div class='text-center quiz-text' id="countdown" role="presentation" aria-label="This is the countdown timer">
                 </div>
-        </div>
-        <!-- Times Up Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog" id="timeupmodal">
-                <!-- Times Up Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Time is up!</h4>
-                        <button type="button" value="Refresh" onClick="refresh(this)" class="close" data-dismiss="modal">&times;</button>
+                <h1 class='text-center quiz-text-title' id="welcome-text" aria-label="This is a h1">DARTH QUIZ</h1>
+                <h2 class="text-center quiz-text-caption main-caption" id="welcome-text-2" role="presentation" aria-labelledby="welcome-text">Give yourself to the Dark Side</h2>
+                <div id="question-buttons">
+                  <!-- Quiz questions -->
+                  <div class="text-center quiz-text question">
+                    <div id="question">
                     </div>
-                    <div class="modal-body">
-                        <p class="text-center quiz-text">You have not failed me yet my young apprentice.</p>
+                  </div>
+                  <ol class="options-container" type="A">
+                      <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                      <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                      <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                      <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+                  </ol>
+                      <!-- Question count -->
+                      <div class='text-center quiz-text' id="questionCount" role="presentation" aria-label="This is the question counter, counting up to ten">
+                      </div>     
+                </div>                     
+              </div>
+              <!-- Quiz Control Buttons -->
+              <div class="buttons text-center">
+                <button type="button" id="gameStart" class="gameStart btn btn-danger quiz-text game-buttons" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
+                <button type="button" class="btn btn-danger quiz-text game-buttons" id="Refresh" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Restart</button>
+                <!-- Trigger the modal with a button -->
+                <button type="button" id="show-modal-btn" class="btn btn-danger quiz-text game-buttons" data-toggle="modal" data-target="#htpModal" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
+                <!-- Modal -->
+                <div class="modal fade" id="htpModal" tabindex="-1" aria-labelledby="htpModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title" id="htpModalLabel">Join me and play</h2>
+                        <button class="game-buttons close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body quiz-text">
+                        <p>How well do you know the Dark Loard?<br> Test your knowledge and get ten questions correct before the timer runs out.<br> You have 60 seconds. It is your destiny!</p>
+                        <h3>Controls:</h3>
+                        <p>'START' to start the quiz.</p>
+                        <p>'RESTART' to reset the quiz.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger quiz-text game-buttons" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" value="Refresh" onClick="refresh(this)" class="btn btn-danger quiz-text" data-dismiss="modal">Try Again</button>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <!-- scoreboard section -->
+            <div id="scoreboard">
+              <h2 class="quiz-text-caption text-center" role="presentation">You did well my young apprentice</h2>
+              <div class="score-points">
+                <h2 class="quiz-text text-center" id="score-title">Your Score</h2>
+                <!-- Score Points Placeholder  -->
+                <div class="quiz-text text-center" id="score" role="presentation" aria-label="Your final score for the quiz">
+                </div>
+              </div>
+              <div class="buttons text-center">
+                <button class="quiz-text btn btn-danger" type="button" id="score-btn-one" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Restart</button>
+                <button class="quiz-text btn btn-danger game-buttons" type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
+              </div>
+            </div>  
+            <!-- Answers section -->
+            <div id="answerBank" role="presentation" aria-label="Your answers">
+              <h2 class="quiz-text-caption text-center">Your Answers</h2>
+              <ol class="text-left" type="1" id="answers">
+              </ol>
+              <div class="buttons text-center">
+                <button class="btn btn-danger quiz-text game-buttons" type="button" id="score-btn-two" value="Refresh" onClick="refresh(this)" aria-label="Click or tap to go back to the quiz">Return to Quiz</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- Times Up Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog" id="timeupmodal">
+              <!-- Times Up Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Time is up!</h4>
+                      <button type="button" value="Refresh" onClick="refresh(this)" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <p class="text-center quiz-text">You have not failed me yet my young apprentice.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" value="Refresh" onClick="refresh(this)" class="btn btn-danger quiz-text" data-dismiss="modal">Try Again</button>
+                  </div>
+              </div>
+          </div>
+      </div>
     </section>
   </main>
   

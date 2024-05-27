@@ -3,10 +3,11 @@
 Screenshot
 
 ## Introduction
+### Problem Statement
 The Darth Side is a website designed to provide fans with the opportunity to learn about and test their knowledge on the iconic Darth Vader from the legendary Star Wars franchise.
 
-## User Stories
 
+## User Stories
 ### Navigation
 
 - I want to gain access to the gain access to the Home, About Us, Quiz and Wiki page via the nav bar so that I can understand what areas of the site to visit.
@@ -50,11 +51,15 @@ The Darth Side is a website designed to provide fans with the opportunity to lea
 - Agile methodology was used by appointing a Scrum Master (Micah) and utilising a Kanban board on GitHub in order to prioritise and organise tasks. 
 
 - **The project uses Star Wars sound effects**
-- Sound effects are employed throughout the site when buttons are pressed.
+- When hovering over 'Team ChewHakkas' on the homepage, Chewbaccas signature growl is heard.
+- Lightsaber sounds are heard when hovering over boxes on the homepage.
+- Darth Vader's voice is heard at the end of the quiz.
+
 
 - **Project demonstrates responsiveness, accessibility, and thorough testing**
 - Project was designed with a mobile first approach. BootStrap was utilised to ensure responsiveness across all screen sizes. 
-- The site was continually manually tested by members throughout development.
+- The site was continually manually tested by members throughout development. 
+- Please read the [TESTING.md](TESTING.md) document for further evidence of testing.
 
 - **Fun and entertaining presentation**
 - A video presentation was created using OBS. 
@@ -89,8 +94,15 @@ We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=Wha
 
 ## Features
 ### Quiz
+- The Quiz uses 10 questions from a bank of 16 randomised questions which are shuffled to give the quiz repeatability. 
+- There is a 60 second timer to complete the whole quiz.
+- There is an option to restart the quiz throughout by use of a 'Restart' button.
+- At the end of the quiz, you can review your answers before you restart the quiz.
+- A different message/voiceover is shown dependent on your score on the quiz. 
 
 ### Wiki Page
+- Information is displayed in the form of a timeline.
+- When each time-frame is clicked on, a box appears containing the relevant information for that time frame. The box disappears again when clicked.
 
 ## Tech used
 - HTML
