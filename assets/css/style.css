@@ -1,7 +1,5 @@
 /*----- ROOT VARIABLES -----*/
 :root {
-  /* Typography Variables */
-
   /* Colour Variables */
   --white: #f1f1f1;
   --grey: #2b3637;
@@ -155,12 +153,12 @@ span {
 
 /*highlight answer on mouse hover*/
 .option:hover {
-  box-shadow: 0px 0px 5px 5px #ff0011;
+  box-shadow: 0px 0px 5px 5px var(--red);
   cursor: pointer;
 }
 
 .option:hover .option:marker {
-  box-shadow: 0px 0px 5px 5px #ff0011;
+  box-shadow: 0px 0px 5px 5px var(--red);
 }
 
 #scoreboard,
@@ -181,7 +179,7 @@ span {
 }
 
 .quiz-box-shadow {
-  box-shadow: 0 0 10px 5px (var(--red));
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 .quiz-text-title {
@@ -262,7 +260,7 @@ ol {
 }
 
 .game-buttons {
-  box-shadow: 0 0 10px 2px #f1f1f1;
+  box-shadow: 0 0 10px 2px var(--white);
   font-weight: 700;
 }
 
@@ -276,7 +274,7 @@ ol {
 }
 
 li.option:hover {
-  box-shadow: 0 0 10px 2px #f1f1f1;
+  box-shadow: 0 0 10px 2px var(--white);
 }
 
 /* Responsive breakpoints */
