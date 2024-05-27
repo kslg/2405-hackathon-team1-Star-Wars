@@ -46,9 +46,9 @@ We have gone through each page using google chrome developer tools & Firefox ins
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-* [script.js]()
-* [quiz.js]()
-* [wiki.js]()
+* [script.js](./assets/images/www.jslint.com_.png)
+* [quiz.js](./assets/images/www.jslint.com_%20(1).png)
+* [wiki.js](./assets/images/www.jslint.com_%20(2).png)
 
 - - -
 
