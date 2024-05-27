@@ -10,7 +10,7 @@ main {
   font-weight: bold;
   width: 50%;
   margin: 0 auto;
-  transform: rotateX(40deg);
+  transform: rotateX(30deg);
   animation: animateCrawl 20s ease-in;
 }
 
@@ -24,10 +24,10 @@ p {
 
 @keyframes animateCrawl {
   0% {
-    transform: rotateX(50deg) translateY(400px);
+    transform: rotateX(30deg) translateY(400px);
   }
   100% {
-    transform: rotateX(50deg) translateY(-600px);
+    transform: rotateX(30deg) translateY(-600px);
   }
 }
 
