@@ -75,8 +75,6 @@ footer a:hover {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  /* background: url(../images/chewbacca.jpeg) center no-repeat; */
-  /* height: 100%; */
 }
 
 .title-card:focus,
@@ -113,9 +111,18 @@ footer a:hover {
   text-decoration-line: none;
 }
 
+.avatar-body {
+  min-height: 400px;
+}
+
 .card-footer a:hover {
   color: var(--red);
 }
+
+/* .scroll {
+  max-height: 200px;
+  overflow-y: auto;
+} */
 
 @media (max-width: 426px) {
   .homepage-card p {
