@@ -132,6 +132,7 @@ Full testing was performed on the following devices:
   * Pacard 13.5 inch screen
   * acer Aspire 3 15 inch screen
   * HP Pavilion 15 inch screen
+  * HP 255G8 Notebook
 * Mobile Devices:
   * iPhone 13 pro
   * Google Pixel 6
@@ -139,11 +140,12 @@ Full testing was performed on the following devices:
   * Galaxy A71 
   * Moto GP
 
-Each device tested the site using the following browsers:
+Devices tested the site using the following browsers:
 
 * Google Chrome
 * Safari
 * Firefox
+* Opera 
 
 Additional testing was taken by friends and family on a variety of devices and screen sizes. 
 
