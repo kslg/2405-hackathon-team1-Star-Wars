@@ -257,9 +257,6 @@ ol {
 .inner-gameArea,
 #answerBank {
   height: 32rem;
-
-  background: url("../images/darth-quiz-hero.png") no-repeat;
-  background-size: cover;
 }
 
 .buttons {
