@@ -1,6 +1,6 @@
 # Code Wars - May Hackathon 2024
 
-Screenshot
+![Image of Responsiveness](assets/images/responsive.png.png)
 
 ## Introduction
 ### Problem Statement
@@ -82,9 +82,6 @@ The Darth Side is a website designed to provide fans with the opportunity to lea
 
 We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=What%20colour%20is%20Darth%20Vader%27s%20light%20saber%3F&query=news) for the main text and [star wars]() font for headings.
 
-### User experience
-
-
 ## Accessibility
 - The colour scheme was run through a [Web Accessibility Colour Contrast Checker](https://accessibleweb.com/color-contrast-checker/) to ensure good contrast for colours. 
 - Aria labels were added so that users with screen readers can access the site more easily. 
@@ -99,6 +96,7 @@ We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=Wha
 - There is an option to restart the quiz throughout by use of a 'Restart' button.
 - At the end of the quiz, you can review your answers before you restart the quiz.
 - A different message/voiceover is shown dependent on your score on the quiz. 
+![Screenshot of Quiz](assets/images/quiz.png)
 
 ### Wiki Page
 - Information is displayed in the form of a timeline.
