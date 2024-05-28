@@ -96,20 +96,35 @@ We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=Wha
 
 ## Features
 
+### Home Page 
+
+![Home Page Responsive Image](docs/readme_images/home-responsive.png)
+
+
 ### Quiz
+
+![Quiz Page Responsive Image](docs/readme_images/quiz-responsive.png)
 
 - The Quiz uses 10 questions from a bank of 16 randomised questions which are shuffled to give the quiz repeatability.
 - There is a 60 second timer to complete the whole quiz.
 - There is an option to restart the quiz throughout by use of a 'Restart' button.
 - At the end of the quiz, you can review your answers before you restart the quiz.
 - A different message/voiceover is shown dependent on your score on the quiz. 
-![Screenshot of Quiz](docs/readme_images/quiz.png)
-
 
 ### Wiki Page
 
+![Wiki Page Responsive Image](docs/readme_images/wiki-responsive.png)
+
 - Information is displayed in the form of a timeline.
 - When each time-frame is clicked on, a box appears containing the relevant information for that time frame. The box disappears again when clicked.
+
+### About Page
+
+![About Page Responsive Image](docs/readme_images/about-responsive.png)
+
+### 404 Page
+
+![404 Page Responsive Image](docs/readme_images/404-responsive.png)
 
 ## Tech used
 
