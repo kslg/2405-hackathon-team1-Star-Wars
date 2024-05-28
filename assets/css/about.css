@@ -40,8 +40,8 @@
 
 .avatar-card.padawan:focus,
 .avatar-card.padawan:hover {
-  border: 1px solid orangered;
-  box-shadow: 0 0 50px orangered;
+  border: 1px solid rgb(238, 193, 13);
+  box-shadow: 0 0 50px rgb(238, 193, 13);
 }
 
 .avatar-card h5 {
