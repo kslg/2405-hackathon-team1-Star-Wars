@@ -13,12 +13,12 @@ for (let i = 0; i < histories.length; i++) {
         /* for items on the right, the horizontal line comes first, then the header */
         headers[i].style.flexDirection = "row";
         /* place a small gap to the right of the line before the header */
-        lines[i].style.margin = "0px 10px 0px 0px"
+        lines[i].style.margin = "0px 10px 0px 0px";
         /* keep the text in the middle of the screen on different screen sizes */
         if (window.innerWidth < 500) {
-            details[i].style.right = "45vw"
+            details[i].style.right = "45vw";
         } else {
-            details[i].style.right = "30vw"
+            details[i].style.right = "30vw";
         }
 
     } else {
@@ -27,12 +27,12 @@ for (let i = 0; i < histories.length; i++) {
         /* for items on the left, the header comes first, then the horizontal line */
         headers[i].style.flexDirection = "row-reverse";
         /* place a small gap to the left of the line after the header */
-        lines[i].style.margin = "0px 0px 0px 10px"
+        lines[i].style.margin = "0px 0px 0px 10px";
         /* keep the text in the middle of the screen on different screen sizes */
         if (window.innerWidth < 500) {
-            details[i].style.left = "-5vw"
+            details[i].style.left = "-5vw";
         } else {
-            details[i].style.left = "25vw"
+            details[i].style.left = "25vw";
         }
     }
     /* show the details when the header is clicked */
@@ -56,7 +56,7 @@ function expandDetails(index) {
 }
 
 /* Updates the styles if the window if resized after the document is loaded */
-window.addEventListener('resize', updateStlyes)
+window.addEventListener('resize', updateStlyes);
 
 function updateStlyes() {
     for (i = 0; i < histories.length; i++) {
@@ -68,9 +68,9 @@ function updateStlyes() {
             }
         } else {
             if (window.innerWidth < 500) {
-                details[i].style.left = "-5vw"
+                details[i].style.left = "-5vw";
             } else {
-                details[i].style.left = "10vw"
+                details[i].style.left = "10vw";
             }
         }
     }

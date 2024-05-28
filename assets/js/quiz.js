@@ -106,7 +106,7 @@ var option3 = document.getElementById('option3');
 var next = document.querySelector('.next');
 var points = document.getElementById('score');
 var span = document.querySelectorAll('span');
-var toggler1=document.getElementById('toggler1')
+var toggler1=document.getElementById('toggler1');
 var currentQuestion = 0;
 var score = 0;
 var downloadTimer;
@@ -156,7 +156,7 @@ function nextQuestion() {
             scoreMessage.innerText = "WE WOULD BE HONORED, IF YOU WOULD JOIN US.";
             sound3.play();
         }
-        scoreboard.style.display = 'block'
+        scoreboard.style.display = 'block';
         points.innerHTML = score + '/' + (questionBank.length - 6);
         quizContainer.style.display = 'none';
     }
@@ -188,9 +188,6 @@ document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("welcome-text").style.display = "none";
     document.getElementById("welcome-text-2").style.display = "none";
     document.getElementById("gameStart").style.display = "none";
-
-    var timeleft = 6000;
-
     document.getElementById("Refresh").style.display ="inline-block";
     var timeleft = 60;
     var currentQuestion = 0;
@@ -218,7 +215,7 @@ document.getElementById("gameStart").addEventListener("click", function () {
  * can retsart the quiz and the timer.
  */
 function refresh() {
-    window.location.reload("Refresh")
+    window.location.reload("Refresh");
 }
 
 // Modal function
@@ -226,14 +223,14 @@ const overlay = document.querySelector("#overlay");
 document.querySelector("#show-modal-btn").
     addEventListener("click", () => {
         overlay.style.display = "block";
-    })
-document.querySelector("#close-modal-btn").
+    });
+document.querySelector("#close-modal-btn");
     addEventListener("click", () => {
         overlay.style.display = "none";
-    })
-const modalOverlay = document.getElementById("overlay")
+    });
+const modalOverlay = document.getElementById("overlay");
 
-modalOverlay.classList.add('hide')
+modalOverlay.classList.add('hide');
 
 function shuffle(array) {
     let currentIndex = array.length;
