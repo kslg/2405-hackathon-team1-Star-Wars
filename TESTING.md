@@ -35,8 +35,8 @@ We have gone through each page using google chrome developer tools & Firefox ins
 * [About]()
 * [404]()
 
-* [style.css]()
-* [about.css]()
+* [style.css](docs/testing/validation/style-css-validation.png) - ❌
+* [about.css](docs/testing/validation/about-css-validation.png) - ✅
 * [wiki.css](docs/testing/validation/wiki-css-validation.png) - ✅
 * [404.css](docs/testing/validation/404-css-validation.png) - ✅
 
