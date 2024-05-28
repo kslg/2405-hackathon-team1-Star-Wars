@@ -72,7 +72,7 @@ The Darth Side is a website designed to provide fans with the opportunity to lea
 
 ### Wireframes
 
-- ![The Darth Side site planning wireframe](assets/images/wireframe-chewhakkas.png)
+- ![The Darth Side site planning wireframe](docs/readme_images/wireframe-chewhakkas.png)
 
 ### Colour scheme
 
@@ -101,7 +101,7 @@ We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=Wha
 - There is an option to restart the quiz throughout by use of a 'Restart' button.
 - At the end of the quiz, you can review your answers before you restart the quiz.
 - A different message/voiceover is shown dependent on your score on the quiz. 
-![Screenshot of Quiz](assets/images/quiz.png)
+![Screenshot of Quiz](docs/readme_images/quiz.png)
 
 
 ### Wiki Page
@@ -115,15 +115,15 @@ We chose to use [Rubik](https://fonts.google.com/specimen/Rubik?preview.text=Wha
 - CSS
 - JavaScript
 - [Bootstrap (Version 4.6)](https://getbootstrap.com/docs/4.6/getting-started/introduction/) CSS framework
-
-## Media
-
-- [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
+- TinyPNG - For compressing images
+- Birme - To convert images to WEBP format
 
 ## Credits
 
 - [404 Page text crawl](https://itsilesia.com/star-wars-opening-crawl-based-on-css-animations-and-transformations/)
 - [Darth Vader information](https://en.wikipedia.org/wiki/Darth_Vader)
+
+## Media
 
 ### Images:
 
@@ -139,9 +139,7 @@ Most of the images used are from [StarWars.com](https://www.starwars.com/).
 - [Anakin meal time](https://www.starwars.com/databank/shmi-skywalker-lars?image_id=55fb4f8ad66c4d274a02c118undefined)
 - [Star Wars movies](https://www.starwars.com/films) image a composite of images taken from StarWars.com
 - [Darth in front of Storm Troopers](https://www.hdwallpapers.in/darth_vader_stormtroopers-wallpapers.html) quiz image of the Darth Vader on the home page.
-
-Other images:
-
+- [Anakin](https://www.starwars.com/databank/anakin-skywalker?image_id=5390fdbc0a172d315d0003a7)
 - [Darth helmet](https://www.pexels.com/photo/black-and-red-star-wars-helmet-4310574/) Photo by Lucas Ianiak from Pexels
 - [Kylo Ren](https://variety.com/wp-content/uploads/2023/12/Screen-Shot-2023-12-13-at-4.19.17-PM.png?w=1000&h=667&crop=1)
 
@@ -149,7 +147,8 @@ We created our avatar images using [Doll Divine](https://www.dolldivine.com/star
 
 ### Sound Effects:
 
-All the sound effects used on the site were downloaded from [Voicy](https://www.voicy.network/search/darth-vader-sound-effects)
+- [Chewie Sound Effect](https://www.myinstants.com/en/instant/chewbacca/)
+- All other sound effects used on the site were downloaded from [Voicy](https://www.voicy.network/search/darth-vader-sound-effects)
 
 ### Quiz resources
 
@@ -160,13 +159,10 @@ All the sound effects used on the site were downloaded from [Voicy](https://www.
 - https://stackoverflow.com/questions/70776559/how-can-i-get-objects-in-my-array-to-only-show-up-once-javascript
 - https://stackoverflow.com/questions/27091427/using-an-array-element-only-once
 
-Images:
-
-[Anakin](https://www.starwars.com/databank/anakin-skywalker?image_id=5390fdbc0a172d315d0003a7)
 
 ## Team
 
-- Alex Crabbe [GitHub](https://github.com/alexrobincrabbe) [LinkedIn]()
+- Alex Crabbe [GitHub](https://github.com/alexrobincrabbe)
 - Kera Cudmore [GitHub](https://github.com/kera-cudmore) [LinkedIn](https://www.linkedin.com/in/keracudmore/)
 - Micah Francis [GitHub](https://github.com/2ndborn?tab=repositories) [LinkedIn](www.linkedin.com/in/micah-francis-87bb0832)
 - Krishan Gharu [GitHub](https://github.com/kslg) [LinkedIn](https://www.linkedin.com/in/krishang/)
