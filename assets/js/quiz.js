@@ -84,11 +84,11 @@ var questionBank = [
 
 /* sounds */
 const sound1=document.createElement('audio');
-sound1.setAttribute('src', 'assets/audio/Voicy_Darth_Vader_Noooo.mp3');
+sound1.setAttribute('src', 'assets/audio/voicy_darth_vader_noooo.mp3');
 const sound2=document.createElement('audio');
-sound2.setAttribute('src', 'assets/audio/Voicy_Dont_fail_me_again.mp3');
+sound2.setAttribute('src', 'assets/audio/voicy_dont_fail_me_again.mp3');
 const sound3=document.createElement('audio');
-sound3.setAttribute('src', 'assets/audio/Voicy_Darth_Vader_Force_strong.mp3');
+sound3.setAttribute('src', 'assets/audio/voicy_darth_vader_force_strong.mp3');
 
 /*shuffle the question bank when the document loads */
 
@@ -150,7 +150,7 @@ function nextQuestion() {
             scoreMessage.innerText = "YES, YOUR THOUGHTS BETRAY YOU.";
             sound1.play();
         } else if (score < 8) {
-            scoreMessage.innerText = "YOU DON’T KNOW THE POWER OF THE DARK SIDE.";
+            scoreMessage.innerText = "YOU DON'T KNOW THE POWER OF THE DARK SIDE.";
             sound2.play();
         } else {
             scoreMessage.innerText = "WE WOULD BE HONORED, IF YOU WOULD JOIN US.";
