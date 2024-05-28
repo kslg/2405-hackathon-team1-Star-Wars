@@ -17,7 +17,7 @@
   <meta property="og:title" content="The Darth Side - Wiki">
   <meta property="og:description"
     content="The ultimate fan page dedicated to Darth Vader, the iconic Sith Lord from Star Wars. Explore his history, quiz, and more.">
-  <meta name="image" property="og:image" content="URL TO IMAGE">
+  <meta name="image" property="og:image" content="assets/images/responsive.png">
   <meta property="og:image:alt" content="The Darth Side Website shown on a variety of devices">
   <meta property="og:url" content="https://desislavanaydenova.github.io/2405-hackathon-team1-StarWars/">
   <meta property="og:site_name" content="The Darth Side">
@@ -55,7 +55,7 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/wiki.css">
 
@@ -94,20 +94,22 @@
 
   <main>
     <!-- site banner -->
-    <section class="container-fluid">
+    <div class="container-fluid">
       <div class="row justify-content-center mt-4">
         <div class="col-sm-12 col-md-12 col-lg-12  mt-4">
-          <div class="bg-color-background section-column homepage-card logo-card p-3 text-center"
-            onmouseover="reveal('logo-text')" onmouseout="hideText('logo-text')" onmouseover="PlaySound('light-saber')"
-            onmouseout="StopSound('light-saber')">
+          <div
+            class="bg-color-background section-column homepage-card logo-card p-3 text-center"
+            onmouseover="reveal('logo-text'); PlaySound('light-saber')"
+            onmouseout="hideText('logo-text'); StopSound('light-saber')"
+          >
             <a href="index.html" aria-label="click to go to home page">The Darth Side</a>
             <p id="logo-text" class="mt-5">Welcome to The Darth Side, the ultimate fan site dedicated to Darth Vader!
             </p>
-            <audio id="light-saber" src="assets/sounds/Voicy_Lightsaber%20swing.mp3"></audio>
+            <audio id="light-saber" src="assets/audio/voicy_lightsaber_swing.mp3"></audio>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Time Line -->
     <section class="wiki-timeline">
@@ -116,17 +118,17 @@
         <p id="heading-subtext">
           Your lack of knowledge disturbs me.
           Click on the time-frames to learn about our Master, Lord Vader.
-          You have failed me for the last time.        </p>
+          You have failed me for the last time.</p>
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Born</span>
+                  >Born</span>
               </h2>
               <p class="details">
                 Darth Vader was born Anakin Skywalker to Shmi Skywalker on the planet of Tattooine.
-                <img src="assets/images/shmi_anakins_mother.jpeg">
+                <img src="assets/images/shmi_anakins_mother.webp" alt="Photo of Anakin Skywalkers Mother, Shmi Skywalker.">
               </p>
             </div>
           </div>
@@ -134,14 +136,14 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Childhood</span>
+                  >Childhood</span>
               </h2>
               <p class="details">
                 Anakin and Shmi were slaves on Tatooine. Anakin was liberated by Qui-Gon Jinn and trained to be a jedi
                 under Obi-Wan Kenobi.
-                <img src="assets/images/anakin_meal.jpeg">
+                <img src="assets/images/anakin_meal.webp" alt="Image of Anakin enjoying a meal as a child with friends and family.">
               </p>
             </div>
           </div>
@@ -149,9 +151,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Love</span>
+                  >Love</span>
               </h2>
               <p class="details">
                 Anakin Skywalker fell in love with Padme Amidala, whom he was assigned to protect as a Jedi apprentice.
@@ -159,7 +161,7 @@
                 When Padme falls pregnant, Anakin has visions of her dying in childbirth and fears that these visions
                 are true. Palpatine (who turns out to be Darth Sidious) convinces Anakin that the power of the Dark Side
                 would save Padme.
-                <img src="assets/images/anakin_padme.jpeg">
+                <img src="assets/images/anakin_padme.webp" alt="Anakin and Padme spending time together in a meadow.">
               </p>
             </div>
           </div>
@@ -167,8 +169,8 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
-                <hr><span class="summary" aria-label="clicking here will open a window with trivia information">The Dark
+              <h2 aria-label="clicking here will open a window with trivia information">
+                <hr><span class="summary">The Dark
                   Side</span>
               </h2>
               <p class="details">
@@ -178,7 +180,7 @@
                 Palpatine rescues Vader, encases Vader in mechanical black armour to keep him alive and tells him that
                 Padme died when she was strangled.
                 Palpatine convinced Darth Vader to turn to the dark side at the age of 23.
-                <img src="assets/images/anakin_palpatine.jpeg">
+                <img src="assets/images/anakin_palpatine.webp" alt="Anakin in discussion with Palpatine.">
               </p>
               
             </div>
@@ -187,9 +189,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Adulthood</span>
+                  >Adulthood</span>
               </h2>
               <p class="details">
                 Darth Vader is Emperor Palpatine's enforces and hunts the Rebels throughout the galaxy. He uses the
@@ -197,7 +199,7 @@
                 Vader discovers that his son Luke Skywalker is alive and is a Rebel.
                 Darth Vader reveals to Luke that Luke is his son ("No, I am your father" - The Empire Strikes Back). He
                 cuts off Luke's right hand.
-                <img src="assets/images/darth_luke.jpeg">
+                <img src="assets/images/darth_luke.webp" alt="Darth Vader speaking to Luke.">
               </p>
             </div>
           </div>
@@ -205,15 +207,15 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Death</span>
+                  >Death</span>
               </h2>
               <p class="details">
                 When Luke Skywalker is being struck with Force lightning by Emperor Palpatine, Vader saves Luke by
                 killing Palpatine, but is mortally wounded in the process. He asks Luke to remove his helmet and they
                 share a moment of reconciliation.
-                <img src="assets/images/darth_dying.jpeg">
+                <img src="assets/images/darth_dying.webp" alt="A scarred Darth Vader without his helmet, wearing his breathing mask.">
               </p>
             </div>
           </div>
@@ -221,13 +223,13 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
-                <hr><span class="summary" aria-label="clicking here will open a window with trivia information">After
+              <h2 aria-label="clicking here will open a window with trivia information">
+                <hr><span class="summary">After
                   Death</span>
               </h2>
               <p class="details" id="after-death">
                 Darth Vader's daughter Leia had a son with Han Solo named Kylo Ren.
-                <img src="assets/images/kyloren.webp">
+                <img src="assets/images/kyloren.webp" alt="Profile portrait of Kylo Ren, Darth Vaders grandson.">
               </p>
             </div>
           </div>
@@ -235,9 +237,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Movies</span>
+                  >Movies</span>
               </h2>
               <p class="details" id="movies">
                 Darth Vader was voiced by James Earl Jones.
@@ -247,7 +249,7 @@
                 removed, Sebastian Shaw's face was used.
                 Darth Vader's theme song is The Imperial March.
                 Darth Vader only had 12 minutes of screen time in the first Star Wars movie (A New Hope).
-                <img src="assets/images/starwars_movies.jpg">
+                <img src="assets/images/starwars_movies.webp" alt="Movie posters for each film in the Star Wars saga.">
               </p>
             </div>
           </div>
@@ -264,7 +266,7 @@
         </a>
       </div>
       <div class="col">
-        <a href="about.html">
+        <a href="about.html" aria-label="click to go to about us page">
           <i class="fa-solid fa-people-group"><span class="sr-only">Meet the Team</span></i>
         </a>
       </div>

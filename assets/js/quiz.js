@@ -84,11 +84,11 @@ var questionBank = [
 
 /* sounds */
 const sound1=document.createElement('audio');
-sound1.setAttribute('src', 'assets/audio/Voicy_Darth_Vader_Noooo.mp3');
+sound1.setAttribute('src', 'assets/audio/voicy_darth_vader_noooo.mp3');
 const sound2=document.createElement('audio');
-sound2.setAttribute('src', 'assets/audio/Voicy_Dont_fail_me_again.mp3');
+sound2.setAttribute('src', 'assets/audio/voicy_dont_fail_me_again.mp3');
 const sound3=document.createElement('audio');
-sound3.setAttribute('src', 'assets/audio/Voicy_Darth_Vader_Force_strong.mp3');
+sound3.setAttribute('src', 'assets/audio/voicy_darth_vader_force_strong.mp3');
 
 /*shuffle the question bank when the document loads */
 
@@ -106,7 +106,7 @@ var option3 = document.getElementById('option3');
 var next = document.querySelector('.next');
 var points = document.getElementById('score');
 var span = document.querySelectorAll('span');
-var toggler1=document.getElementById('toggler1')
+var toggler1=document.getElementById('toggler1');
 var currentQuestion = 0;
 var score = 0;
 var downloadTimer;
@@ -150,13 +150,13 @@ function nextQuestion() {
             scoreMessage.innerText = "YES, YOUR THOUGHTS BETRAY YOU.";
             sound1.play();
         } else if (score < 8) {
-            scoreMessage.innerText = "YOU DON’T KNOW THE POWER OF THE DARK SIDE.";
+            scoreMessage.innerText = "YOU DON'T KNOW THE POWER OF THE DARK SIDE.";
             sound2.play();
         } else {
             scoreMessage.innerText = "WE WOULD BE HONORED, IF YOU WOULD JOIN US.";
             sound3.play();
         }
-        scoreboard.style.display = 'block'
+        scoreboard.style.display = 'block';
         points.innerHTML = score + '/' + (questionBank.length - 6);
         quizContainer.style.display = 'none';
     }
@@ -188,9 +188,6 @@ document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("welcome-text").style.display = "none";
     document.getElementById("welcome-text-2").style.display = "none";
     document.getElementById("gameStart").style.display = "none";
-
-    var timeleft = 6000;
-
     document.getElementById("Refresh").style.display ="inline-block";
     var timeleft = 60;
     var currentQuestion = 0;
@@ -218,7 +215,7 @@ document.getElementById("gameStart").addEventListener("click", function () {
  * can retsart the quiz and the timer.
  */
 function refresh() {
-    window.location.reload("Refresh")
+    window.location.reload("Refresh");
 }
 
 // Modal function
@@ -226,14 +223,14 @@ const overlay = document.querySelector("#overlay");
 document.querySelector("#show-modal-btn").
     addEventListener("click", () => {
         overlay.style.display = "block";
-    })
-document.querySelector("#close-modal-btn").
+    });
+document.querySelector("#close-modal-btn");
     addEventListener("click", () => {
         overlay.style.display = "none";
-    })
-const modalOverlay = document.getElementById("overlay")
+    });
+const modalOverlay = document.getElementById("overlay");
 
-modalOverlay.classList.add('hide')
+modalOverlay.classList.add('hide');
 
 function shuffle(array) {
     let currentIndex = array.length;

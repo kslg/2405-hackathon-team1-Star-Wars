@@ -1,6 +1,9 @@
+body {
+  background: url(../images/starfield.webp);
+}
+
 main {
   perspective: 400px;
-  background: url(../images/starfield.jpeg);
   height: 100vh;
 }
 

@@ -35,8 +35,8 @@ We have gone through each page using google chrome developer tools & Firefox ins
 * [About]()
 * [404]()
 
-* [style.css]()
-* [about.css]()
+* [style.css](docs/testing/validation/style-css-validation.png) - ❌
+* [about.css](docs/testing/validation/about-css-validation.png) - ✅
 * [wiki.css](docs/testing/validation/wiki-css-validation.png) - ✅
 * [404.css](docs/testing/validation/404-css-validation.png) - ✅
 
@@ -46,9 +46,9 @@ We have gone through each page using google chrome developer tools & Firefox ins
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-* [script.js](./assets/images/www.jslint.com_.png)
-* [quiz.js](./assets/images/www.jslint.com_%20(1).png)
-* [wiki.js](./assets/images/www.jslint.com_%20(2).png)
+* [script.js](docs/testing/validation/script-js-validation.png) - ✅
+* [quiz.js](docs/testing/validation/quiz-js-validation.png) - ✅
+* [wiki.js](docs/testing/validation/wiki-js-validation.png) - ✅
 
 - - -
 
@@ -74,7 +74,7 @@ We have gone through each page using google chrome developer tools & Firefox ins
 
 | Goals | How are they achieved? | Evidence |
 | :--- | :--- | :--- |
-| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar and links to their Linkedin and GitHub profiles | |
+| I want to view a list of collaborators and their roles so that I can understand who was involved in building the site. | Bootstrap Cards have been utilised with information on each team member along with a Star Wars themed avatar and links to their Linkedin and GitHub profiles | [About page](docs/testing/user-story-about.png) |
 
 `Quiz Page`
 
@@ -132,7 +132,7 @@ Additional testing was taken by friends and family on a variety of devices and s
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | `Navbar` |
-| --- | --- | --- | --- | --- |
+| |
 | Site Name | When clicked, user will be taken to the home page | Clicked site name | Taken to home page | ✅ |
 | Home Nav Item | When clicked, user will be taken to the home page | Clicked home nav item | Taken to the home page | ✅ |
 | Quiz Nav Item | When clicked, user will be taken to the home page | Clicked quick nav item | Taken to the quiz page | ✅ |
@@ -141,20 +141,31 @@ Additional testing was taken by friends and family on a variety of devices and s
 | Active on page | It is clear which page you are currently on, as the nav item will be red to hightlight the active page | Visit pages to see if they update to display as red in navbar | The current page is displayed as red in the navbar | ✅ |
 | Hover effect on nav items | When user hovers over a nav item in the navbar, a red bar will be displayed underneath | Hovered over nav items in the navbar | When hovered over, the nav item displays a red bar underneath | ✅ |
 | `Footer` |
-| --- | --- | --- | --- | --- |
+| |
 | GitHub icon | When clicked, user will be taken to the GitHub repo for this project in a new tab. | Clicked icon | Taken to the project GitHub page in a new tab | ✅ |
 | Team icon | When clicked, user will be taken to the about page. | Clicked icon | Taken to about page | ✅ |
 | Icon Hover | When user hovers over the icon, the icon changes color to red to indicate the user is hovered over the icon | Hover over icons | Icons change to red | ✅ |
 | `Home Page` |
-| --- | --- | --- | --- | --- |
+| |
 | Quiz Card | When clicked, user is taken to the quiz page | Clicked quiz card | Taken to the quiz page | ✅ |
 | Wiki Card | When clicked, user is taken to the wiki page | Clicked wiki card | Taken to the quiz page | ✅ |
 | Sound Effect | When card on home page is moused over, a sound effect will play | Mouseover card | Sound effect plays | ✅ |
 | `Quiz Page` |
-| --- | --- | --- | --- | --- |
+| |
+| Start Button |When clicked, the quiz will begin. The start button will then be hidden from display | Click button | Quiz begins and start button is hidden from display | ✅ |
+| How to Play Button | When clicked, a modal will display how to play information | Click button | Modal displays | ✅ |
+| Restart Button | When clicked, the user will be taken to the quiz page| Clicked button | Taken to the Quiz page | ✅ |
+|Time up | If user does not finish the quiz in the allotted time, a modal will display giving them the option to try again | Let quiz countdown expire | Modal displays to give user option to try again | ✅ |
+| Try again button in time up modal | When clicked, the user will be taken to the quiz page| Clicked button | Taken to the Quiz page | ✅ |
+| Correct Answer Chosen | When the user selects the correct answer, they will receive feedback by the answer highlighting green | Select right answer | Answer hightlighted green | ✅ |
+| Incorrect Answer Chosen | When the user selects the incorrect answer, they will receive feedback by the answer highlighting red | Select wrong answer | Answer hightlighted red | ✅ |
+| Score Results | At the end of the quiz, user will be presented with their final score | Complete the quiz | Score displayed at end | ✅ |
+| Check Answers Button | When clicked, the user will be shown all the answers they chose during the quiz | Clicked button | Shown answers selected | ✅ |
+| Countdown | Countdown is displayed and counts down from 60 seconds once user starts the quiz| Start the quiz | Countdown is displayed and counts down from 60 seconds | ✅ |
 | `Wiki Page` |
-| --- | --- | --- | --- | --- |
+| |
+| Timeline headings | When clicked, a popup will display with more information. Clicking the heading again will close the pop up | Clicked heading | Pop up with more information displays. Clicking the heading again closes the pop up | ✅ |
 | `About Page` |
-| --- | --- | --- | --- | --- |
-| Team Member Linkedin Links| When clicked, user is taken to that members Linkedin Page in a new tab ||||
-|Team Member GitHub Links | When clicked, user is taken to that members GitHub Profile Page in a new tab ||||
+| |
+| Team Member Linkedin Links| When clicked, user is taken to that members Linkedin Page in a new tab | Click Linkedin Icon | Taken to team members Linkedin Page in a new tab | ✅ |
+|Team Member GitHub Links | When clicked, user is taken to that members GitHub Profile Page in a new tab | Click GitHub Icon | Taken to team members GitHub Profile Page in a new tab | ✅ |
