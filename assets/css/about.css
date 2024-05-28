@@ -34,14 +34,14 @@
 
 .avatar-card.jedi:focus,
 .avatar-card.jedi:hover {
-  border: 1px solid green;
-  box-shadow: 0 0 50px green;
+  border: 1px solid #008000;
+  box-shadow: 0 0 50px #008000;
 }
 
 .avatar-card.padawan:focus,
 .avatar-card.padawan:hover {
-  border: 1px solid rgb(238, 193, 13);
-  box-shadow: 0 0 50px rgb(238, 193, 13);
+  border: 1px solid #eec10d;
+  box-shadow: 0 0 50px #eec10d;
 }
 
 .avatar-card h5 {
@@ -66,6 +66,14 @@
 }
 .fa-brands:hover {
   color: var(--red);
+}
+
+.jedi.fa-brands:hover {
+  color: #008000;
+}
+
+.padawan.fa-brands:hover {
+  color: #eec10d;
 }
 
 @media (max-width: 426px) {
