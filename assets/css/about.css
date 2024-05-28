@@ -48,7 +48,7 @@
   color: var(--red);
 }
 
-.fa-brands {
+.card-footer .fa-brands {
   color: var(--white);
   font-size: 2rem;
 }
