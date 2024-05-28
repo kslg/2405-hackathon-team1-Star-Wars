@@ -55,7 +55,7 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/wiki.css">
 
@@ -94,12 +94,14 @@
 
   <main>
     <!-- site banner -->
-    <section class="container-fluid">
+    <div class="container-fluid">
       <div class="row justify-content-center mt-4">
         <div class="col-sm-12 col-md-12 col-lg-12  mt-4">
-          <div class="bg-color-background section-column homepage-card logo-card p-3 text-center"
-            onmouseover="reveal('logo-text')" onmouseout="hideText('logo-text')" onmouseover="PlaySound('light-saber')"
-            onmouseout="StopSound('light-saber')">
+          <div
+            class="bg-color-background section-column homepage-card logo-card p-3 text-center"
+            onmouseover="reveal('logo-text'); PlaySound('light-saber')"
+            onmouseout="hideText('logo-text'); StopSound('light-saber')"
+          >
             <a href="index.html" aria-label="click to go to home page">The Darth Side</a>
             <p id="logo-text" class="mt-5">Welcome to The Darth Side, the ultimate fan site dedicated to Darth Vader!
             </p>
@@ -107,7 +109,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Time Line -->
     <section class="wiki-timeline">
@@ -116,13 +118,13 @@
         <p id="heading-subtext">
           Your lack of knowledge disturbs me.
           Click on the time-frames to learn about our Master, Lord Vader.
-          You have failed me for the last time.        </p>
+          You have failed me for the last time.</p>
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Born</span>
+                  >Born</span>
               </h2>
               <p class="details">
                 Darth Vader was born Anakin Skywalker to Shmi Skywalker on the planet of Tattooine.
@@ -134,9 +136,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Childhood</span>
+                  >Childhood</span>
               </h2>
               <p class="details">
                 Anakin and Shmi were slaves on Tatooine. Anakin was liberated by Qui-Gon Jinn and trained to be a jedi
@@ -149,9 +151,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Love</span>
+                  >Love</span>
               </h2>
               <p class="details">
                 Anakin Skywalker fell in love with Padme Amidala, whom he was assigned to protect as a Jedi apprentice.
@@ -167,8 +169,8 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
-                <hr><span class="summary" aria-label="clicking here will open a window with trivia information">The Dark
+              <h2 aria-label="clicking here will open a window with trivia information">
+                <hr><span class="summary">The Dark
                   Side</span>
               </h2>
               <p class="details">
@@ -187,9 +189,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Adulthood</span>
+                  >Adulthood</span>
               </h2>
               <p class="details">
                 Darth Vader is Emperor Palpatine's enforces and hunts the Rebels throughout the galaxy. He uses the
@@ -205,9 +207,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Death</span>
+                  >Death</span>
               </h2>
               <p class="details">
                 When Luke Skywalker is being struck with Force lightning by Emperor Palpatine, Vader saves Luke by
@@ -221,8 +223,8 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
-                <hr><span class="summary" aria-label="clicking here will open a window with trivia information">After
+              <h2 aria-label="clicking here will open a window with trivia information">
+                <hr><span class="summary">After
                   Death</span>
               </h2>
               <p class="details" id="after-death">
@@ -235,9 +237,9 @@
         <div class="timeline-item">
           <div class="history">
             <div class="history-content">
-              <h2>
+              <h2 aria-label="clicking here will open a window with trivia information">
                 <hr><span class="summary"
-                  aria-label="clicking here will open a window with trivia information">Movies</span>
+                  >Movies</span>
               </h2>
               <p class="details" id="movies">
                 Darth Vader was voiced by James Earl Jones.
@@ -264,7 +266,7 @@
         </a>
       </div>
       <div class="col">
-        <a href="about.html">
+        <a href="about.html" aria-label="click to go to about us page">
           <i class="fa-solid fa-people-group"><span class="sr-only">Meet the Team</span></i>
         </a>
       </div>
