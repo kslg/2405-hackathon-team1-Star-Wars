@@ -76,7 +76,7 @@ The Darth Side is a website designed to provide fans with the opportunity to lea
 
 ### Colour scheme
 
-- ![Colour palette - black, red, gunmetal](docs/readme_images/darth%20colour%20palette.png)
+- ![Colour palette - black, red, gunmetal](docs/readme_images/colour-palette.png)
 - The colour scheme was chosen to match the costume of Darth Vader but also to provide enough contrast for accessibility reasons.
 
 ### Font
