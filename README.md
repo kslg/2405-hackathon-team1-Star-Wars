@@ -1,6 +1,6 @@
 # Code Wars - May Hackathon 2024
 
-![Image of Responsiveness](assets/images/responsive.png.png)
+![Image of Responsiveness](assets/images/responsive.png)
 
 ## Introduction
 
