@@ -29,11 +29,11 @@ We have gone through each page using google chrome developer tools & Firefox ins
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [Home Page]()
-* [Quiz]()
-* [Wiki]()
-* [About]()
-* [404]()
+* [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdesislavanaydenova.github.io%2F2405-hackathon-team1-StarWars%2Findex.html) - ✅
+* [Quiz](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdesislavanaydenova.github.io%2F2405-hackathon-team1-StarWars%2Fquiz.html) - ✅
+* [Wiki](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdesislavanaydenova.github.io%2F2405-hackathon-team1-StarWars%2Fwiki.html) - ❌
+* [About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdesislavanaydenova.github.io%2F2405-hackathon-team1-StarWars%2Fabout.html) - ✅
+* [404](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdesislavanaydenova.github.io%2F2405-hackathon-team1-StarWars%2F404.html) - ✅
 
 * [style.css](docs/testing/validation/style-css-validation.png) - ❌
 * [about.css](docs/testing/validation/about-css-validation.png) - ✅
