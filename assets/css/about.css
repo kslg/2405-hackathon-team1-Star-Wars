@@ -32,6 +32,18 @@
   box-shadow: 0 0 50px var(--red);
 }
 
+.avatar-card.jedi:focus,
+.avatar-card.jedi:hover {
+  border: 1px solid green;
+  box-shadow: 0 0 50px green;
+}
+
+.avatar-card.padawan:focus,
+.avatar-card.padawan:hover {
+  border: 1px solid orangered;
+  box-shadow: 0 0 50px orangered;
+}
+
 .avatar-card h5 {
   font-family: "starwars", "Rubik", sans-serif;
   font-size: 30px;
