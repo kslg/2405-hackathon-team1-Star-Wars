@@ -263,6 +263,8 @@ ol {
   position: absolute;
   bottom: 20px;
   width: 90%;
+  width: 100%;
+  padding-right: 3.5rem;
 }
 
 .game-buttons {
