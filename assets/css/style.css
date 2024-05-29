@@ -360,7 +360,4 @@ li.option:hover {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
   }
-  ol {
-      padding-top: 5rem;
-    }
 }
