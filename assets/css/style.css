@@ -292,8 +292,8 @@ li.option:hover {
     color: white;
     overflow: hidden;
     background: #C04848;  /* fallback for old browsers */
-    background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)), url('../images/darth-quiz-hero.png') no-repeat; /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
   }
   .modal {
@@ -303,7 +303,6 @@ li.option:hover {
     margin-top: 3rem;
   }
 }
-/* End of Responsive breakpoints */
 
 @media (max-width: 769px) {
   #logo-text,
@@ -312,18 +311,52 @@ li.option:hover {
     font-size: 2vw;
     font-weight: 500;
   }
+  .hero-image,
+  #scoreboard,
+  #answerBank {
+    color: white;
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+  }
 }
 
 @media (max-width: 426px) {
   .logo-card {
     height: 120px;
   }
-
   .homepage-card a {
     font-size: 28px;
   }
-
   .homepage-card a > p {
     font-size: 3.2vw;
+  }
+  .hero-image,
+  #scoreboard,
+  #answerBank {
+    color: white;
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+  }
+}
+
+@media (min-width: 344px) {
+  .hero-image,
+  #scoreboard,
+  #answerBank {
+    /* background-position-x: 50%;
+    background: center center;
+    background-position: 0 100px; */
+    color: white;
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
   }
 }
