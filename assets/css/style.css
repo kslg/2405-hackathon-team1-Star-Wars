@@ -147,6 +147,11 @@ footer a:hover {
   visibility: hidden;
 }
 
+.homepage-buttons:hover {
+  text-shadow: 0 0 10px 2px var(--white);
+  font-weight: 700;
+}
+
 /*----- QUIZ -----*/
 .hide {
   display: none;
