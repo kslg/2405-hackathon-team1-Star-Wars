@@ -354,6 +354,9 @@ li.option:hover {
   .navbar .navbar-brand {
     font-size: 1.5rem;
   }
+  .modal {
+    width: 92%;
+}
 }
 
 @media (max-width: 344px) {
