@@ -344,9 +344,12 @@ li.option:hover {
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
   }
+  .buttons {
+    padding-right: 1.5rem;
+  }
 }
 
-@media (min-width: 344px) {
+@media (max-width: 344px) {
   .hero-image,
   #scoreboard,
   #answerBank {
@@ -359,5 +362,29 @@ li.option:hover {
     background: linear-gradient(rgba(14, 13, 14, 0.8), rgba(227, 32, 32, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(rgba(7, 7, 7, 0.8), rgba(234, 57, 57, 0.8)), url('../images/darth-quiz-hero.png') center center no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
+  }
+  .question {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .question {
+    margin-bottom: 4rem;
+  }
+  .row {
+    position: relative;
+  }
+  h2#welcome-text-2 {
+    margin-top: 3rem;
+  }
+  .quiz-text-caption {
+    margin-top: 1rem;
+  }
+  h2#score-title {
+    margin-top: -3rem;
+  }
+  .buttons {
+    padding-right: 2.5rem;
   }
 }
