@@ -96,8 +96,6 @@ shuffle(questionBank);
 
 var question = document.getElementById('question');
 var quizContainer = document.getElementById('quiz-container');
-// var timeupmodal = document.getElementById('timeupmodal'); 
-// var myModal = document.getElementById('myModal'); 
 var scorecard = document.getElementById('scorecard');
 var option0 = document.getElementById('option0');
 var option1 = document.getElementById('option1');
@@ -111,6 +109,9 @@ var currentQuestion = 0;
 var score = 0;
 var downloadTimer;
 var scoreMessage=document.getElementById('score-message');
+var questionCount = document.getElementById('questionCount');
+var scoreboard = document.getElementById('scoreboard');
+
 //Function to display questions
 function displayQuestion() {
     for (var a = 1; a < span.length; a++) {
