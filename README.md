@@ -2,7 +2,7 @@
 
 ![Image of Responsiveness](assets/images/responsive.png)
 
-Visit the deployed site: [The Darth Side](https://desislavanaydenova.github.io/2405-hackathon-team1-StarWars/quiz.html)
+Visit the deployed site: [The Darth Side](https://kslg.github.io/2405-hackathon-team1-Star-Wars/)
 
 ## Introduction
 
