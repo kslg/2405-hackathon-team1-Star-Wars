@@ -220,17 +220,24 @@ function refresh() {
 
 // Modal function
 const overlay = document.querySelector("#overlay");
-document.querySelector("#show-modal-btn").
-    addEventListener("click", () => {
+const showModalBtn = document.querySelector("#show-modal-btn");
+const closeModalBtn = document.querySelector("#close-modal-btn");
+
+if (showModalBtn && overlay) {
+    showModalBtn.addEventListener("click", () => {
         overlay.style.display = "block";
     });
-document.querySelector("#close-modal-btn");
-    addEventListener("click", () => {
+}
+if (closeModalBtn && overlay) {
+    closeModalBtn.addEventListener("click", () => {
         overlay.style.display = "none";
     });
-const modalOverlay = document.getElementById("overlay");
+}
 
-// modalOverlay.classList.add('hide');
+const modalOverlay = document.getElementById("overlay");
+if (modalOverlay) {
+    modalOverlay.classList.add('hide');
+}
 
 function shuffle(array) {
     let currentIndex = array.length;
