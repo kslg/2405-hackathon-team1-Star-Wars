@@ -195,7 +195,7 @@ We created our avatar images using [Doll Divine](https://www.dolldivine.com/star
 There was an error in the console when the user clicks 'Start' on the quiz:
 "TypeError: Cannot read properties of null (reading 'style')"
 
-![TypeError Screenshot](docs/readme_images/TypeError%20Screenshot.png)
+![TypeError Screenshot](docs/readme_images/typerrror-screenshot.png)
 
 This is likely caused by trying to access the ‘style’ property of a null element, which means the element with the specified ID or class is not found in the DOM.
 
