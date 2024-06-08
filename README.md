@@ -175,6 +175,9 @@ We created our avatar images using [Doll Divine](https://www.dolldivine.com/star
 - https://stackoverflow.com/questions/37373387/display-array-item-onceon-click
 - https://stackoverflow.com/questions/70776559/how-can-i-get-objects-in-my-array-to-only-show-up-once-javascript
 - https://stackoverflow.com/questions/27091427/using-an-array-element-only-once
+- https://www.toynk.com/blogs/news/best-darth-vader-quotes
+- Main Image: https://screenrant.com/star-wars-darth-vader-armor-suits-trivia-facts/
+- Main Image Overlay Effects: https://imagekit.io/blog/css-image-overlay/
 
 
 ## Team
@@ -186,3 +189,23 @@ We created our avatar images using [Doll Divine](https://www.dolldivine.com/star
 - Daniel Higginson [GitHub](https://github.com/Danbob81) [LinkedIn](https://www.linkedin.com/in/daniel-higginson/)
 - Emma Lamont [GitHub](https://github.com/elamont174) [LinkedIn](https://www.linkedin.com/in/emma-lamont)
 - Desislava Naydenova [GitHub](https://github.com/DesislavaNaydenova) [LinkedIn](https://www.linkedin.com/in/desislava-naydenova-96877b2a3/)
+
+## Fixed Bugs
+
+There was an error in the console when the user clicks 'Start' on the quiz:
+"TypeError: Cannot read properties of null (reading 'style')"
+
+![TypeError Screenshot](docs/readme_images/TypeError%20Screenshot.png)
+
+This is likely caused by trying to access the ‘style’ property of a null element, which means the element with the specified ID or class is not found in the DOM.
+
+To fix this, I made sure the elements you I was trying to access exist in the HTML before the JavaScript code ran.
+
+I added some checks to ensure elements are not null before accessing their properties.
+
+Key Changes:
+1. Null checks before accessing properties: Before accessing properties like style, we check if the element is not null.
+2. Checking existence of elements in event listeners and functions: Ensure elements exist before trying to modify their properties or add event listeners.
+3. Added questionCount and scoreboard variables: These were referenced but not defined in your JavaScript.
+
+This should help prevent the "TypeError: Cannot read properties of null" errors by ensuring elements exist before you try to access or modify them.
