@@ -1,5 +1,5 @@
 //Question bank
-var questionBank = [
+let questionBank = [
     {
         question: 'What colour is Darth Vader&#39;s light saber?',
         option: ['Red', 'Blue', 'Green', 'Yellow'],
@@ -83,37 +83,35 @@ var questionBank = [
 ];
 
 /* sounds */
-const sound1=document.createElement('audio');
+const sound1 = document.createElement('audio');
 sound1.setAttribute('src', 'assets/audio/voicy_darth_vader_noooo.mp3');
-const sound2=document.createElement('audio');
+const sound2 = document.createElement('audio');
 sound2.setAttribute('src', 'assets/audio/voicy_dont_fail_me_again.mp3');
-const sound3=document.createElement('audio');
+const sound3 = document.createElement('audio');
 sound3.setAttribute('src', 'assets/audio/voicy_darth_vader_force_strong.mp3');
 
 /*shuffle the question bank when the document loads */
 
 shuffle(questionBank);
 
-var question = document.getElementById('question');
-var quizContainer = document.getElementById('quiz-container');
-// var timeupmodal = document.getElementById('timeupmodal'); 
-// var myModal = document.getElementById('myModal'); 
-var scorecard = document.getElementById('scorecard');
-var option0 = document.getElementById('option0');
-var option1 = document.getElementById('option1');
-var option2 = document.getElementById('option2');
-var option3 = document.getElementById('option3');
-var next = document.querySelector('.next');
-var points = document.getElementById('score');
-var span = document.querySelectorAll('span');
-var toggler1=document.getElementById('toggler1');
-var currentQuestion = 0;
-var score = 0;
-var downloadTimer;
-var scoreMessage=document.getElementById('score-message');
+let question = document.getElementById('question');
+let quizContainer = document.getElementById('quiz-container');
+let scorecard = document.getElementById('scorecard');
+let option0 = document.getElementById('option0');
+let option1 = document.getElementById('option1');
+let option2 = document.getElementById('option2');
+let option3 = document.getElementById('option3');
+let next = document.querySelector('.next');
+let points = document.getElementById('score');
+let span = document.querySelectorAll('span');
+let toggler1 = document.getElementById('toggler1');
+let currentQuestion = 0;
+let score = 0;
+let downloadTimer;
+let scoreMessage = document.getElementById('score-message');
 //Function to display questions
 function displayQuestion() {
-    for (var a = 1; a < span.length; a++) {
+    for (let a = 1; a < span.length; a++) {
         span[a].style.background = 'none';
     }
     question.innerHTML = 'Q.' + (currentQuestion + 1) + ' ' + questionBank[currentQuestion].question;
@@ -164,14 +162,14 @@ function nextQuestion() {
 
 //Function to check Answers
 function checkAnswer() {
-    var answerBank = document.getElementById('answerBank');
+    let answerBank = document.getElementById('answerBank');
 
-    var answers = document.getElementById('answers');
+    let answers = document.getElementById('answers');
     answerBank.style.display = 'block';
     scoreboard.style.display = 'none';
 
-    for (var a = 0; a < (questionBank.length - 6); a++) {
-        var list = document.createElement('li');
+    for (let a = 0; a < (questionBank.length - 6); a++) {
+        let list = document.createElement('li');
         list.innerHTML = questionBank[a].answer;
         answers.appendChild(list);
     }
@@ -179,7 +177,7 @@ function checkAnswer() {
 displayQuestion();
 
 /** 
- * Countdown timer which shows a window alert 
+ * Countdown timer which shows a pop up modal
  * if the player does not complete the quiz before the countdown ends
  * if the player does complete the quiz before the countdown ends, then the window alert does not show
  */
@@ -188,10 +186,11 @@ document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("welcome-text").style.display = "none";
     document.getElementById("welcome-text-2").style.display = "none";
     document.getElementById("gameStart").style.display = "none";
-    document.getElementById("Refresh").style.display ="inline-block";
-    var timeleft = 60;
-    var currentQuestion = 0;
-    var a = 0; a < (questionBank.length - 6);
+    document.getElementById("Refresh").style.display = "inline-block";
+    let timeleft = 60;
+    let currentQuestion = 0;
+    let a = 0;
+    a < (questionBank.length - 6);
 
     downloadTimer = setInterval(function function1() {
         timeleft -= 1;
@@ -200,7 +199,7 @@ document.getElementById("gameStart").addEventListener("click", function () {
         if (timeleft <= -0) {
             clearInterval(downloadTimer);
             $("#myModal").modal();
-            
+
         } else if (timeleft >= 0, currentQuestion > questionBank.length - 7) {
             $("#myModal").modal('hide');
             quizContainer.style.display = 'none';
@@ -210,7 +209,7 @@ document.getElementById("gameStart").addEventListener("click", function () {
 });
 
 /** 
- * Connected to the Reset button and 
+ * Connected to the Restart button and 
  * reloads the page so the player 
  * can retsart the quiz and the timer.
  */
@@ -225,13 +224,14 @@ document.querySelector("#show-modal-btn").
         overlay.style.display = "block";
     });
 document.querySelector("#close-modal-btn");
-    addEventListener("click", () => {
-        overlay.style.display = "none";
-    });
+addEventListener("click", () => {
+    overlay.style.display = "none";
+});
 const modalOverlay = document.getElementById("overlay");
 
 modalOverlay.classList.add('hide');
 
+// Shuffles the quiz questions from the question bank
 function shuffle(array) {
     let currentIndex = array.length;
 
