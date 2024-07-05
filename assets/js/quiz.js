@@ -96,6 +96,7 @@ shuffle(questionBank);
 
 let question = document.getElementById('question');
 let quizContainer = document.getElementById('quiz-container');
+let questionCount = document.getElementById('questionCount');
 let scorecard = document.getElementById('scorecard');
 let option0 = document.getElementById('option0');
 let option1 = document.getElementById('option1');
