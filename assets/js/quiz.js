@@ -216,17 +216,24 @@ function refresh() {
 
 // Modal function
 const overlay = document.querySelector("#overlay");
-document.querySelector("#show-modal-btn").
-    addEventListener("click", () => {
-        overlay.style.display = "block";
-    });
-document.querySelector("#close-modal-btn");
-addEventListener("click", () => {
-    overlay.style.display = "none";
-});
-const modalOverlay = document.getElementById("overlay");
+const showModalBtn = document.querySelector("#show-modal-btn");
+const closeModalBtn = document.querySelector("#close-modal-btn");
 
-modalOverlay.classList.add('hide');
+if (showModalBtn) {
+    showModalBtn.addEventListener("click", () => {
+        if (overlay) overlay.style.display = "block";
+    });
+}
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener("click", () => {
+        if (overlay) overlay.style.display = "none";
+    });
+}
+
+if (overlay) {
+    overlay.classList.add('hide');
+}
 
 // Shuffles the quiz questions from the question bank
 function shuffle(array) {
