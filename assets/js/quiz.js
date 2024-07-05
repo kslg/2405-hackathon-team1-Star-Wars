@@ -97,6 +97,7 @@ shuffle(questionBank);
 let question = document.getElementById('question');
 let quizContainer = document.getElementById('quiz-container');
 let questionCount = document.getElementById('questionCount');
+let scoreBoard = document.getElementById('scoreboard');
 let option0 = document.getElementById('option0');
 let option1 = document.getElementById('option1');
 let option2 = document.getElementById('option2');
@@ -120,7 +121,7 @@ function displayQuestion() {
     option3.innerHTML = questionBank[currentQuestion].option[3];
     questionCount.innerHTML = "Question" + ' ' + (currentQuestion + 1) + ' ' + 'of' + ' ' + (questionBank.length - 6);
     // if(i<questionBank.length-6){
-    //     scoreboard.style.display= 'block'
+    //     scoreBoard.style.display= 'block'
     // }
 }
 
@@ -153,7 +154,7 @@ function nextQuestion() {
             scoreMessage.innerText = "WE WOULD BE HONORED, IF YOU WOULD JOIN US.";
             sound3.play();
         }
-        scoreboard.style.display = 'block';
+        scoreBoard.style.display = 'block';
         points.innerHTML = score + '/' + (questionBank.length - 6);
         quizContainer.style.display = 'none';
     }
@@ -165,7 +166,7 @@ function checkAnswer() {
     let answerBank = document.getElementById('answerBank');
     let answers = document.getElementById('answers');
     answerBank.style.display = 'block';
-    scoreboard.style.display = 'none';
+    scoreBoard.style.display = 'none';
 
     for (let a = 0; a < (questionBank.length - 6); a++) {
         let list = document.createElement('li');
@@ -199,7 +200,7 @@ document.getElementById("gameStart").addEventListener("click", function () {
         } else if (timeleft >= 0, currentQuestion > questionBank.length - 7) {
             $("#myModal").modal('hide');
             quizContainer.style.display = 'none';
-            scoreboard.style.display = 'block';
+            scoreBoard.style.display = 'block';
         }
     }, 1000);
 });
