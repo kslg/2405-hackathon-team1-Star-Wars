@@ -97,19 +97,17 @@ shuffle(questionBank);
 let question = document.getElementById('question');
 let quizContainer = document.getElementById('quiz-container');
 let questionCount = document.getElementById('questionCount');
-let scorecard = document.getElementById('scorecard');
 let option0 = document.getElementById('option0');
 let option1 = document.getElementById('option1');
 let option2 = document.getElementById('option2');
 let option3 = document.getElementById('option3');
-let next = document.querySelector('.next');
 let points = document.getElementById('score');
 let span = document.querySelectorAll('span');
-let toggler1 = document.getElementById('toggler1');
 let currentQuestion = 0;
 let score = 0;
 let downloadTimer;
 let scoreMessage = document.getElementById('score-message');
+
 //Function to display questions
 function displayQuestion() {
     for (let a = 1; a < span.length; a++) {
@@ -160,11 +158,11 @@ function nextQuestion() {
         quizContainer.style.display = 'none';
     }
 }
+displayQuestion();
 
 //Function to check Answers
 function checkAnswer() {
     let answerBank = document.getElementById('answerBank');
-
     let answers = document.getElementById('answers');
     answerBank.style.display = 'block';
     scoreboard.style.display = 'none';
@@ -175,7 +173,6 @@ function checkAnswer() {
         answers.appendChild(list);
     }
 }
-displayQuestion();
 
 /** 
  * Countdown timer which shows a pop up modal
