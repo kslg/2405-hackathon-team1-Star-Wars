@@ -189,8 +189,6 @@ document.getElementById("gameStart").addEventListener("click", function () {
     document.getElementById("Refresh").style.display = "inline-block";
     let timeleft = 60;
     let currentQuestion = 0;
-    // let a = 0;
-    // a < (questionBank.length - 6);
 
     downloadTimer = setInterval(function function1() {
         timeleft -= 1;
